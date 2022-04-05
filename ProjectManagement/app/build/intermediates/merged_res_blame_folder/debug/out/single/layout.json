@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_listing.xml",
+        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/content_listing.xml"
+    },
+    {
+        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_first.xml",
+        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/fragment_first.xml"
+    },
+    {
+        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second.xml",
+        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/fragment_second.xml"
+    },
+    {
+        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerlayout.xml",
+        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/registerlayout.xml"
+    },
+    {
+        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing.xml",
+        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/activity_listing.xml"
+    }
+]

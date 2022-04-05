@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ProjectManagement</string>
+    <string name="title_activity_listing">ListingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="emailExample">xyz@email.com</string>
+    <string name="notRegistered">Not registered?</string>
+    <string name="signUp">Sign Up</string>
+    <string name="password">password</string>
+    <string name="signIn">Sign In</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="emailId">Email ID</string>
+    <string name="fullName">Full Name</string>
+    <string name="alreadyAccount">Already have an account?</string>
+    <string name="passwordRegister">Password</string>
+</resources>

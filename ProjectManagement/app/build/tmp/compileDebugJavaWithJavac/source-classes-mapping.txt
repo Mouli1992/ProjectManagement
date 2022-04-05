@@ -1,0 +1,14 @@
+com/example/projectmanagement/databinding/FragmentSecondBinding.java
+ com.example.projectmanagement.databinding.FragmentSecondBinding
+com/example/projectmanagement/databinding/RegisterlayoutBinding.java
+ com.example.projectmanagement.databinding.RegisterlayoutBinding
+com/example/projectmanagement/databinding/FragmentFirstBinding.java
+ com.example.projectmanagement.databinding.FragmentFirstBinding
+com/example/projectmanagement/databinding/ActivityListingBinding.java
+ com.example.projectmanagement.databinding.ActivityListingBinding
+com/example/projectmanagement/databinding/ActivityMainBinding.java
+ com.example.projectmanagement.databinding.ActivityMainBinding
+com/example/projectmanagement/databinding/ContentListingBinding.java
+ com.example.projectmanagement.databinding.ContentListingBinding
+com/example/projectmanagement/BuildConfig.java
+ com.example.projectmanagement.BuildConfig
