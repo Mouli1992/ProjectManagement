@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +24,15 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
 
   @NonNull
   public final Button btnAddTasks;
+
+  @NonNull
+  public final Button btnSubmitProject;
+
+  @NonNull
+  public final EditText edtDeadline;
+
+  @NonNull
+  public final EditText edtProjectName;
 
   @NonNull
   public final Guideline guideline11;
@@ -52,13 +62,17 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
   public final TextView txtProjectName;
 
   private ActivityProjectDetailsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnAddTasks, @NonNull Guideline guideline11, @NonNull Guideline guideline12,
-      @NonNull Guideline guideline13, @NonNull Guideline guideline14,
-      @NonNull Guideline guideline17, @NonNull Guideline guideline18,
-      @NonNull TextView txtAssignedBy, @NonNull TextView txtDeadline,
-      @NonNull TextView txtProjectName) {
+      @NonNull Button btnAddTasks, @NonNull Button btnSubmitProject, @NonNull EditText edtDeadline,
+      @NonNull EditText edtProjectName, @NonNull Guideline guideline11,
+      @NonNull Guideline guideline12, @NonNull Guideline guideline13,
+      @NonNull Guideline guideline14, @NonNull Guideline guideline17,
+      @NonNull Guideline guideline18, @NonNull TextView txtAssignedBy,
+      @NonNull TextView txtDeadline, @NonNull TextView txtProjectName) {
     this.rootView = rootView;
     this.btnAddTasks = btnAddTasks;
+    this.btnSubmitProject = btnSubmitProject;
+    this.edtDeadline = edtDeadline;
+    this.edtProjectName = edtProjectName;
     this.guideline11 = guideline11;
     this.guideline12 = guideline12;
     this.guideline13 = guideline13;
@@ -100,6 +114,24 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
       id = R.id.btnAddTasks;
       Button btnAddTasks = ViewBindings.findChildViewById(rootView, id);
       if (btnAddTasks == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubmitProject;
+      Button btnSubmitProject = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubmitProject == null) {
+        break missingId;
+      }
+
+      id = R.id.edtDeadline;
+      EditText edtDeadline = ViewBindings.findChildViewById(rootView, id);
+      if (edtDeadline == null) {
+        break missingId;
+      }
+
+      id = R.id.edtProjectName;
+      EditText edtProjectName = ViewBindings.findChildViewById(rootView, id);
+      if (edtProjectName == null) {
         break missingId;
       }
 
@@ -158,8 +190,8 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
       }
 
       return new ActivityProjectDetailsBinding((ConstraintLayout) rootView, btnAddTasks,
-          guideline11, guideline12, guideline13, guideline14, guideline17, guideline18,
-          txtAssignedBy, txtDeadline, txtProjectName);
+          btnSubmitProject, edtDeadline, edtProjectName, guideline11, guideline12, guideline13,
+          guideline14, guideline17, guideline18, txtAssignedBy, txtDeadline, txtProjectName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

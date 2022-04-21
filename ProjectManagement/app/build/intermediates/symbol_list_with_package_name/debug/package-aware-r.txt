@@ -2730,6 +2730,7 @@ id btnSignIn
 id btnSignInRegister
 id btnSignUp
 id btnSignUpRegister
+id btnSubmitProject
 id btnSubmitTask
 id buttonPanel
 id cache_measures
@@ -2816,6 +2817,8 @@ id editNewPasswordRegister
 id editPassword
 id edit_query
 id edtAssignedUser
+id edtDeadline
+id edtProjectName
 id edtTaskName
 id elastic
 id end

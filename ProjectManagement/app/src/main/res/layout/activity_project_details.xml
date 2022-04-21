@@ -18,8 +18,10 @@
       android:textColor="#000000"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.925"
       app:layout_constraintStart_toStartOf="@+id/guideline17"
-      app:layout_constraintTop_toTopOf="@+id/guideline18" />
+      app:layout_constraintTop_toTopOf="@+id/guideline18"
+      app:layout_constraintVertical_bias="0.619" />
 
   <Button
       android:id="@+id/btnSubmitProject"
@@ -35,40 +37,67 @@
 
   <TextView
       android:id="@+id/txtProjectName"
-      android:layout_width="268dp"
+      android:layout_width="wrap_content"
       android:layout_height="0dp"
       android:layout_marginTop="16dp"
       android:background="@drawable/shape"
       android:text="name"
-      app:layout_constraintEnd_toStartOf="@+id/guideline12"
-      app:layout_constraintHorizontal_bias="1.0"
-      app:layout_constraintStart_toStartOf="@+id/guideline11"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/guideline17"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
   <TextView
       android:id="@+id/txtDeadline"
-      android:layout_width="268dp"
+      android:layout_width="wrap_content"
       android:layout_height="0dp"
-      android:layout_marginTop="16dp"
+      android:layout_marginTop="52dp"
       android:background="@drawable/shape"
       android:text="deadline"
-      app:layout_constraintEnd_toStartOf="@+id/guideline12"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="@+id/guideline11"
+      app:layout_constraintEnd_toEndOf="@+id/txtProjectName"
+      app:layout_constraintStart_toStartOf="@+id/txtProjectName"
       app:layout_constraintTop_toBottomOf="@+id/txtProjectName" />
 
   <TextView
       android:id="@+id/txtAssignedBy"
-      android:layout_width="268dp"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="16dp"
-      android:layout_marginBottom="64dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginBottom="8dp"
       android:background="@drawable/shape"
-      android:text="assignedby"
+      android:text="assignedby:"
+      android:editable="false"
       app:layout_constraintBottom_toTopOf="@+id/guideline14"
-      app:layout_constraintEnd_toStartOf="@+id/guideline12"
-      app:layout_constraintStart_toStartOf="@+id/guideline11"
-      app:layout_constraintTop_toBottomOf="@+id/txtDeadline" />
+      app:layout_constraintEnd_toEndOf="@+id/txtDeadline"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/txtDeadline"
+      app:layout_constraintTop_toBottomOf="@+id/txtDeadline"
+      app:layout_constraintVertical_bias="1.0" />
+
+
+  <EditText
+      android:id="@+id/edtProjectName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Enter Project Name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.032"
+      app:layout_constraintStart_toStartOf="@+id/guideline17"
+      app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+  <EditText
+      android:id="@+id/edtDeadline"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:inputType="date"
+      android:text="Enter Date"
+      app:layout_constraintEnd_toEndOf="@+id/edtProjectName"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/edtProjectName"
+      app:layout_constraintTop_toBottomOf="@+id/edtProjectName" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline11"
@@ -103,7 +132,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="vertical"
-      app:layout_constraintGuide_percent="0.6" />
+      app:layout_constraintGuide_percent="0.38" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline18"

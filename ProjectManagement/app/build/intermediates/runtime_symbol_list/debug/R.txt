@@ -2729,6 +2729,7 @@ int id btnSignIn 0x7f090072
 int id btnSignInRegister 0x7f090073
 int id btnSignUp 0x7f090074
 int id btnSignUpRegister 0x7f090075
+int id btnSubmitProject 0x7f09022b
 int id btnSubmitTask 0x7f090076
 int id buttonPanel 0x7f090077
 int id cache_measures 0x7f090078
@@ -2815,6 +2816,8 @@ int id editNewPasswordRegister 0x7f0900c8
 int id editPassword 0x7f0900c9
 int id edit_query 0x7f0900ca
 int id edtAssignedUser 0x7f0900cb
+int id edtDeadline 0x7f09022c
+int id edtProjectName 0x7f09022d
 int id edtTaskName 0x7f0900cc
 int id elastic 0x7f0900cd
 int id end 0x7f0900ce
