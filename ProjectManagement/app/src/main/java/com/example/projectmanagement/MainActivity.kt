@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         firebaseUser = task.result!!.user!!
                         Toast.makeText(this, "You are signed in Successfully", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this@MainActivity, MainActivity::class.java)
+                        val intent = Intent(this@MainActivity, ListingProject::class.java)
                         intent.putExtra("userId", firebaseUser?.uid)
                         intent.putExtra("email", email)
                         startActivity(intent)

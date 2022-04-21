@@ -6,11 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
@@ -21,6 +23,9 @@ import java.lang.String;
 public final class RegisterlayoutBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final Button btnAddProfileImage;
 
   @NonNull
   public final Button btnSignInRegister;
@@ -44,14 +49,29 @@ public final class RegisterlayoutBinding implements ViewBinding {
   public final EditText editNewPasswordRegister;
 
   @NonNull
+  public final Guideline guideline10;
+
+  @NonNull
+  public final Guideline guideline15;
+
+  @NonNull
+  public final Guideline guideline9;
+
+  @NonNull
+  public final ImageView imgProfileImage;
+
+  @NonNull
   public final TextView txtAlreadyAccount;
 
   private RegisterlayoutBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnSignInRegister, @NonNull Button btnSignUpRegister,
-      @NonNull Spinner dropdownMenu, @NonNull EditText editEmailRegister,
-      @NonNull EditText editFullNameRegister, @NonNull EditText editMobileNumberRegister,
-      @NonNull EditText editNewPasswordRegister, @NonNull TextView txtAlreadyAccount) {
+      @NonNull Button btnAddProfileImage, @NonNull Button btnSignInRegister,
+      @NonNull Button btnSignUpRegister, @NonNull Spinner dropdownMenu,
+      @NonNull EditText editEmailRegister, @NonNull EditText editFullNameRegister,
+      @NonNull EditText editMobileNumberRegister, @NonNull EditText editNewPasswordRegister,
+      @NonNull Guideline guideline10, @NonNull Guideline guideline15, @NonNull Guideline guideline9,
+      @NonNull ImageView imgProfileImage, @NonNull TextView txtAlreadyAccount) {
     this.rootView = rootView;
+    this.btnAddProfileImage = btnAddProfileImage;
     this.btnSignInRegister = btnSignInRegister;
     this.btnSignUpRegister = btnSignUpRegister;
     this.dropdownMenu = dropdownMenu;
@@ -59,6 +79,10 @@ public final class RegisterlayoutBinding implements ViewBinding {
     this.editFullNameRegister = editFullNameRegister;
     this.editMobileNumberRegister = editMobileNumberRegister;
     this.editNewPasswordRegister = editNewPasswordRegister;
+    this.guideline10 = guideline10;
+    this.guideline15 = guideline15;
+    this.guideline9 = guideline9;
+    this.imgProfileImage = imgProfileImage;
     this.txtAlreadyAccount = txtAlreadyAccount;
   }
 
@@ -89,6 +113,12 @@ public final class RegisterlayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnAddProfileImage;
+      Button btnAddProfileImage = ViewBindings.findChildViewById(rootView, id);
+      if (btnAddProfileImage == null) {
+        break missingId;
+      }
+
       id = R.id.btnSignInRegister;
       Button btnSignInRegister = ViewBindings.findChildViewById(rootView, id);
       if (btnSignInRegister == null) {
@@ -131,15 +161,40 @@ public final class RegisterlayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline10;
+      Guideline guideline10 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline10 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline15;
+      Guideline guideline15 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline15 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline9;
+      Guideline guideline9 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline9 == null) {
+        break missingId;
+      }
+
+      id = R.id.imgProfileImage;
+      ImageView imgProfileImage = ViewBindings.findChildViewById(rootView, id);
+      if (imgProfileImage == null) {
+        break missingId;
+      }
+
       id = R.id.txtAlreadyAccount;
       TextView txtAlreadyAccount = ViewBindings.findChildViewById(rootView, id);
       if (txtAlreadyAccount == null) {
         break missingId;
       }
 
-      return new RegisterlayoutBinding((ConstraintLayout) rootView, btnSignInRegister,
-          btnSignUpRegister, dropdownMenu, editEmailRegister, editFullNameRegister,
-          editMobileNumberRegister, editNewPasswordRegister, txtAlreadyAccount);
+      return new RegisterlayoutBinding((ConstraintLayout) rootView, btnAddProfileImage,
+          btnSignInRegister, btnSignUpRegister, dropdownMenu, editEmailRegister,
+          editFullNameRegister, editMobileNumberRegister, editNewPasswordRegister, guideline10,
+          guideline15, guideline9, imgProfileImage, txtAlreadyAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

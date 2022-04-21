@@ -1,26 +1,34 @@
 [
     {
-        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_listing.xml",
-        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/content_listing.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_project_details.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_project_details.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_first.xml",
-        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/fragment_first.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second.xml",
-        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/fragment_second.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerlayout.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/registerlayout.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerlayout.xml",
-        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/registerlayout.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewprojectlist.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/recyclerviewprojectlist.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_project_list.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/fragment_project_list.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing.xml",
-        "source": "/Users/chandramouli/Downloads/ProjectManagement/app/src/main/res/layout/activity_listing.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_no_project.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/fragment_no_project.xml"
+    },
+    {
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing_project.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_listing_project.xml"
+    },
+    {
+        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_projects_tasks.xml",
+        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_projects_tasks.xml"
     }
 ]

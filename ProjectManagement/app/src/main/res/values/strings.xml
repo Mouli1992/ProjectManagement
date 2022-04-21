@@ -19,4 +19,11 @@
     <string name="fullName">Full Name</string>
     <string name="alreadyAccount">Already have an account?</string>
     <string name="passwordRegister">Password</string>
+    <string-array name="SpinnerRegister">
+        <item>Role</item>
+        <item>Project Manager</item>
+        <item>Team Member</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

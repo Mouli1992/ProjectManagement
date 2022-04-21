@@ -10,10 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectManagement">
         <activity
-            android:name=".ListingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_listing"
-            android:theme="@style/Theme.ProjectManagement.NoActionBar" />
+            android:name=".ProjectsTasks"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ListingProject"
+            android:exported="false" />
         <activity
             android:name=".Register"
             android:exported="false"

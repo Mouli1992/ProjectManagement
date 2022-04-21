@@ -23,10 +23,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProjectManagement" >
         <activity
-            android:name="com.example.projectmanagement.ListingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_listing"
-            android:theme="@style/Theme.ProjectManagement.NoActionBar" />
+            android:name="com.example.projectmanagement.ProjectsTasks"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectmanagement.ProjectDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectmanagement.ListingProject"
+            android:exported="false" />
         <activity
             android:name="com.example.projectmanagement.Register"
             android:exported="false"

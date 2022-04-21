@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
@@ -34,16 +35,25 @@ public final class ActivityMainBinding implements ViewBinding {
   public final EditText editPassword;
 
   @NonNull
+  public final Guideline guideline7;
+
+  @NonNull
+  public final Guideline guideline8;
+
+  @NonNull
   public final TextView txtNotRegistered;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnSignIn,
       @NonNull Button btnSignUp, @NonNull EditText editEmail, @NonNull EditText editPassword,
+      @NonNull Guideline guideline7, @NonNull Guideline guideline8,
       @NonNull TextView txtNotRegistered) {
     this.rootView = rootView;
     this.btnSignIn = btnSignIn;
     this.btnSignUp = btnSignUp;
     this.editEmail = editEmail;
     this.editPassword = editPassword;
+    this.guideline7 = guideline7;
+    this.guideline8 = guideline8;
     this.txtNotRegistered = txtNotRegistered;
   }
 
@@ -98,6 +108,18 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline7;
+      Guideline guideline7 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline7 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline8;
+      Guideline guideline8 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline8 == null) {
+        break missingId;
+      }
+
       id = R.id.txtNotRegistered;
       TextView txtNotRegistered = ViewBindings.findChildViewById(rootView, id);
       if (txtNotRegistered == null) {
@@ -105,7 +127,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, btnSignIn, btnSignUp, editEmail,
-          editPassword, txtNotRegistered);
+          editPassword, guideline7, guideline8, txtNotRegistered);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
