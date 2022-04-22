@@ -3018,7 +3018,6 @@ id right_side
 id rounded
 id row_index_key
 id rtl
-id rvProjectList
 id rvProjectShown
 id save_non_transition_alpha
 id save_overlay_view
@@ -3140,7 +3139,6 @@ id txtAssignedBy
 id txtAssignedUser
 id txtDatePicker
 id txtDeadline
-id txtFragment1
 id txtNoProjects
 id txtNotRegistered
 id txtProjectName
@@ -3279,8 +3277,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_no_project
-layout fragment_project_list
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

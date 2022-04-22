@@ -6,6 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ProjectDetails">
 
+  <TextView
+      android:id="@+id/txtNoTasks"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="No Tasks Assigned"
+      android:visibility="visible"
+      app:layout_constraintBottom_toTopOf="@+id/guideline18"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvTasks"
+      android:layout_width="367dp"
+      android:layout_height="361dp"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toTopOf="@+id/guideline18"
+      app:layout_constraintEnd_toStartOf="@+id/guideline12"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline11"
+      app:layout_constraintTop_toTopOf="@+id/guideline14"
+      app:layout_constraintVertical_bias="0.26" />
+
   <Button
       android:id="@+id/btnAddTasks"
       android:layout_width="wrap_content"
@@ -81,6 +104,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="8dp"
+      android:minHeight="48dp"
       android:text="Enter Project Name"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.032"
@@ -93,6 +117,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="20dp"
       android:inputType="date"
+      android:minHeight="48dp"
       android:text="Enter Date"
       app:layout_constraintEnd_toEndOf="@+id/edtProjectName"
       app:layout_constraintHorizontal_bias="0.0"
@@ -111,7 +136,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="vertical"
-      app:layout_constraintGuide_begin="289dp" />
+      app:layout_constraintGuide_percent="0.94" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline13"

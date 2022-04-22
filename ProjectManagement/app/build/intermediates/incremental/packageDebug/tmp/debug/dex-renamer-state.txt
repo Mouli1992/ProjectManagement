@@ -1,14 +1,14 @@
-#Thu Apr 21 14:21:29 BST 2022
+#Fri Apr 22 12:49:19 BST 2022
 path.4=classes2.dex
 path.3=8/classes.dex
 path.2=10/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.4=/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.3=/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
-base.2=/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.1=/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.0=/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.4=/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.3=/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
+base.2=/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+base.1=/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.0=/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
