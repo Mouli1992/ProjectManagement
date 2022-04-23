@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
+            "outputFile": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "/Users/anmolaggarwal/.gradle/caches/transforms-3/9b90b2b6f8b90b437a967b451fc7da71/transformed/jetified-play-services-base-17.1.0/res/values-sv/values.xml",

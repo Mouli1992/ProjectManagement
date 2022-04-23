@@ -16,7 +16,9 @@ class ProjectsTasks : AppCompatActivity() {
         buttonSubmitTask= findViewById<Button>(R.id.btnSubmitTask)
         buttonSubmitTask.setOnClickListener{
             Intent(this,ProjectDetails::class.java).also {
+                finish()
                 startActivity(it)
+
             }
         }
     }

@@ -1,34 +1,26 @@
 [
     {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_project_details.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_project_details.xml"
+        "merged": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing_project.xml",
+        "source": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_listing_project.xml"
     },
     {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerlayout.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/registerlayout.xml"
+        "merged": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_project_details.xml",
+        "source": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_project_details.xml"
     },
     {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewprojectlist.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/recyclerviewprojectlist.xml"
+        "merged": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerlayout.xml",
+        "source": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/src/main/res/layout/registerlayout.xml"
     },
     {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_project_list.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/fragment_project_list.xml"
+        "merged": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_projects_tasks.xml",
+        "source": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_projects_tasks.xml"
     },
     {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_no_project.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/fragment_no_project.xml"
-    },
-    {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing_project.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_listing_project.xml"
-    },
-    {
-        "merged": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_projects_tasks.xml",
-        "source": "/Users/anmolaggarwal/Desktop/ProjectManagement 2 2/app/src/main/res/layout/activity_projects_tasks.xml"
+        "merged": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewprojectlist.xml",
+        "source": "/Users/anmolaggarwal/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewprojectlist.xml"
     }
 ]

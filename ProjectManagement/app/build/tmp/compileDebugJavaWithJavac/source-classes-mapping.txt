@@ -2,8 +2,6 @@ com/example/projectmanagement/databinding/RegisterlayoutBinding.java
  com.example.projectmanagement.databinding.RegisterlayoutBinding
 com/example/projectmanagement/databinding/ActivityProjectDetailsBinding.java
  com.example.projectmanagement.databinding.ActivityProjectDetailsBinding
-com/example/projectmanagement/databinding/FragmentProjectListBinding.java
- com.example.projectmanagement.databinding.FragmentProjectListBinding
 com/example/projectmanagement/databinding/RecyclerviewprojectlistBinding.java
  com.example.projectmanagement.databinding.RecyclerviewprojectlistBinding
 com/example/projectmanagement/databinding/ActivityProjectsTasksBinding.java
@@ -14,5 +12,3 @@ com/example/projectmanagement/BuildConfig.java
  com.example.projectmanagement.BuildConfig
 com/example/projectmanagement/databinding/ActivityListingProjectBinding.java
  com.example.projectmanagement.databinding.ActivityListingProjectBinding
-com/example/projectmanagement/databinding/FragmentNoProjectBinding.java
- com.example.projectmanagement.databinding.FragmentNoProjectBinding
