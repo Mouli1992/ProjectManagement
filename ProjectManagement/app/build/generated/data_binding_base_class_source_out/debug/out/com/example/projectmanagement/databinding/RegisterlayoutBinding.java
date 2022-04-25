@@ -34,9 +34,6 @@ public final class RegisterlayoutBinding implements ViewBinding {
   public final Button btnSignUpRegister;
 
   @NonNull
-  public final Spinner dropdownMenu;
-
-  @NonNull
   public final EditText editEmailRegister;
 
   @NonNull
@@ -61,20 +58,23 @@ public final class RegisterlayoutBinding implements ViewBinding {
   public final ImageView imgProfileImage;
 
   @NonNull
+  public final Spinner roleSpinner;
+
+  @NonNull
   public final TextView txtAlreadyAccount;
 
   private RegisterlayoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnAddProfileImage, @NonNull Button btnSignInRegister,
-      @NonNull Button btnSignUpRegister, @NonNull Spinner dropdownMenu,
-      @NonNull EditText editEmailRegister, @NonNull EditText editFullNameRegister,
-      @NonNull EditText editMobileNumberRegister, @NonNull EditText editNewPasswordRegister,
-      @NonNull Guideline guideline10, @NonNull Guideline guideline15, @NonNull Guideline guideline9,
-      @NonNull ImageView imgProfileImage, @NonNull TextView txtAlreadyAccount) {
+      @NonNull Button btnSignUpRegister, @NonNull EditText editEmailRegister,
+      @NonNull EditText editFullNameRegister, @NonNull EditText editMobileNumberRegister,
+      @NonNull EditText editNewPasswordRegister, @NonNull Guideline guideline10,
+      @NonNull Guideline guideline15, @NonNull Guideline guideline9,
+      @NonNull ImageView imgProfileImage, @NonNull Spinner roleSpinner,
+      @NonNull TextView txtAlreadyAccount) {
     this.rootView = rootView;
     this.btnAddProfileImage = btnAddProfileImage;
     this.btnSignInRegister = btnSignInRegister;
     this.btnSignUpRegister = btnSignUpRegister;
-    this.dropdownMenu = dropdownMenu;
     this.editEmailRegister = editEmailRegister;
     this.editFullNameRegister = editFullNameRegister;
     this.editMobileNumberRegister = editMobileNumberRegister;
@@ -83,6 +83,7 @@ public final class RegisterlayoutBinding implements ViewBinding {
     this.guideline15 = guideline15;
     this.guideline9 = guideline9;
     this.imgProfileImage = imgProfileImage;
+    this.roleSpinner = roleSpinner;
     this.txtAlreadyAccount = txtAlreadyAccount;
   }
 
@@ -128,12 +129,6 @@ public final class RegisterlayoutBinding implements ViewBinding {
       id = R.id.btnSignUpRegister;
       Button btnSignUpRegister = ViewBindings.findChildViewById(rootView, id);
       if (btnSignUpRegister == null) {
-        break missingId;
-      }
-
-      id = R.id.dropdown_menu;
-      Spinner dropdownMenu = ViewBindings.findChildViewById(rootView, id);
-      if (dropdownMenu == null) {
         break missingId;
       }
 
@@ -185,6 +180,12 @@ public final class RegisterlayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.roleSpinner;
+      Spinner roleSpinner = ViewBindings.findChildViewById(rootView, id);
+      if (roleSpinner == null) {
+        break missingId;
+      }
+
       id = R.id.txtAlreadyAccount;
       TextView txtAlreadyAccount = ViewBindings.findChildViewById(rootView, id);
       if (txtAlreadyAccount == null) {
@@ -192,9 +193,9 @@ public final class RegisterlayoutBinding implements ViewBinding {
       }
 
       return new RegisterlayoutBinding((ConstraintLayout) rootView, btnAddProfileImage,
-          btnSignInRegister, btnSignUpRegister, dropdownMenu, editEmailRegister,
-          editFullNameRegister, editMobileNumberRegister, editNewPasswordRegister, guideline10,
-          guideline15, guideline9, imgProfileImage, txtAlreadyAccount);
+          btnSignInRegister, btnSignUpRegister, editEmailRegister, editFullNameRegister,
+          editMobileNumberRegister, editNewPasswordRegister, guideline10, guideline15, guideline9,
+          imgProfileImage, roleSpinner, txtAlreadyAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

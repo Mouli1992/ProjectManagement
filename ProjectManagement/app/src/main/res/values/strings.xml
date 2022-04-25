@@ -19,9 +19,9 @@
     <string name="fullName">Full Name</string>
     <string name="alreadyAccount">Already have an account?</string>
     <string name="passwordRegister">Password</string>
-    <string-array name="SpinnerRegister">
+    <string-array name="SpinnerRole">
         <item>Role</item>
-        <item>Project Manager</item>
+        <item>Manager</item>
         <item>Team Member</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->

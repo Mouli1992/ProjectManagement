@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools" xmlns:ns2="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="SpinnerRegister">
+    <string-array name="SpinnerRole">
         <item>Role</item>
-        <item>Project Manager</item>
+        <item>Manager</item>
         <item>Team Member</item>
     </string-array>
     <attr format="enum" name="animateCircleAngleTo">

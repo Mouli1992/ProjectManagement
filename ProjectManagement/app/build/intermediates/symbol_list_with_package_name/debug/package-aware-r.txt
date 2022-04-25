@@ -71,7 +71,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
-array SpinnerRegister
+array SpinnerRole
 attr SharedValue
 attr SharedValueId
 attr action
@@ -3015,10 +3015,12 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id roleSpinner
 id rounded
 id row_index_key
 id rtl
 id rvProjectShown
+id rvTasks
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3140,6 +3142,7 @@ id txtAssignedUser
 id txtDatePicker
 id txtDeadline
 id txtNoProjects
+id txtNoTasks
 id txtNotRegistered
 id txtProjectName
 id txtProjectStatus
@@ -3339,6 +3342,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout recyclerviewprojectlist
+layout recyclerviewtasklist
 layout registerlayout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

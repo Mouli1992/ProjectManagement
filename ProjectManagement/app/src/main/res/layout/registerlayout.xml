@@ -103,13 +103,13 @@
         app:layout_constraintTop_toBottomOf="@+id/editMobileNumberRegister" />
 
     <Spinner
-        android:id="@+id/dropdown_menu"
+        android:id="@+id/roleSpinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
         android:layout_marginTop="16dp"
         android:autofillHints="Role"
-        android:entries="@array/SpinnerRegister"
+        android:entries="@array/SpinnerRole"
         android:minHeight="48dp"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="@+id/editNewPasswordRegister"
@@ -126,10 +126,10 @@
         android:background="@color/blue1"
         android:text="@string/signUp"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/dropdown_menu"
+        app:layout_constraintEnd_toEndOf="@+id/roleSpinner"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/dropdown_menu"
-        app:layout_constraintTop_toBottomOf="@+id/dropdown_menu" />
+        app:layout_constraintStart_toStartOf="@+id/roleSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/roleSpinner" />
 
     <TextView
         android:id="@+id/txtAlreadyAccount"

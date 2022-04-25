@@ -2,22 +2,18 @@ package com.example.projectmanagement
 
 import android.app.Activity
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
-import androidx.activity.result.ActivityResult
-import androidx.activity.result.ActivityResultLauncher
+import android.widget.*
+import com.example.projectmanagement.model.UserDetails
+import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import java.net.URI
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class Register: AppCompatActivity() {
 
@@ -28,7 +24,11 @@ class Register: AppCompatActivity() {
     private lateinit var regBtn: Button
     private lateinit var uploadP: ImageView
     private lateinit var addProfilePhoto: Button
-
+    private lateinit var signInBtn: Button
+    private lateinit var roleSpinner : Spinner
+    private lateinit var signUpBtn : Button
+    private lateinit var selectedRole :String
+    private val database = Firebase.firestore
 
 
     companion object{
@@ -40,6 +40,7 @@ class Register: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.registerlayout)
 
+
         name= findViewById(R.id.editFullNameRegister)
         email= findViewById(R.id.editEmailRegister)
         mobile= findViewById(R.id.editMobileNumberRegister)
@@ -47,28 +48,28 @@ class Register: AppCompatActivity() {
         regBtn = findViewById(R.id.btnSignUpRegister)
         uploadP= findViewById(R.id.imgProfileImage)
         addProfilePhoto = findViewById<Button>(R.id.btnAddProfileImage)
-
-
-
+        signInBtn =findViewById(R.id.btnSignInRegister)
+        signUpBtn = findViewById(R.id.btnSignUpRegister)
+        roleSpinner = findViewById(R.id.roleSpinner)
+        getRoleSelected()
         addProfilePhoto.setOnClickListener {
             Intent(Intent.ACTION_GET_CONTENT).also {
                 it.type = "image/*"
                 startActivityForResult(it,0)
             }
         }
+        signInBtn.setOnClickListener{
+            navigateToSignInActivity()
+        }
 
-
-
-
-        val signInButton = findViewById<Button>(R.id.btnSignInRegister)
-        signInButton.setOnClickListener {
-            callSignInButton()
+        signUpBtn.setOnClickListener {
+            registerUser()
         }
 
 
 
-    }
 
+    }
 
 
 
@@ -79,6 +80,23 @@ class Register: AppCompatActivity() {
                 uploadP.setImageURI(uri)
         }
 
+
+    }
+
+    private fun getRoleSelected() {
+        roleSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val role = parent!!.getItemAtPosition(position)
+                selectedRole = role.toString()
+                Log.i(TAG,"Role selected $selectedRole")
+
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
+
     }
 
     private fun registerUser() {
@@ -87,10 +105,13 @@ class Register: AppCompatActivity() {
             TextUtils.isEmpty(email.text.toString().trim {it <= ' '}) ->{
                 Toast.makeText(this@Register,"Please enter email", Toast.LENGTH_SHORT).show()
             }
-
             TextUtils.isEmpty(pwd.text.toString().trim{it <= ' '}) ->{
                 Toast.makeText(this@Register,"Please enter password", Toast.LENGTH_SHORT).show()
-            }else -> {
+            }
+            selectedRole.contentEquals("Role") ->{
+                Toast.makeText(this@Register,"Please Select Role", Toast.LENGTH_SHORT).show()
+            }
+            else -> {
             val email = email.text.toString().trim {it <= ' '}
             val pwd = pwd.text.toString().trim{it <= ' '}
 
@@ -98,12 +119,8 @@ class Register: AppCompatActivity() {
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         firebaseUser = task.result!!.user!!
-                        Toast.makeText(this, "You are registered Successfully", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this@Register, MainActivity::class.java)
-                        intent.putExtra("userId", firebaseUser?.uid)
-                        intent.putExtra("email", email)
-                        startActivity(intent)
-                        finish()
+                        saveUserDetails(email,name.text.toString(),Integer.parseInt(mobile.text.toString()),selectedRole)
+
                     }
                 }
                 .addOnFailureListener{ exception ->
@@ -114,14 +131,40 @@ class Register: AppCompatActivity() {
 
         }
 
-
         }
     }
 
-    private fun callSignInButton() {
+    private fun saveUserDetails(email: String, name: String, mobileNo: Int, role: String) {
+        val userDetails = UserDetails(email,name,mobileNo, Timestamp.now(),role)
+        database.collection("userDetails").document(email).set(userDetails).addOnCompleteListener { userDetailsTask ->
+            if(userDetailsTask.isSuccessful) {
+                Toast.makeText(this, "You are registered Successfully", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@Register, MainActivity::class.java)
+                intent.putExtra("name", name)
+                intent.putExtra("email", email)
+                startActivity(intent)
+                finish()
+
+            }else{
+                Log.e(TAG, "Exception with User Registration")
+                Toast.makeText(this, "User registeration Failed", Toast.LENGTH_SHORT).show()
+                return@addOnCompleteListener
+            }
+
+
+
+        }
+
+
+
+    }
+
+    private fun navigateToSignInActivity() {
         val intent = Intent(this, MainActivity::class.java).also {
             startActivity(it)
         }
+
+
 
     }
 }

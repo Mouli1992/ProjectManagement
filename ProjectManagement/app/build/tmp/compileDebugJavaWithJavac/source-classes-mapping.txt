@@ -8,6 +8,8 @@ com/example/projectmanagement/databinding/ActivityProjectsTasksBinding.java
  com.example.projectmanagement.databinding.ActivityProjectsTasksBinding
 com/example/projectmanagement/databinding/ActivityMainBinding.java
  com.example.projectmanagement.databinding.ActivityMainBinding
+com/example/projectmanagement/databinding/RecyclerviewtasklistBinding.java
+ com.example.projectmanagement.databinding.RecyclerviewtasklistBinding
 com/example/projectmanagement/BuildConfig.java
  com.example.projectmanagement.BuildConfig
 com/example/projectmanagement/databinding/ActivityListingProjectBinding.java
