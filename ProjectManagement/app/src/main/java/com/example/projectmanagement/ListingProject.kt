@@ -10,11 +10,13 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projectmanagement.model.ProjectTaskDetails
+import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TaskDetails
+import com.example.projectmanagement.model.UserDetails
 import com.example.projectmanagement.utils.PROJECT_STATUS_PENDING
 import com.example.projectmanagement.utils.TASK_STATUS_ONGOING
 import com.google.firebase.Timestamp
+import com.google.firebase.firestore.QuerySnapshot
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import java.util.*
@@ -24,9 +26,12 @@ class ListingProject : AppCompatActivity() {
     private lateinit var txtNo: TextView
     private val database = Firebase.firestore
     private lateinit var buttonAddProject : Button
+    private lateinit var listOfTeamMembers : MutableList<String>
+    private lateinit var listOfProjectDetails: MutableList<ProjectDetails>
     companion object{
         private const val TAG = "ListingProject"
         private const val CREATE_REQUEST_CODE = 248
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +45,10 @@ class ListingProject : AppCompatActivity() {
             ProjectListData("p1", "pending"),
             ProjectListData("p2", "pending"),
         )
+
+        listOfTeamMembers = getTeamMemberDetails()
+        listOfProjectDetails = getManagerProjectDetails()
+
 
         val adapter = ProjectListAdapter(todoList)
         projectRecyclerView.adapter = adapter
@@ -63,7 +72,7 @@ class ListingProject : AppCompatActivity() {
         buttonAddProject = findViewById<Button>(R.id.btnAddProject)
 
         buttonAddProject.setOnClickListener{
-            val projectTaskDetails : ProjectTaskDetails = createDummyProjectDetails()
+            val projectTaskDetails : ProjectDetails = createDummyProjectDetails()
             database.collection("projectDetails").document(projectTaskDetails.projectId.toString()).
             set(projectTaskDetails).addOnCompleteListener { projectTaskDetailsTask ->
                 if(projectTaskDetailsTask.isSuccessful) {
@@ -74,13 +83,54 @@ class ListingProject : AppCompatActivity() {
                     return@addOnCompleteListener
                 }
 
-
-
             }
 
-
-
         }
+
+    }
+
+    private fun getManagerProjectDetails(): MutableList<ProjectDetails> {
+        var projectDetailsLst = mutableListOf<ProjectDetails>()
+        database.collection("projectDetails").
+        whereEqualTo("projectCreatedBy","C@live.com").get().addOnSuccessListener { documents ->
+            projectDetailsLst = documents.toObjects(ProjectDetails::class.java)
+        }
+
+        return projectDetailsLst;
+
+    }
+
+    private fun getTeamMemberDetails(): MutableList<String> {
+        var teamMemberEmailLst: MutableList<String> = mutableListOf()
+        var userDetailsLst = mutableListOf<UserDetails>()
+        database.collection("userDetails").
+        whereEqualTo("role","Team Member").get().addOnSuccessListener { documents ->
+            userDetailsLst = documents.toObjects(UserDetails::class.java)
+        }
+
+        for(userDetails in userDetailsLst){
+            teamMemberEmailLst.add(userDetails?.email!!)
+            }
+
+        return teamMemberEmailLst
+        }
+
+    }
+
+//        val buttonAddProject = findViewById<Button>(R.id.btnAddProject)
+//
+//        buttonAddProject.setOnClickListener{
+////            supportFragmentManager.beginTransaction().apply {
+////                replace(R.id.flFragmentListing,fragmenttwo)
+////                commit()
+////                }
+//            val intent = Intent(this, ProjectDetails:: class.java).also {
+//                startActivity(it)
+//            }
+
+
+
+
 //            supportFragmentManager.beginTransaction().apply {
 //                replace(R.id.flFragmentListing,fragmenttwo)
 //                commit()
@@ -90,12 +140,12 @@ class ListingProject : AppCompatActivity() {
 //                startActivity(it)
 
 
-            }
 
-    private fun createDummyProjectDetails(): ProjectTaskDetails {
+
+    private fun createDummyProjectDetails(): ProjectDetails {
         var taskLst = mutableListOf<TaskDetails>()
         var taskDetails = TaskDetails(
-            Date().getTime(),
+            Integer.toUnsignedLong (Timestamp.now().nanoseconds),
             "TasKName1",
             TASK_STATUS_ONGOING,
             Timestamp.now(),
@@ -119,8 +169,9 @@ class ListingProject : AppCompatActivity() {
         )
         taskLst.add(taskDetails)
 
-        return ProjectTaskDetails(
+        return ProjectDetails(
             Date().getTime(),
+            "Project1",
             "C@live.com",
             PROJECT_STATUS_PENDING,
             Timestamp.now(),
@@ -132,7 +183,6 @@ class ListingProject : AppCompatActivity() {
 
     }
 
-}
 
 
 

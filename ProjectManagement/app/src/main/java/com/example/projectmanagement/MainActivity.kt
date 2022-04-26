@@ -78,7 +78,6 @@ class MainActivity : AppCompatActivity() {
                             intent.putExtra("mobileNo", userDetails?.mobileNo)
                             startActivity(intent)
                             finish()
-
                         }
 
 
