@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-SubmitButton/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/anmolaggarwal/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/chandramouli/.gradle/caches/transforms-3/3502eb47329acacdbdb876e0f40fb358/transformed/appcompat-1.4.1/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "/Users/chandramouli/.gradle/caches/transforms-3/a36bb3c5542d8f0329739f91cc4fbaa6/transformed/material-1.5.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/anmolaggarwal/.gradle/caches/transforms-3/a36bb3c5542d8f0329739f91cc4fbaa6/transformed/material-1.5.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -33,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/chandramouli/.gradle/caches/transforms-3/61c36d7dcdeafc3aa99481f0f0548cbd/transformed/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/anmolaggarwal/.gradle/caches/transforms-3/61c36d7dcdeafc3aa99481f0f0548cbd/transformed/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -47,6 +37,16 @@
                         "startOffsets": "1547,1613,1674,1740",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "1608,1669,1735,1802"
+                    }
+                },
+                {
+                    "source": "/Users/anmolaggarwal/.gradle/caches/transforms-3/3502eb47329acacdbdb876e0f40fb358/transformed/appcompat-1.4.1/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
                     }
                 }
             ]
