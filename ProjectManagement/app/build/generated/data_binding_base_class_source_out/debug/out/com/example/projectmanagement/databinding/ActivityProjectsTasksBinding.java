@@ -39,6 +39,15 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
   public final Guideline guideline16;
 
   @NonNull
+  public final Guideline guideline20;
+
+  @NonNull
+  public final Guideline guideline22;
+
+  @NonNull
+  public final Guideline guideline23;
+
+  @NonNull
   public final TextView txtAssigned;
 
   @NonNull
@@ -56,7 +65,8 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
   private ActivityProjectsTasksBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnSubmitTask, @NonNull DatePicker dteTaskDeadline,
       @NonNull EditText edtAssignedUser, @NonNull EditText edtTaskName,
-      @NonNull Guideline guideline16, @NonNull TextView txtAssigned,
+      @NonNull Guideline guideline16, @NonNull Guideline guideline20,
+      @NonNull Guideline guideline22, @NonNull Guideline guideline23, @NonNull TextView txtAssigned,
       @NonNull TextView txtAssignedUser, @NonNull TextView txtDatePicker,
       @NonNull TextView txtTaskName, @NonNull TextView txtTaskStatus) {
     this.rootView = rootView;
@@ -65,6 +75,9 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
     this.edtAssignedUser = edtAssignedUser;
     this.edtTaskName = edtTaskName;
     this.guideline16 = guideline16;
+    this.guideline20 = guideline20;
+    this.guideline22 = guideline22;
+    this.guideline23 = guideline23;
     this.txtAssigned = txtAssigned;
     this.txtAssignedUser = txtAssignedUser;
     this.txtDatePicker = txtDatePicker;
@@ -129,6 +142,24 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline20;
+      Guideline guideline20 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline20 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline22;
+      Guideline guideline22 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline22 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline23;
+      Guideline guideline23 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline23 == null) {
+        break missingId;
+      }
+
       id = R.id.txtAssigned;
       TextView txtAssigned = ViewBindings.findChildViewById(rootView, id);
       if (txtAssigned == null) {
@@ -160,8 +191,8 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
       }
 
       return new ActivityProjectsTasksBinding((ConstraintLayout) rootView, btnSubmitTask,
-          dteTaskDeadline, edtAssignedUser, edtTaskName, guideline16, txtAssigned, txtAssignedUser,
-          txtDatePicker, txtTaskName, txtTaskStatus);
+          dteTaskDeadline, edtAssignedUser, edtTaskName, guideline16, guideline20, guideline22,
+          guideline23, txtAssigned, txtAssignedUser, txtDatePicker, txtTaskName, txtTaskStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

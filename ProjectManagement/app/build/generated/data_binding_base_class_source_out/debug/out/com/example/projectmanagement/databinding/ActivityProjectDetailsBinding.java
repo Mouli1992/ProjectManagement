@@ -54,6 +54,12 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
   public final Guideline guideline18;
 
   @NonNull
+  public final Guideline guideline19;
+
+  @NonNull
+  public final Guideline guideline21;
+
+  @NonNull
   public final RecyclerView rvTasks;
 
   @NonNull
@@ -73,7 +79,8 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
       @NonNull EditText edtProjectName, @NonNull Guideline guideline11,
       @NonNull Guideline guideline12, @NonNull Guideline guideline13,
       @NonNull Guideline guideline14, @NonNull Guideline guideline17,
-      @NonNull Guideline guideline18, @NonNull RecyclerView rvTasks,
+      @NonNull Guideline guideline18, @NonNull Guideline guideline19,
+      @NonNull Guideline guideline21, @NonNull RecyclerView rvTasks,
       @NonNull TextView txtAssignedBy, @NonNull TextView txtDeadline, @NonNull TextView txtNoTasks,
       @NonNull TextView txtProjectName) {
     this.rootView = rootView;
@@ -87,6 +94,8 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
     this.guideline14 = guideline14;
     this.guideline17 = guideline17;
     this.guideline18 = guideline18;
+    this.guideline19 = guideline19;
+    this.guideline21 = guideline21;
     this.rvTasks = rvTasks;
     this.txtAssignedBy = txtAssignedBy;
     this.txtDeadline = txtDeadline;
@@ -181,6 +190,18 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline19;
+      Guideline guideline19 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline19 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline21;
+      Guideline guideline21 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline21 == null) {
+        break missingId;
+      }
+
       id = R.id.rvTasks;
       RecyclerView rvTasks = ViewBindings.findChildViewById(rootView, id);
       if (rvTasks == null) {
@@ -213,8 +234,8 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
 
       return new ActivityProjectDetailsBinding((ConstraintLayout) rootView, btnAddTasks,
           btnSubmitProject, edtDeadline, edtProjectName, guideline11, guideline12, guideline13,
-          guideline14, guideline17, guideline18, rvTasks, txtAssignedBy, txtDeadline, txtNoTasks,
-          txtProjectName);
+          guideline14, guideline17, guideline18, guideline19, guideline21, rvTasks, txtAssignedBy,
+          txtDeadline, txtNoTasks, txtProjectName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
