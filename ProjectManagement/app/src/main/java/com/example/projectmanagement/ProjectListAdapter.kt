@@ -8,10 +8,11 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projectmanagement.R.layout.recyclerviewprojectlist
+import com.example.projectmanagement.model.ProjectDetails
 
 
 class ProjectListAdapter(
-    var projectdata: List<ProjectListData>
+    var projectdata: List<ProjectDetails>
 ) : RecyclerView.Adapter<ProjectListAdapter.ProjectListViewHolder>(){
     inner class ProjectListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
@@ -24,10 +25,11 @@ class ProjectListAdapter(
        holder.itemView.apply {
            val txtbutton = findViewById<TextView>(R.id.txtProjectName)
            val txtstatus = findViewById<TextView>(R.id.txtProjectStatus)
+           val txtProjectDeadline = findViewById<TextView>(R.id.txtProjectDeadline)
 
-           txtbutton.text= projectdata[position].title
-           txtstatus.text=projectdata[position].status
-
+           txtbutton.text= projectdata[position].projectName
+           txtstatus.text=projectdata[position].projectStatus
+           txtProjectDeadline.text = projectdata[position].projectDeadline?.toDate().toString()
 
        }
     }

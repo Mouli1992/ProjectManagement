@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/3502eb47329acacdbdb876e0f40fb358/transformed/appcompat-1.4.1/res/values-night-v8/values-night-v8.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/src/main/res/values-night/themes.xml",
+                    "source": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

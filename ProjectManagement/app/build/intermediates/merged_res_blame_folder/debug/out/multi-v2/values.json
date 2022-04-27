@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/67a264f2a8e4a65a4d85650be3556e0e/transformed/transition-1.4.1/res/values/values.xml",
@@ -18,23 +18,6 @@
                         "startOffsets": "90443,90483,91675,91857,91912,93516,93570,93622,93671,93732",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "90478,90525,91713,91907,91954,93565,93617,93666,93727,93777"
-                    }
-                },
-                {
-                    "source": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/build/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,339,421,525,634,754,851",
-                        "endColumns": "143,139,81,103,108,119,96,73",
-                        "endOffsets": "194,334,416,520,629,749,846,920"
-                    },
-                    "to": {
-                        "startLines": "1663,1670,1673,1674,1675,1676,1677,1778",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "102760,103472,103723,103805,103909,104018,104138,118123",
-                        "endColumns": "143,139,81,103,108,119,96,73",
-                        "endOffsets": "102899,103607,103800,103904,104013,104133,104230,118192"
                     }
                 },
                 {
@@ -184,6 +167,25 @@
                     }
                 },
                 {
+                    "source": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2,21,16,23",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "100,993,827,1100",
+                        "endLines": "14,21,19,23",
+                        "endColumns": "12,105,12,95",
+                        "endOffsets": "821,1094,987,1191"
+                    },
+                    "to": {
+                        "startLines": "5772,5785,5786,5790",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "396507,397231,397336,397501",
+                        "endLines": "5784,5785,5789,5790",
+                        "endColumns": "12,104,12,94",
+                        "endOffsets": "397226,397331,397496,397591"
+                    }
+                },
+                {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/ad484514355da009b83bdfdedd6c7fc8/transformed/navigation-ui-2.4.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4",
@@ -254,7 +256,7 @@
                     }
                 },
                 {
-                    "source": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/src/main/res/values/colors.xml",
+                    "source": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/src/main/res/values/colors.xml",
                     "from": {
                         "startLines": "7,9,2,3,4,5,6,8",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -268,6 +270,23 @@
                         "startOffsets": "30281,30323,46984,47031,47078,47822,47867,48075",
                         "endColumns": "41,39,46,46,46,44,44,41",
                         "endOffsets": "30318,30358,47026,47073,47120,47862,47907,48112"
+                    }
+                },
+                {
+                    "source": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "41",
+                        "endOffsets": "53"
+                    },
+                    "to": {
+                        "startLines": "998",
+                        "startColumns": "4",
+                        "startOffsets": "57909",
+                        "endColumns": "41",
+                        "endOffsets": "57946"
                     }
                 },
                 {
@@ -285,6 +304,25 @@
                         "startOffsets": "46307,86234,86287,86340,86393,366427,366603,366725,366987,367182",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "46391,86282,86335,86388,86441,366488,366720,366781,367048,367244"
+                    }
+                },
+                {
+                    "source": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "21,19,1,11,17,4,18,27,9,10,16,6,12,14,20,7,5,15,13,2",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1076,954,16,562,862,194,907,1280,409,479,807,324,617,718,1022,362,258,764,675,72",
+                        "endLines": "25,19,1,11,17,4,18,27,9,10,16,6,12,14,20,7,5,15,13,2",
+                        "endColumns": "19,67,55,54,44,63,46,69,69,82,54,37,57,45,53,45,65,42,42,66",
+                        "endOffsets": "1217,1017,67,612,902,253,949,1345,474,557,857,357,670,759,1071,403,319,802,713,134"
+                    },
+                    "to": {
+                        "startLines": "2,1634,1636,1664,1665,1671,1672,1678,1679,1680,1729,1768,1769,1770,1771,1777,1780,1781,1782,1784",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "150,99276,99427,102904,102959,103612,103676,104235,104305,104375,110237,117079,117117,117175,117221,118077,118250,118316,118359,118473",
+                        "endLines": "6,1634,1636,1664,1665,1671,1672,1678,1679,1680,1729,1768,1769,1770,1771,1777,1780,1781,1782,1784",
+                        "endColumns": "19,67,55,54,44,63,46,69,69,82,54,37,57,45,53,45,65,42,42,66",
+                        "endOffsets": "291,99339,99478,102954,102999,103671,103718,104300,104370,104453,110287,117112,117170,117216,117270,118118,118311,118354,118397,118535"
                     }
                 },
                 {
@@ -326,23 +364,6 @@
                     }
                 },
                 {
-                    "source": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/src/main/res/values/dimens.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "41",
-                        "endOffsets": "53"
-                    },
-                    "to": {
-                        "startLines": "998",
-                        "startColumns": "4",
-                        "startOffsets": "57909",
-                        "endColumns": "41",
-                        "endOffsets": "57946"
-                    }
-                },
-                {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/b5c11c2bb3065bc9d6b3c968a470ba17/transformed/navigation-runtime-2.4.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,10,13",
@@ -378,25 +399,6 @@
                         "endLines": "120,123,946,10221",
                         "endColumns": "55,47,51,24",
                         "endOffsets": "5878,6034,54581,657959"
-                    }
-                },
-                {
-                    "source": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2,21,16,23",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "100,993,827,1100",
-                        "endLines": "14,21,19,23",
-                        "endColumns": "12,105,12,95",
-                        "endOffsets": "821,1094,987,1191"
-                    },
-                    "to": {
-                        "startLines": "5772,5785,5786,5790",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "396507,397231,397336,397501",
-                        "endLines": "5784,5785,5789,5790",
-                        "endColumns": "12,104,12,94",
-                        "endOffsets": "397226,397331,397496,397591"
                     }
                 },
                 {
@@ -476,6 +478,23 @@
                     }
                 },
                 {
+                    "source": "/Users/chandramouli/Downloads/PrjMgmt/ProjectManagement/app/build/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,339,421,525,634,754,851",
+                        "endColumns": "143,139,81,103,108,119,96,73",
+                        "endOffsets": "194,334,416,520,629,749,846,920"
+                    },
+                    "to": {
+                        "startLines": "1663,1670,1673,1674,1675,1676,1677,1778",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "102760,103472,103723,103805,103909,104018,104138,118123",
+                        "endColumns": "143,139,81,103,108,119,96,73",
+                        "endOffsets": "102899,103607,103800,103904,104013,104133,104230,118192"
+                    }
+                },
+                {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/7ea7dd3abbc7db97847857267a69de3e/transformed/lifecycle-viewmodel-2.3.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -490,25 +509,6 @@
                         "startOffsets": "94004",
                         "endColumns": "49",
                         "endOffsets": "94049"
-                    }
-                },
-                {
-                    "source": "/Users/chandramouli/Downloads/PrjMgmt-master/Desktop/mainprojectmanagemenet/PrjMgmt/ProjectManagement/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "21,19,1,11,17,4,18,27,9,10,16,6,12,14,20,7,5,15,13,2",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1076,954,16,562,862,194,907,1280,409,479,807,324,617,718,1022,362,258,764,675,72",
-                        "endLines": "25,19,1,11,17,4,18,27,9,10,16,6,12,14,20,7,5,15,13,2",
-                        "endColumns": "19,67,55,54,44,63,46,69,69,82,54,37,57,45,53,45,65,42,42,66",
-                        "endOffsets": "1217,1017,67,612,902,253,949,1345,474,557,857,357,670,759,1071,403,319,802,713,134"
-                    },
-                    "to": {
-                        "startLines": "2,1634,1636,1664,1665,1671,1672,1678,1679,1680,1729,1768,1769,1770,1771,1777,1780,1781,1782,1784",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "150,99276,99427,102904,102959,103612,103676,104235,104305,104375,110237,117079,117117,117175,117221,118077,118250,118316,118359,118473",
-                        "endLines": "6,1634,1636,1664,1665,1671,1672,1678,1679,1680,1729,1768,1769,1770,1771,1777,1780,1781,1782,1784",
-                        "endColumns": "19,67,55,54,44,63,46,69,69,82,54,37,57,45,53,45,65,42,42,66",
-                        "endOffsets": "291,99339,99478,102954,102999,103671,103718,104300,104370,104453,110287,117112,117170,117216,117270,118118,118311,118354,118397,118535"
                     }
                 },
                 {

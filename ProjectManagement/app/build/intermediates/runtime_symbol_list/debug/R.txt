@@ -3148,6 +3148,7 @@ int id txtDeadline 0x7f090215
 int id txtNoProjects 0x7f090216
 int id txtNoTasks 0x7f090217
 int id txtNotRegistered 0x7f090218
+int id txtProjectDeadline 0x7f090234
 int id txtProjectName 0x7f090219
 int id txtProjectStatus 0x7f09021a
 int id txtTaskName 0x7f09021b

@@ -20,14 +20,19 @@ public final class RecyclerviewprojectlistBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView txtProjectDeadline;
+
+  @NonNull
   public final TextView txtProjectName;
 
   @NonNull
   public final TextView txtProjectStatus;
 
   private RecyclerviewprojectlistBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView txtProjectName, @NonNull TextView txtProjectStatus) {
+      @NonNull TextView txtProjectDeadline, @NonNull TextView txtProjectName,
+      @NonNull TextView txtProjectStatus) {
     this.rootView = rootView;
+    this.txtProjectDeadline = txtProjectDeadline;
     this.txtProjectName = txtProjectName;
     this.txtProjectStatus = txtProjectStatus;
   }
@@ -59,6 +64,12 @@ public final class RecyclerviewprojectlistBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.txtProjectDeadline;
+      TextView txtProjectDeadline = ViewBindings.findChildViewById(rootView, id);
+      if (txtProjectDeadline == null) {
+        break missingId;
+      }
+
       id = R.id.txtProjectName;
       TextView txtProjectName = ViewBindings.findChildViewById(rootView, id);
       if (txtProjectName == null) {
@@ -71,8 +82,8 @@ public final class RecyclerviewprojectlistBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RecyclerviewprojectlistBinding((ConstraintLayout) rootView, txtProjectName,
-          txtProjectStatus);
+      return new RecyclerviewprojectlistBinding((ConstraintLayout) rootView, txtProjectDeadline,
+          txtProjectName, txtProjectStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
