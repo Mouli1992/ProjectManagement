@@ -1,20 +1,22 @@
 package com.example.projectmanagement
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button as Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projectmanagement.db.FirestoreCallback
+import com.example.projectmanagement.db.FirestoreRepository
 import com.example.projectmanagement.model.*
 import com.example.projectmanagement.model.ProjectDetails
+import com.example.projectmanagement.utils.INTENT_FROM_PROJECT_LIST
 import com.example.projectmanagement.utils.PROJECT_STATUS_PENDING
 import com.example.projectmanagement.utils.TASK_STATUS_ONGOING
+import com.example.projectmanagement.utils.USER_ROLE_TEAM_MEMBER
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -46,26 +48,24 @@ class ListingProject : AppCompatActivity()  {
             ProjectListData("p2", "pending"),
         )
 
+
         teamMemberEmailViewModel = ViewModelProvider(this).get(TeamMemberEmailViewModel::class.java)
-        getTeamMemberEmails()
+        getTeamMemberEmails(USER_ROLE_TEAM_MEMBER)
         managerProjectDetailsViewModel = ViewModelProvider(this).get(ProjectDetailsViewModel::class.java)
-        getProjectDetailsOfManager()
+        val intent = intent
+        getProjectDetailsOfManager(intent.getStringExtra("email")!!)
 
         buttonAddProject = findViewById<Button>(R.id.btnAddProject)
 
         buttonAddProject.setOnClickListener{
-            val projectTaskDetails : ProjectDetails = createDummyProjectDetails()
-            database.collection("projectDetails").document(projectTaskDetails.projectId.toString()).
-            set(projectTaskDetails).addOnCompleteListener { projectTaskDetailsTask ->
-                if(projectTaskDetailsTask.isSuccessful) {
-                    Toast.makeText(this, "Project Details Added Successfully", Toast.LENGTH_SHORT).show()
-                }else{
-                    Log.e(TAG, "Exception with User Registration")
-                    Toast.makeText(this, "Project Details Insertion Failed", Toast.LENGTH_SHORT).show()
-                    return@addOnCompleteListener
-                }
 
-            }
+            val prevIntent = intent;
+            val intent = Intent(this@ListingProject, com.example.projectmanagement.ProjectDetails::class.java)
+            intent.putExtra("name",prevIntent.getStringExtra("name") )
+            intent.putExtra("email", prevIntent.getStringExtra("email"))
+            intent.putExtra("code", INTENT_FROM_PROJECT_LIST)
+            startActivity(intent)
+            finish()
 
         }
 
@@ -74,7 +74,7 @@ class ListingProject : AppCompatActivity()  {
 
     }
 
-    private fun getProjectDetailsOfManager() {
+    private fun getProjectDetailsOfManager(email : String) {
         managerProjectDetailsViewModel.getProjectDetails(object : FirestoreCallback{
             override fun onTeamMemberListCallBack(teamMemberLst: MutableList<String>) {
                 TODO("Not yet implemented")
@@ -94,21 +94,24 @@ class ListingProject : AppCompatActivity()  {
             }
 
 
-        })
+        }, email = email)
 
     }
 
-    private fun getTeamMemberEmails() {
+    private fun getTeamMemberEmails(role: String) {
        teamMemberEmailViewModel.getTeamMemberDetails(object : FirestoreCallback{
            override fun onTeamMemberListCallBack(teamMemberLst: MutableList<String>) {
-               println(teamMemberLst)
+               listOfTeamMembers = teamMemberLst
+               println(listOfTeamMembers)
+
+
            }
 
            override fun onProjectDetailsCallback(projectDetails: MutableList<ProjectDetails>) {
                TODO("Not yet implemented")
            }
-       })
-    }
+       }, role = "Team Member")
+       }
 
             //Commented by Chandra to test project task Additon
 //            val intent = Intent(this, ProjectDetails:: class.java).also {

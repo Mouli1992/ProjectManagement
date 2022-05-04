@@ -11,19 +11,20 @@ class FirestoreRepository {
     private var database = Firebase.firestore
 
     companion object{
-        const val TAG = "TeamMemberDetails"
+        const val TAG = "FirestoreRepository"
     }
 
-   fun getTeamMemberDetailsUsingCallBack(callback: FirestoreCallback){
+   fun getTeamMemberDetailsUsingCallBack(callback: FirestoreCallback,  role : String){
        var teamMemberEmailLst: MutableList<String> = mutableListOf()
        var userDetailsLst = mutableListOf<UserDetails>()
        database.collection("userDetails").
-       whereEqualTo("role","Team Member").get().addOnCompleteListener{ task ->
+       whereEqualTo("role",role).get().addOnCompleteListener{ task ->
            if(task.isSuccessful){
                userDetailsLst = task.result.toObjects(UserDetails::class.java)
                for(userDetails in userDetailsLst){
                    teamMemberEmailLst.add(userDetails?.email!!)
                }
+               println(teamMemberEmailLst)
                callback.onTeamMemberListCallBack(teamMemberEmailLst)
                return@addOnCompleteListener
 
@@ -33,10 +34,10 @@ class FirestoreRepository {
        }
    }
 
-    fun getManagerProjectDetails(projectDetailsCallback : FirestoreCallback){
+    fun getManagerProjectDetails(projectDetailsCallback: FirestoreCallback, email : String){
         var projectDetailsLst = mutableListOf<ProjectDetails>()
         database.collection("projectDetails").
-        whereEqualTo("projectCreatedBy","C@live.com").get().addOnCompleteListener{ task ->
+        whereEqualTo("projectCreatedBy",email).get().addOnCompleteListener{ task ->
             if(task.isSuccessful){
                 projectDetailsLst = task.result.toObjects(ProjectDetails::class.java)
             }else{

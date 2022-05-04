@@ -8,6 +8,8 @@ import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import com.example.projectmanagement.model.UserDetails
+import com.example.projectmanagement.utils.INTENT_FROM_LOGIN
+import com.example.projectmanagement.utils.USER_ROLE_MANAGER
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.ktx.firestore
@@ -71,13 +73,26 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this, "You are signed in Successfully", Toast.LENGTH_SHORT).show()
                         database.collection("userDetails").document(email).get().addOnSuccessListener { document ->
                             val userDetails = document.toObject(UserDetails::class.java)
-                            val intent = Intent(this@MainActivity, ListingProject::class.java)
-                            intent.putExtra("userId", firebaseUser?.uid)
-                            intent.putExtra("email", email)
-                            intent.putExtra("role", userDetails?.role)
-                            intent.putExtra("mobileNo", userDetails?.mobileNo)
-                            startActivity(intent)
-                            finish()
+                            if(userDetails?.role.equals(USER_ROLE_MANAGER)){
+                                val intent = Intent(this@MainActivity, ListingProject::class.java)
+                                intent.putExtra("userId", firebaseUser?.uid)
+                                intent.putExtra("email", email)
+                                intent.putExtra("role", userDetails?.role)
+                                intent.putExtra("mobileNo", userDetails?.mobileNo)
+                                intent.putExtra("code", INTENT_FROM_LOGIN)
+                                startActivity(intent)
+                                finish()
+                            }else{
+                                val intent = Intent(this@MainActivity, ListingProject::class.java)
+                                intent.putExtra("userId", firebaseUser?.uid)
+                                intent.putExtra("email", email)
+                                intent.putExtra("role", userDetails?.role)
+                                intent.putExtra("mobileNo", userDetails?.mobileNo)
+                                startActivity(intent)
+                                finish()
+
+                            }
+
                         }
 
 

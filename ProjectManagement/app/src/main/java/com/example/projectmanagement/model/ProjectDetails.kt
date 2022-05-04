@@ -3,11 +3,11 @@ package com.example.projectmanagement.model
 import com.google.firebase.Timestamp
 
 data class ProjectDetails(
-    val projectId: Long = -1,
-    val projectName: String? = null,
-    val projectCreatedBy: String?= null,
+    var projectId: Long = -1,
+    var projectName: String? = null,
+    var projectCreatedBy: String?= null,
     var projectStatus: String?= null,
-    val projectDeadline: Timestamp? = Timestamp.now(),
-    val taskLst: MutableList<TaskDetails>? = mutableListOf(),
-    val createdAt : Timestamp? = Timestamp.now()
+    var projectDeadline: Timestamp? = Timestamp.now(),
+    var taskLst: MutableList<TaskDetails>? = mutableListOf(),
+    var createdAt : Timestamp? = Timestamp.now()
 )

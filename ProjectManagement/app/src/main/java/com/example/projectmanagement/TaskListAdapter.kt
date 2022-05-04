@@ -5,10 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.projectmanagement.model.TaskDetails
 import java.nio.file.Files.size
 
 class TaskListAdapter (
-    var taskdata: List<TaskListData>
+    var taskdata: List<TaskDetails>
         ):RecyclerView.Adapter<TaskListAdapter.TaskListViewHolder>(){
     inner class TaskListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
@@ -22,8 +23,8 @@ class TaskListAdapter (
             val txtbutton = findViewById<TextView>(R.id.txtTaskName)
             val txtstatus = findViewById<TextView>(R.id.txtTaskStatus)
 
-            txtbutton.text= taskdata[position].title
-            txtstatus.text= taskdata[position].status
+            txtbutton.text= taskdata[position].taskName
+            txtstatus.text= taskdata[position].taskStatus
 
 
         }
