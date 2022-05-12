@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@drawable/shape"
-        android:text="Assigned User"
+        android:text="Assign User"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline16"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:background="@drawable/shape"
-        android:text="Date Picker"
+        android:text="Deadline"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline16"
@@ -71,9 +71,10 @@
         android:text="Assigned"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:editable="false"
         app:layout_constraintEnd_toStartOf="@+id/guideline23"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtAssignedUser"
+        app:layout_constraintStart_toStartOf="@+id/spinnerAssignedUser"
         app:layout_constraintTop_toBottomOf="@+id/dteTaskDeadline" />
 
     <EditText
@@ -89,40 +90,49 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/edtAssignedUser"
+<!--    <EditText-->
+<!--        android:id="@+id/edtAssignedUser"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:background="@drawable/shape"-->
+<!--        android:hint="Assigned User"-->
+<!--        android:textColor="#000000"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/guideline23"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline22"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edtTaskName"-->
+<!--        tools:ignore="TouchTargetSizeCheck" />-->
+    <!--            android:minHeight="48dp"--><![CDATA[
+            android:spinnerMode="dropdown"/>
+
+    ]]>
+
+    <Spinner
+        android:id="@+id/spinnerAssignedUser"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@drawable/shape"
-        android:hint="Assigned User"
-        android:textColor="#000000"
+        android:autofillHints="Team Member Assigned"
+
         app:layout_constraintEnd_toStartOf="@+id/guideline23"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/guideline22"
-        app:layout_constraintTop_toBottomOf="@+id/edtTaskName"
-        tools:ignore="TouchTargetSizeCheck" />
-    <!--    <Spinner-->
-    <!--        android:id="@+id/spinnerTaskDeadline"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:autofillHints="Date"-->
-    <!--        android:entries="@array/Date"-->
-    <!--        android:minHeight="48dp"-->
-    <!--        android:spinnerMode="dropdown"/>-->
+        app:layout_constraintTop_toBottomOf="@+id/edtTaskName" />
 
     <DatePicker
         android:id="@+id/dteTaskDeadline"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/shape"
         android:calendarViewShown="false"
         android:datePickerMode="spinner"
         app:layout_constraintEnd_toStartOf="@+id/guideline23"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline22"
-        app:layout_constraintTop_toBottomOf="@+id/edtAssignedUser" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAssignedUser" />
 
     <Button
         android:id="@+id/btnSubmitTask"
@@ -144,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.33" />
+        app:layout_constraintGuide_percent="0.27" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline20"
@@ -158,7 +168,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.45" />
+        app:layout_constraintGuide_percent="0.34" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline23"

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,9 +31,6 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
   public final DatePicker dteTaskDeadline;
 
   @NonNull
-  public final EditText edtAssignedUser;
-
-  @NonNull
   public final EditText edtTaskName;
 
   @NonNull
@@ -46,6 +44,9 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
 
   @NonNull
   public final Guideline guideline23;
+
+  @NonNull
+  public final Spinner spinnerAssignedUser;
 
   @NonNull
   public final TextView txtAssigned;
@@ -64,20 +65,20 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
 
   private ActivityProjectsTasksBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnSubmitTask, @NonNull DatePicker dteTaskDeadline,
-      @NonNull EditText edtAssignedUser, @NonNull EditText edtTaskName,
-      @NonNull Guideline guideline16, @NonNull Guideline guideline20,
-      @NonNull Guideline guideline22, @NonNull Guideline guideline23, @NonNull TextView txtAssigned,
+      @NonNull EditText edtTaskName, @NonNull Guideline guideline16, @NonNull Guideline guideline20,
+      @NonNull Guideline guideline22, @NonNull Guideline guideline23,
+      @NonNull Spinner spinnerAssignedUser, @NonNull TextView txtAssigned,
       @NonNull TextView txtAssignedUser, @NonNull TextView txtDatePicker,
       @NonNull TextView txtTaskName, @NonNull TextView txtTaskStatus) {
     this.rootView = rootView;
     this.btnSubmitTask = btnSubmitTask;
     this.dteTaskDeadline = dteTaskDeadline;
-    this.edtAssignedUser = edtAssignedUser;
     this.edtTaskName = edtTaskName;
     this.guideline16 = guideline16;
     this.guideline20 = guideline20;
     this.guideline22 = guideline22;
     this.guideline23 = guideline23;
+    this.spinnerAssignedUser = spinnerAssignedUser;
     this.txtAssigned = txtAssigned;
     this.txtAssignedUser = txtAssignedUser;
     this.txtDatePicker = txtDatePicker;
@@ -124,12 +125,6 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.edtAssignedUser;
-      EditText edtAssignedUser = ViewBindings.findChildViewById(rootView, id);
-      if (edtAssignedUser == null) {
-        break missingId;
-      }
-
       id = R.id.edtTaskName;
       EditText edtTaskName = ViewBindings.findChildViewById(rootView, id);
       if (edtTaskName == null) {
@@ -157,6 +152,12 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
       id = R.id.guideline23;
       Guideline guideline23 = ViewBindings.findChildViewById(rootView, id);
       if (guideline23 == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerAssignedUser;
+      Spinner spinnerAssignedUser = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerAssignedUser == null) {
         break missingId;
       }
 
@@ -191,8 +192,9 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
       }
 
       return new ActivityProjectsTasksBinding((ConstraintLayout) rootView, btnSubmitTask,
-          dteTaskDeadline, edtAssignedUser, edtTaskName, guideline16, guideline20, guideline22,
-          guideline23, txtAssigned, txtAssignedUser, txtDatePicker, txtTaskName, txtTaskStatus);
+          dteTaskDeadline, edtTaskName, guideline16, guideline20, guideline22, guideline23,
+          spinnerAssignedUser, txtAssigned, txtAssignedUser, txtDatePicker, txtTaskName,
+          txtTaskStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

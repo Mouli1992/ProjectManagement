@@ -47,4 +47,18 @@ class FirestoreRepository {
             return@addOnCompleteListener
 
         }
-}}
+    }
+    fun getProjectIndividualDetails(projectDetailsCallback: FirestoreCallback, projectId : String){
+        var projectDetails : ProjectDetails
+        database.collection("projectDetails").
+        whereEqualTo("id",projectId).get().addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                projectDetails = task.getResult(ProjectDetails::class.java)
+            } else {
+                Log.e(TAG, "Error in getManagerProjectDetails Details :", task.exception)
+            }
+            projectDetailsCallback.onProjectDetailsCallback(projectDetailsLst)
+            return@addOnCompleteListener
+        }
+        }
+}

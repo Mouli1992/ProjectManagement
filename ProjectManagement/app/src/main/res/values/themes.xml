@@ -19,6 +19,12 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="SplashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_splashscreenicon</item>
+        <item name="android:statusBarColor">@color/black</item>
+
+    </style>
+
     <style name="Theme.ProjectManagement.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ProjectManagement.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

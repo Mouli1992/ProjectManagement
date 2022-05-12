@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -30,10 +31,10 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
   public final Button btnSubmitProject;
 
   @NonNull
-  public final EditText edtCreatedBy;
+  public final DatePicker dteProjectDeadline;
 
   @NonNull
-  public final EditText edtDeadline;
+  public final EditText edtCreatedBy;
 
   @NonNull
   public final EditText edtProjectName;
@@ -78,19 +79,20 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
   public final TextView txtProjectName;
 
   private ActivityProjectDetailsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnAddTasks, @NonNull Button btnSubmitProject, @NonNull EditText edtCreatedBy,
-      @NonNull EditText edtDeadline, @NonNull EditText edtProjectName,
-      @NonNull Guideline guideline11, @NonNull Guideline guideline12,
-      @NonNull Guideline guideline13, @NonNull Guideline guideline14,
-      @NonNull Guideline guideline17, @NonNull Guideline guideline18,
-      @NonNull Guideline guideline19, @NonNull Guideline guideline21, @NonNull RecyclerView rvTasks,
+      @NonNull Button btnAddTasks, @NonNull Button btnSubmitProject,
+      @NonNull DatePicker dteProjectDeadline, @NonNull EditText edtCreatedBy,
+      @NonNull EditText edtProjectName, @NonNull Guideline guideline11,
+      @NonNull Guideline guideline12, @NonNull Guideline guideline13,
+      @NonNull Guideline guideline14, @NonNull Guideline guideline17,
+      @NonNull Guideline guideline18, @NonNull Guideline guideline19,
+      @NonNull Guideline guideline21, @NonNull RecyclerView rvTasks,
       @NonNull TextView txtAssignedBy, @NonNull TextView txtDeadline, @NonNull TextView txtNoTasks,
       @NonNull TextView txtProjectName) {
     this.rootView = rootView;
     this.btnAddTasks = btnAddTasks;
     this.btnSubmitProject = btnSubmitProject;
+    this.dteProjectDeadline = dteProjectDeadline;
     this.edtCreatedBy = edtCreatedBy;
-    this.edtDeadline = edtDeadline;
     this.edtProjectName = edtProjectName;
     this.guideline11 = guideline11;
     this.guideline12 = guideline12;
@@ -146,15 +148,15 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.edtCreatedBy;
-      EditText edtCreatedBy = ViewBindings.findChildViewById(rootView, id);
-      if (edtCreatedBy == null) {
+      id = R.id.dteProjectDeadline;
+      DatePicker dteProjectDeadline = ViewBindings.findChildViewById(rootView, id);
+      if (dteProjectDeadline == null) {
         break missingId;
       }
 
-      id = R.id.edtDeadline;
-      EditText edtDeadline = ViewBindings.findChildViewById(rootView, id);
-      if (edtDeadline == null) {
+      id = R.id.edtCreatedBy;
+      EditText edtCreatedBy = ViewBindings.findChildViewById(rootView, id);
+      if (edtCreatedBy == null) {
         break missingId;
       }
 
@@ -243,9 +245,9 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
       }
 
       return new ActivityProjectDetailsBinding((ConstraintLayout) rootView, btnAddTasks,
-          btnSubmitProject, edtCreatedBy, edtDeadline, edtProjectName, guideline11, guideline12,
-          guideline13, guideline14, guideline17, guideline18, guideline19, guideline21, rvTasks,
-          txtAssignedBy, txtDeadline, txtNoTasks, txtProjectName);
+          btnSubmitProject, dteProjectDeadline, edtCreatedBy, edtProjectName, guideline11,
+          guideline12, guideline13, guideline14, guideline17, guideline18, guideline19, guideline21,
+          rvTasks, txtAssignedBy, txtDeadline, txtNoTasks, txtProjectName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

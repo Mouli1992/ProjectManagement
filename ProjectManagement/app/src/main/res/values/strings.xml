@@ -7,6 +7,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string name="forget_password_hyperlink"><u>Forget Password</u></string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="emailExample">xyz@email.com</string>
@@ -19,11 +20,18 @@
     <string name="fullName">Full Name</string>
     <string name="alreadyAccount">Already have an account?</string>
     <string name="passwordRegister">Password</string>
+    <string name="R">Role</string>
     <string-array name="SpinnerRole">
-        <item>Role</item>
         <item>Manager</item>
         <item>Team Member</item>
     </string-array>
+    <string-array name="SpinnerRoleTaskAssignment">
+        <item>Member</item>
+        <item>Member1</item>
+        <item>Member2</item>
+        <item>Member3</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

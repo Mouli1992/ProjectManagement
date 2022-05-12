@@ -21,7 +21,7 @@ class Register: AppCompatActivity() {
     private lateinit var name:EditText
     private lateinit var mobile:EditText
     private lateinit var pwd:EditText
-    private lateinit var regBtn: Button
+//    private lateint var regBtn: Button
     private lateinit var uploadP: ImageView
     private lateinit var addProfilePhoto: Button
     private lateinit var signInBtn: Button
@@ -38,6 +38,7 @@ class Register: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_ProjectManagement)
         setContentView(R.layout.registerlayout)
 
 
@@ -45,7 +46,7 @@ class Register: AppCompatActivity() {
         email= findViewById(R.id.editEmailRegister)
         mobile= findViewById(R.id.editMobileNumberRegister)
         pwd= findViewById(R.id.editNewPasswordRegister)
-        regBtn = findViewById(R.id.btnSignUpRegister)
+//        regBtn = findViewById(R.id.btnSignUpRegister)
         uploadP= findViewById(R.id.imgProfileImage)
         addProfilePhoto = findViewById<Button>(R.id.btnAddProfileImage)
         signInBtn =findViewById(R.id.btnSignInRegister)
@@ -147,7 +148,7 @@ class Register: AppCompatActivity() {
 
             }else{
                 Log.e(TAG, "Exception with User Registration")
-                Toast.makeText(this, "User registeration Failed", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "User registration Failed", Toast.LENGTH_SHORT).show()
                 return@addOnCompleteListener
             }
 

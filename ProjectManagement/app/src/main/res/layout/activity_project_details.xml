@@ -12,6 +12,7 @@
       android:layout_height="wrap_content"
       android:background="@drawable/shape"
       android:text="No Tasks Assigned"
+      android:textColor="#000000"
       android:textStyle="bold"
       android:visibility="visible"
       app:layout_constraintBottom_toTopOf="@+id/guideline18"
@@ -22,14 +23,14 @@
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/rvTasks"
       android:layout_width="367dp"
-      android:layout_height="361dp"
+      android:layout_height="0dp"
       android:visibility="invisible"
       app:layout_constraintBottom_toTopOf="@+id/guideline18"
       app:layout_constraintEnd_toStartOf="@+id/guideline12"
       app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
       app:layout_constraintTop_toTopOf="@+id/guideline14"
-      app:layout_constraintVertical_bias="0.26" />
+      app:layout_constraintVertical_bias="0.0" />
 
   <Button
       android:id="@+id/btnAddTasks"
@@ -68,22 +69,26 @@
       android:layout_marginTop="16dp"
       android:background="@drawable/shape"
       android:text="name"
+      android:textColor="#000000"
       android:textStyle="bold"
       app:layout_constraintEnd_toStartOf="@+id/guideline17"
       app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
       app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
+
   <TextView
       android:id="@+id/txtDeadline"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginTop="28dp"
+      android:layout_marginTop="72dp"
       android:background="@drawable/shape"
+      android:gravity="start"
       android:text="deadline"
+      android:textColor="#000000"
       android:textStyle="bold"
       app:layout_constraintEnd_toStartOf="@+id/guideline17"
-      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
       app:layout_constraintTop_toBottomOf="@+id/txtProjectName" />
 
@@ -91,22 +96,23 @@
       android:id="@+id/txtAssignedBy"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
       android:background="@drawable/shape"
       android:editable="false"
       android:text="AssignedBy:"
       android:textAlignment="viewStart"
+      android:textColor="#000000"
       android:textSize="16sp"
-      android:textStyle="bold"
 
+      android:textStyle="bold"
       app:layout_constraintBottom_toTopOf="@+id/guideline14"
       app:layout_constraintEnd_toStartOf="@+id/guideline17"
-      app:layout_constraintStart_toStartOf="@+id/guideline11"
-      app:layout_constraintTop_toBottomOf="@+id/txtDeadline" />
-
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/guideline11" />
 
   <EditText
       android:id="@+id/edtProjectName"
-      android:layout_width="184dp"
+      android:layout_width="0dp"
       android:layout_height="27dp"
       android:layout_marginTop="16dp"
       android:background="@drawable/shape"
@@ -116,14 +122,27 @@
       app:layout_constraintStart_toStartOf="@+id/guideline19"
       app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
-  <EditText
-      android:id="@+id/edtDeadline"
+  <!--  <EditText-->
+<!--      android:id="@+id/edtDeadline"-->
+<!--      android:layout_width="0dp"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_marginTop="20dp"-->
+<!--      android:background="@drawable/shape"-->
+<!--      android:hint="Enter Date"-->
+<!--      android:inputType="date"-->
+<!--      app:layout_constraintEnd_toStartOf="@+id/guideline21"-->
+<!--      app:layout_constraintHorizontal_bias="0.0"-->
+<!--      app:layout_constraintStart_toStartOf="@+id/guideline19"-->
+<!--      app:layout_constraintTop_toBottomOf="@+id/edtProjectName" />-->
+
+  <DatePicker
+      android:id="@+id/dteProjectDeadline"
       android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
+      android:layout_height="100dp"
+      android:layout_marginTop="28dp"
       android:background="@drawable/shape"
-      android:hint="Enter Date"
-      android:inputType="date"
+      android:calendarViewShown="false"
+      android:datePickerMode="spinner"
       app:layout_constraintEnd_toStartOf="@+id/guideline21"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="@+id/guideline19"
@@ -155,14 +174,14 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="horizontal"
-      app:layout_constraintGuide_begin="215dp" />
+      app:layout_constraintGuide_percent="0.4" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline17"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="vertical"
-      app:layout_constraintGuide_percent="0.31" />
+      app:layout_constraintGuide_percent="0.3" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline18"
@@ -176,27 +195,28 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="vertical"
-      app:layout_constraintGuide_percent="0.40145984" />
+      app:layout_constraintGuide_percent="0.35" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline21"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="vertical"
-      app:layout_constraintGuide_percent="0.85" />
+      app:layout_constraintGuide_percent="0.9" />
 
   <EditText
       android:id="@+id/edtCreatedBy"
-      android:layout_width="185dp"
+      android:layout_width="0dp"
       android:layout_height="39dp"
-      android:layout_marginTop="20dp"
+      android:layout_marginBottom="16dp"
+      android:background="@drawable/shape"
       android:ems="10"
+      android:hint="Name"
       android:inputType="textPersonName"
-      android:text="Name"
+      app:layout_constraintBottom_toTopOf="@+id/guideline14"
       app:layout_constraintEnd_toStartOf="@+id/guideline21"
       app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="@+id/edtDeadline"
-      app:layout_constraintTop_toBottomOf="@+id/edtDeadline" />
+      app:layout_constraintStart_toStartOf="@+id/guideline19" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
