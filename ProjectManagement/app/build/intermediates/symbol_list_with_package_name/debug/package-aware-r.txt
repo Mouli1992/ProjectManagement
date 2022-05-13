@@ -3473,6 +3473,7 @@ string alreadyAccount
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string assignedTo
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string character_counter_content_description
@@ -3615,6 +3616,8 @@ string signIn
 string signUp
 string sortable_indicator_content_description
 string status_bar_notification_info_overflow
+string taskName
+string taskStatus
 string title_activity_listing
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

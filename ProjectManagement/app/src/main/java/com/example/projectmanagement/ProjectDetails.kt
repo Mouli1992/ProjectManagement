@@ -1,6 +1,5 @@
 package com.example.projectmanagement
 
-import android.app.DatePickerDialog
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,12 +7,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.*
 import androidx.core.view.isVisible
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TaskDetails
 import com.example.projectmanagement.table.project.TaskTableViewAdaptor
-import com.example.projectmanagement.table.project.TaskTableViewAdaptor2
 import com.example.projectmanagement.utils.*
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ktx.firestore
@@ -92,7 +88,7 @@ class ProjectDetails : AppCompatActivity() {
             tableView.columnCount=3
             taskList = projectDetails.taskLst!!
             println(taskList)
-            val adapter = TaskTableViewAdaptor2(context,taskList,tableView)
+            val adapter = TaskTableViewAdaptor(context,taskList,tableView)
             tableView.dataAdapter = adapter
             tableView.headerAdapter = TableHeader.getTaskTableHeader(context, "")
             tableView.isVisible=true

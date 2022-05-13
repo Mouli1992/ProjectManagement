@@ -3472,6 +3472,7 @@ int string alreadyAccount 0x7f11001c
 int string androidx_startup 0x7f11001d
 int string app_name 0x7f11001e
 int string appbar_scrolling_view_behavior 0x7f11001f
+int string assignedTo 0x7f1100af
 int string bottom_sheet_behavior 0x7f110020
 int string bottomsheet_action_expand_halfway 0x7f110021
 int string character_counter_content_description 0x7f110022
@@ -3614,6 +3615,8 @@ int string signIn 0x7f1100aa
 int string signUp 0x7f1100ab
 int string sortable_indicator_content_description 0x7f1100ac
 int string status_bar_notification_info_overflow 0x7f1100ad
+int string taskName 0x7f1100b0
+int string taskStatus 0x7f1100b1
 int string title_activity_listing 0x7f1100ae
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001

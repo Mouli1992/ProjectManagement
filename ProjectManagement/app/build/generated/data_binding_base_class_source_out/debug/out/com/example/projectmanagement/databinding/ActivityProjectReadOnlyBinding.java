@@ -14,7 +14,7 @@ import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
-import de.codecrafters.tableview.TableView;
+import de.codecrafters.tableview.SortableTableView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -60,7 +60,7 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
   public final Guideline guideline21;
 
   @NonNull
-  public final TableView tableReadOnlyTaskView;
+  public final SortableTableView tableReadOnlyTaskView;
 
   @NonNull
   public final TextView txtRdAssignedBy;
@@ -77,7 +77,7 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
       @NonNull Guideline guideline12, @NonNull Guideline guideline13,
       @NonNull Guideline guideline14, @NonNull Guideline guideline17,
       @NonNull Guideline guideline18, @NonNull Guideline guideline19,
-      @NonNull Guideline guideline21, @NonNull TableView tableReadOnlyTaskView,
+      @NonNull Guideline guideline21, @NonNull SortableTableView tableReadOnlyTaskView,
       @NonNull TextView txtRdAssignedBy, @NonNull TextView txtRdDeadline,
       @NonNull TextView txtRdProjectName) {
     this.rootView = rootView;
@@ -199,7 +199,7 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
       }
 
       id = R.id.tableReadOnlyTaskView;
-      TableView tableReadOnlyTaskView = ViewBindings.findChildViewById(rootView, id);
+      SortableTableView tableReadOnlyTaskView = ViewBindings.findChildViewById(rootView, id);
       if (tableReadOnlyTaskView == null) {
         break missingId;
       }
