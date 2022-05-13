@@ -1,6 +1,7 @@
 package com.example.projectmanagement
 
 import android.app.DatePickerDialog
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,15 +12,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TaskDetails
+import com.example.projectmanagement.table.project.TaskTableViewAdaptor
+import com.example.projectmanagement.table.project.TaskTableViewAdaptor2
 import com.example.projectmanagement.utils.*
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
+import de.codecrafters.tableview.TableView
 import java.util.*
 
 lateinit var submitPB:Button
-private lateinit var taskRecyclerView: RecyclerView
+//private lateinit var taskRecyclerView: TableView<TaskDetails>
+private lateinit var tableView: TableView<com.example.projectmanagement.model.TaskDetails>
 private lateinit var txtNoTasks: TextView
 private lateinit var projectName: EditText
 private lateinit var prjDeadline: DatePicker
@@ -28,6 +33,7 @@ private lateinit var projectDetails : ProjectDetails
 private lateinit var taskList: MutableList<TaskDetails>
 private var database = Firebase.firestore
 private lateinit var datePicker : DatePicker
+private lateinit var context: Context
 
 class ProjectDetails : AppCompatActivity() {
     companion object{
@@ -38,12 +44,13 @@ class ProjectDetails : AppCompatActivity() {
         setTheme(R.style.Theme_ProjectManagement)
         setContentView(R.layout.activity_project_details)
         val buttonAddProjectTasks = findViewById<Button>(R.id.btnAddTasks)
-        taskRecyclerView = findViewById(R.id.rvTasks)
+        //taskRecyclerView = findViewById(R.id.rvTasks)
+        tableView = findViewById(R.id.rvTasks)
         txtNoTasks= findViewById(R.id.txtNoTasks)
         projectName = findViewById(R.id.edtProjectName)
         prjDeadline = findViewById(R.id.dteProjectDeadline)
         createdBy = findViewById(R.id.edtCreatedBy)
-
+        context = this
         val mcurrentTime = Calendar.getInstance()
         val year = mcurrentTime.get(Calendar.YEAR)
         val month = mcurrentTime.get(Calendar.MONTH)
@@ -70,21 +77,30 @@ class ProjectDetails : AppCompatActivity() {
             createdBy.setText(intent.getStringExtra("email"))
             createdBy.isEnabled=false
             txtNoTasks.isVisible=true
-            taskRecyclerView.isVisible=false
-            println()
+            tableView.isVisible=false
+            //taskRecyclerView.isVisible=false
+
         }else if (intent.getStringExtra("code").equals(INTENT_FROM_TASK_LIST)){
             projectDetails = Gson().fromJson<ProjectDetails>(intent.getStringExtra("json"), ProjectDetails::class.java)
             println("Email "+projectDetails?.projectCreatedBy.toString())
             createdBy.setText(projectDetails?.projectCreatedBy)
+            createdBy.isEnabled=false
             projectName.setText(projectDetails?.projectName)
+            projectName.isEnabled=false
             //prjDeadline.setText(projectDetails.projectDeadline?.nanoseconds.toString())
-
+            tableView.isVisible=true
+            tableView.columnCount=3
             taskList = projectDetails.taskLst!!
-            val adapter1 = TaskListAdapter(taskList)
-            taskRecyclerView.adapter=adapter1
-            taskRecyclerView.layoutManager= LinearLayoutManager(this)
+            println(taskList)
+            val adapter = TaskTableViewAdaptor2(context,taskList,tableView)
+            tableView.dataAdapter = adapter
+            tableView.headerAdapter = TableHeader.getTaskTableHeader(context, "")
+            tableView.isVisible=true
+//            val adapter1 = TaskListAdapter(taskList)
+//            taskRecyclerView.adapter=adapter1
+//            taskRecyclerView.layoutManager= LinearLayoutManager(this)
             txtNoTasks.isVisible = false
-            taskRecyclerView.isVisible = true
+//            taskRecyclerView.isVisible = true
 
 
         }else if (intent.getStringExtra("code").equals(INTENT_FROM_PRJ_LST_FOR_PRJ)){

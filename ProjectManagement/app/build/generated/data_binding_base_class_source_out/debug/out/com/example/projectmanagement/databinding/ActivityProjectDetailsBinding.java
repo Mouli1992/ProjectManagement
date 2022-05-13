@@ -12,10 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
+import de.codecrafters.tableview.TableView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -64,7 +64,7 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
   public final Guideline guideline21;
 
   @NonNull
-  public final RecyclerView rvTasks;
+  public final TableView rvTasks;
 
   @NonNull
   public final TextView txtAssignedBy;
@@ -85,8 +85,8 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
       @NonNull Guideline guideline12, @NonNull Guideline guideline13,
       @NonNull Guideline guideline14, @NonNull Guideline guideline17,
       @NonNull Guideline guideline18, @NonNull Guideline guideline19,
-      @NonNull Guideline guideline21, @NonNull RecyclerView rvTasks,
-      @NonNull TextView txtAssignedBy, @NonNull TextView txtDeadline, @NonNull TextView txtNoTasks,
+      @NonNull Guideline guideline21, @NonNull TableView rvTasks, @NonNull TextView txtAssignedBy,
+      @NonNull TextView txtDeadline, @NonNull TextView txtNoTasks,
       @NonNull TextView txtProjectName) {
     this.rootView = rootView;
     this.btnAddTasks = btnAddTasks;
@@ -215,7 +215,7 @@ public final class ActivityProjectDetailsBinding implements ViewBinding {
       }
 
       id = R.id.rvTasks;
-      RecyclerView rvTasks = ViewBindings.findChildViewById(rootView, id);
+      TableView rvTasks = ViewBindings.findChildViewById(rootView, id);
       if (rvTasks == null) {
         break missingId;
       }

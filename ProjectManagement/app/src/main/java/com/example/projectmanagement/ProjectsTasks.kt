@@ -39,6 +39,7 @@ class ProjectsTasks : AppCompatActivity() {
         context = this
         teamMemberEmailViewModel = ViewModelProvider(this).get(TeamMemberEmailViewModel::class.java)
         assignedUser = findViewById(R.id.spinnerAssignedUser)
+        getEmailSelected()
         val intent = intent
         getTeamMemberEmails("")
         println(intent.getStringExtra("json"))
@@ -95,7 +96,9 @@ class ProjectsTasks : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val assignedUser = parent!!.getItemAtPosition(position)
                 assignedToUser = assignedUser.toString()
-                println(assignedToUser)
+                task.assignedTo=assignedToUser
+                println("AssignedUser$assignedUser")
+                println("assignedToUser$assignedToUser")
 
 
             }

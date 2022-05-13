@@ -2,8 +2,8 @@ com/example/projectmanagement/databinding/RegisterlayoutBinding.java
  com.example.projectmanagement.databinding.RegisterlayoutBinding
 com/example/projectmanagement/utils/TableHeader.java
  com.example.projectmanagement.utils.TableHeader
-com/example/projectmanagement/databinding/ActivityProjectDetailsBinding.java
- com.example.projectmanagement.databinding.ActivityProjectDetailsBinding
+com/example/projectmanagement/databinding/ActivityListingProjectBinding.java
+ com.example.projectmanagement.databinding.ActivityListingProjectBinding
 com/example/projectmanagement/databinding/RecyclerviewprojectlistBinding.java
  com.example.projectmanagement.databinding.RecyclerviewprojectlistBinding
 com/example/projectmanagement/databinding/ActivityProjectsTasksBinding.java
@@ -20,5 +20,5 @@ com/example/projectmanagement/databinding/ActivityTeamMemberTaskListBinding.java
  com.example.projectmanagement.databinding.ActivityTeamMemberTaskListBinding
 com/example/projectmanagement/databinding/RecyclerviewteammembertasksBinding.java
  com.example.projectmanagement.databinding.RecyclerviewteammembertasksBinding
-com/example/projectmanagement/databinding/ActivityListingProjectBinding.java
- com.example.projectmanagement.databinding.ActivityListingProjectBinding
+com/example/projectmanagement/databinding/ActivityProjectDetailsBinding.java
+ com.example.projectmanagement.databinding.ActivityProjectDetailsBinding

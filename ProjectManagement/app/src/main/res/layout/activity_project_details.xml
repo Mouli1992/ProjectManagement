@@ -20,17 +20,29 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
-  <androidx.recyclerview.widget.RecyclerView
+<!--  <androidx.recyclerview.widget.RecyclerView-->
+<!--      android:id="@+id/rvTasks"-->
+<!--      android:layout_width="367dp"-->
+<!--      android:layout_height="0dp"-->
+<!--      android:visibility="invisible"-->
+<!--      app:layout_constraintBottom_toTopOf="@+id/guideline18"-->
+<!--      app:layout_constraintEnd_toStartOf="@+id/guideline12"-->
+<!--      app:layout_constraintHorizontal_bias="1.0"-->
+<!--      app:layout_constraintStart_toStartOf="@+id/guideline11"-->
+<!--      app:layout_constraintTop_toTopOf="@+id/guideline14"-->
+<!--      app:layout_constraintVertical_bias="0.0" />-->
+
+  <de.codecrafters.tableview.TableView
+      xmlns:table="http://schemas.android.com/apk/res-auto"
       android:id="@+id/rvTasks"
       android:layout_width="367dp"
       android:layout_height="0dp"
-      android:visibility="invisible"
       app:layout_constraintBottom_toTopOf="@+id/guideline18"
       app:layout_constraintEnd_toStartOf="@+id/guideline12"
       app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
       app:layout_constraintTop_toTopOf="@+id/guideline14"
-      app:layout_constraintVertical_bias="0.0" />
+      app:layout_constraintVertical_bias="0.0"  />
 
   <Button
       android:id="@+id/btnAddTasks"
