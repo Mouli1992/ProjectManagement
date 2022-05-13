@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.*
 import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
@@ -22,6 +24,8 @@ private lateinit var teamMemberEmailViewModel: TeamMemberEmailViewModel
 private lateinit var listOfTeamMembers : MutableList<String>
 private lateinit var context: Context
 private lateinit var assignedUser : Spinner
+private lateinit var assignedToUser : String
+private var task: TaskDetails = TaskDetails()
 class ProjectsTasks : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,8 +44,6 @@ class ProjectsTasks : AppCompatActivity() {
         println(intent.getStringExtra("json"))
         println(intent.getStringExtra("code"))
         buttonSubmitTask.setOnClickListener{
-            var task: TaskDetails = TaskDetails()
-            task.assignedTo =assignedUser.toString()
             task.taskDeadline = Timestamp.now()
             task.taskId = Timestamp.now().nanoseconds.toLong()
             task.taskName = edtTaskName.text.toString()
@@ -81,7 +83,28 @@ class ProjectsTasks : AppCompatActivity() {
             override fun onProjectDetailsCallback(projectDetails: MutableList<ProjectDetails>) {
                 TODO("Not yet implemented")
             }
+
+            override fun onOneProjectDetailsCallback(projectDetails: ProjectDetails) {
+                TODO("Not yet implemented")
+            }
         }, role = "Team Member")
+    }
+
+    private fun getEmailSelected() {
+        assignedUser.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val assignedUser = parent!!.getItemAtPosition(position)
+                assignedToUser = assignedUser.toString()
+                println(assignedToUser)
+
+
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
+
     }
 
 }

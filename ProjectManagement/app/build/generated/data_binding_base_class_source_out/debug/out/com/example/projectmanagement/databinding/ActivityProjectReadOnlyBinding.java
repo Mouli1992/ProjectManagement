@@ -4,6 +4,7 @@ package com.example.projectmanagement.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
+import de.codecrafters.tableview.TableView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,6 +22,9 @@ import java.lang.String;
 public final class ActivityProjectReadOnlyBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final Button btnBack;
 
   @NonNull
   public final EditText edtCreatedBy;
@@ -55,6 +60,9 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
   public final Guideline guideline21;
 
   @NonNull
+  public final TableView tableReadOnlyTaskView;
+
+  @NonNull
   public final TextView txtRdAssignedBy;
 
   @NonNull
@@ -64,14 +72,16 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
   public final TextView txtRdProjectName;
 
   private ActivityProjectReadOnlyBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText edtCreatedBy, @NonNull EditText edtDeadline,
+      @NonNull Button btnBack, @NonNull EditText edtCreatedBy, @NonNull EditText edtDeadline,
       @NonNull EditText edtRdProjectName, @NonNull Guideline guideline11,
       @NonNull Guideline guideline12, @NonNull Guideline guideline13,
       @NonNull Guideline guideline14, @NonNull Guideline guideline17,
       @NonNull Guideline guideline18, @NonNull Guideline guideline19,
-      @NonNull Guideline guideline21, @NonNull TextView txtRdAssignedBy,
-      @NonNull TextView txtRdDeadline, @NonNull TextView txtRdProjectName) {
+      @NonNull Guideline guideline21, @NonNull TableView tableReadOnlyTaskView,
+      @NonNull TextView txtRdAssignedBy, @NonNull TextView txtRdDeadline,
+      @NonNull TextView txtRdProjectName) {
     this.rootView = rootView;
+    this.btnBack = btnBack;
     this.edtCreatedBy = edtCreatedBy;
     this.edtDeadline = edtDeadline;
     this.edtRdProjectName = edtRdProjectName;
@@ -83,6 +93,7 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
     this.guideline18 = guideline18;
     this.guideline19 = guideline19;
     this.guideline21 = guideline21;
+    this.tableReadOnlyTaskView = tableReadOnlyTaskView;
     this.txtRdAssignedBy = txtRdAssignedBy;
     this.txtRdDeadline = txtRdDeadline;
     this.txtRdProjectName = txtRdProjectName;
@@ -115,6 +126,12 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnBack;
+      Button btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
+        break missingId;
+      }
+
       id = R.id.edtCreatedBy;
       EditText edtCreatedBy = ViewBindings.findChildViewById(rootView, id);
       if (edtCreatedBy == null) {
@@ -181,6 +198,12 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tableReadOnlyTaskView;
+      TableView tableReadOnlyTaskView = ViewBindings.findChildViewById(rootView, id);
+      if (tableReadOnlyTaskView == null) {
+        break missingId;
+      }
+
       id = R.id.txtRdAssignedBy;
       TextView txtRdAssignedBy = ViewBindings.findChildViewById(rootView, id);
       if (txtRdAssignedBy == null) {
@@ -199,10 +222,10 @@ public final class ActivityProjectReadOnlyBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProjectReadOnlyBinding((ConstraintLayout) rootView, edtCreatedBy,
+      return new ActivityProjectReadOnlyBinding((ConstraintLayout) rootView, btnBack, edtCreatedBy,
           edtDeadline, edtRdProjectName, guideline11, guideline12, guideline13, guideline14,
-          guideline17, guideline18, guideline19, guideline21, txtRdAssignedBy, txtRdDeadline,
-          txtRdProjectName);
+          guideline17, guideline18, guideline19, guideline21, tableReadOnlyTaskView,
+          txtRdAssignedBy, txtRdDeadline, txtRdProjectName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

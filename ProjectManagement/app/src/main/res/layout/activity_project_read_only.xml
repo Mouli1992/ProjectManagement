@@ -80,6 +80,21 @@
         app:layout_constraintStart_toStartOf="@+id/guideline19"
         app:layout_constraintTop_toBottomOf="@+id/edtRdProjectName" />
 
+
+    <de.codecrafters.tableview.TableView
+        xmlns:table="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tableReadOnlyTaskView"
+        android:layout_width="367dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline14"
+        app:layout_constraintVertical_bias="0.0" />
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"
         android:layout_width="wrap_content"
@@ -149,5 +164,18 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline19" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/blue1"
+        android:textColor="@color/black"
+        android:text="Okay"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/tableReadOnlyTaskView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

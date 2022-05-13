@@ -141,6 +141,10 @@ class ListingProject : AppCompatActivity()  {
                 }
 
             }
+
+            override fun onOneProjectDetailsCallback(projectDetails: ProjectDetails) {
+                TODO("Not yet implemented")
+            }
         }, email = email)
 
     }
@@ -157,12 +161,12 @@ class ListingProject : AppCompatActivity()  {
            override fun onProjectDetailsCallback(projectDetails: MutableList<ProjectDetails>) {
                TODO("Not yet implemented")
            }
+
+           override fun onOneProjectDetailsCallback(projectDetails: ProjectDetails) {
+               TODO("Not yet implemented")
+           }
        }, role = "Team Member")
        }
-
-            //Commented by Chandra to test project task Additon
-//            val intent = Intent(this, ProjectDetails:: class.java).also {
-//                startActivity(it)
 
 
 

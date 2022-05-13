@@ -21,8 +21,9 @@ class ProjectClickListener (private val context: Context):TableDataClickListener
     override fun onDataClicked(rowIndex: Int, clickedData: ProjectDetails?){
         clickedData!!.projectName?.let { Log.i("Test", it)
         projectId = clickedData!!.projectId}
-        var intent = Intent(context, com.example.projectmanagement.ProjectDetails::class.java)
+        var intent = Intent(context, com.example.projectmanagement.ProjectReadOnly::class.java)
         intent.putExtra("code", INTENT_FROM_PRJ_LST_FOR_PRJ)
+        intent.putExtra("projectId",projectId.toString() )
         context.startActivity(intent)
         Log.i("Test",projectId.toString())
 

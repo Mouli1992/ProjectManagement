@@ -1,7 +1,6 @@
 package com.example.projectmanagement.db
 
 import android.util.Log
-import com.example.projectmanagement.ListingProject
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.UserDetails
 import com.google.firebase.firestore.ktx.firestore
@@ -48,17 +47,20 @@ class FirestoreRepository {
 
         }
     }
-    fun getProjectIndividualDetails(projectDetailsCallback: FirestoreCallback, projectId : String){
-        var projectDetails : ProjectDetails
+    fun getOneProjectDetails(projectDetailsCallback: FirestoreCallback, projectId : Long){
+        var projectDetails = mutableListOf<ProjectDetails>()
         database.collection("projectDetails").
-        whereEqualTo("id",projectId).get().addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                projectDetails = task.getResult(ProjectDetails::class.java)
-            } else {
-                Log.e(TAG, "Error in getManagerProjectDetails Details :", task.exception)
+        whereEqualTo("projectId",projectId).get().addOnCompleteListener{ task ->
+            if(task.isSuccessful){
+                projectDetails = task.result.toObjects(ProjectDetails::class.java)
+                println(projectDetails)
+            }else{
+                Log.e(TAG, "Error in getManagerProjectDetails Details :",task.exception)
             }
-            projectDetailsCallback.onProjectDetailsCallback(projectDetailsLst)
+            projectDetailsCallback.onOneProjectDetailsCallback(projectDetails[0])
             return@addOnCompleteListener
+
         }
+
         }
 }

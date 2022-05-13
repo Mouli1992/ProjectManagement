@@ -2739,6 +2739,7 @@ id browser_actions_menu_view
 id btnAddProfileImage
 id btnAddProject
 id btnAddTasks
+id btnBack
 id btnSignIn
 id btnSignInRegister
 id btnSignUp
@@ -3055,6 +3056,7 @@ id roleSpinner
 id rounded
 id row_index_key
 id rtl
+id rvProjectShown
 id rvTasks
 id rvTasksTeamMember
 id save_non_transition_alpha
@@ -3124,6 +3126,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabMode
+id tableReadOnlyTaskView
 id tableView
 id table_data_view
 id table_header_view

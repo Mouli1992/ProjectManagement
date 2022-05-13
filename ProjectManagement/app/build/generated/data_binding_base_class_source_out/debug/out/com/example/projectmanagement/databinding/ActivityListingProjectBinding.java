@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
@@ -41,6 +42,9 @@ public final class ActivityListingProjectBinding implements ViewBinding {
   public final Guideline guideline6;
 
   @NonNull
+  public final RecyclerView rvProjectShown;
+
+  @NonNull
   public final TableView tableView;
 
   @NonNull
@@ -49,7 +53,8 @@ public final class ActivityListingProjectBinding implements ViewBinding {
   private ActivityListingProjectBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnAddProject, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
       @NonNull Guideline guideline4, @NonNull Guideline guideline5, @NonNull Guideline guideline6,
-      @NonNull TableView tableView, @NonNull TextView txtNoProjects) {
+      @NonNull RecyclerView rvProjectShown, @NonNull TableView tableView,
+      @NonNull TextView txtNoProjects) {
     this.rootView = rootView;
     this.btnAddProject = btnAddProject;
     this.guideline2 = guideline2;
@@ -57,6 +62,7 @@ public final class ActivityListingProjectBinding implements ViewBinding {
     this.guideline4 = guideline4;
     this.guideline5 = guideline5;
     this.guideline6 = guideline6;
+    this.rvProjectShown = rvProjectShown;
     this.tableView = tableView;
     this.txtNoProjects = txtNoProjects;
   }
@@ -124,6 +130,12 @@ public final class ActivityListingProjectBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rvProjectShown;
+      RecyclerView rvProjectShown = ViewBindings.findChildViewById(rootView, id);
+      if (rvProjectShown == null) {
+        break missingId;
+      }
+
       id = R.id.tableView;
       TableView tableView = ViewBindings.findChildViewById(rootView, id);
       if (tableView == null) {
@@ -137,7 +149,8 @@ public final class ActivityListingProjectBinding implements ViewBinding {
       }
 
       return new ActivityListingProjectBinding((ConstraintLayout) rootView, btnAddProject,
-          guideline2, guideline3, guideline4, guideline5, guideline6, tableView, txtNoProjects);
+          guideline2, guideline3, guideline4, guideline5, guideline6, rvProjectShown, tableView,
+          txtNoProjects);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
