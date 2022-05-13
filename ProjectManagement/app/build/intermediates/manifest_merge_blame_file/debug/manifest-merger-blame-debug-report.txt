@@ -135,29 +135,29 @@
 74                android:value="com.google.firebase.components.ComponentRegistrar" />
 74-->[com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:69:17-82
 75            <meta-data
-75-->[com.google.firebase:firebase-database:20.0.4] /Users/chandramouli/.gradle/caches/transforms-3/009c9efa3941c58f46d911f1e197e500/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
-76                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-76-->[com.google.firebase:firebase-database:20.0.4] /Users/chandramouli/.gradle/caches/transforms-3/009c9efa3941c58f46d911f1e197e500/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:33:17-109
+75-->[com.google.firebase:firebase-storage-ktx:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/628e047fe2c82323885392c759538f78/transformed/jetified-firebase-storage-ktx-20.0.1/AndroidManifest.xml:15:13-17:85
+76                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+76-->[com.google.firebase:firebase-storage-ktx:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/628e047fe2c82323885392c759538f78/transformed/jetified-firebase-storage-ktx-20.0.1/AndroidManifest.xml:16:17-122
 77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.firebase:firebase-database:20.0.4] /Users/chandramouli/.gradle/caches/transforms-3/009c9efa3941c58f46d911f1e197e500/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:34:17-82
+77-->[com.google.firebase:firebase-storage-ktx:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/628e047fe2c82323885392c759538f78/transformed/jetified-firebase-storage-ktx-20.0.1/AndroidManifest.xml:17:17-82
 78            <meta-data
-78-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:55:13-57:85
-79                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-79-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:56:17-119
+78-->[com.google.firebase:firebase-storage:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/95252b884f0919abda0e534c1546b832/transformed/jetified-firebase-storage-20.0.1/AndroidManifest.xml:33:13-35:85
+79                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+79-->[com.google.firebase:firebase-storage:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/95252b884f0919abda0e534c1546b832/transformed/jetified-firebase-storage-20.0.1/AndroidManifest.xml:34:17-107
 80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:57:17-82
+80-->[com.google.firebase:firebase-storage:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/95252b884f0919abda0e534c1546b832/transformed/jetified-firebase-storage-20.0.1/AndroidManifest.xml:35:17-82
 81            <meta-data
-81-->[com.google.firebase:firebase-storage-ktx:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/628e047fe2c82323885392c759538f78/transformed/jetified-firebase-storage-ktx-20.0.1/AndroidManifest.xml:15:13-17:85
-82                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-82-->[com.google.firebase:firebase-storage-ktx:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/628e047fe2c82323885392c759538f78/transformed/jetified-firebase-storage-ktx-20.0.1/AndroidManifest.xml:16:17-122
+81-->[com.google.firebase:firebase-database:20.0.4] /Users/chandramouli/.gradle/caches/transforms-3/009c9efa3941c58f46d911f1e197e500/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
+82                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+82-->[com.google.firebase:firebase-database:20.0.4] /Users/chandramouli/.gradle/caches/transforms-3/009c9efa3941c58f46d911f1e197e500/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:33:17-109
 83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.firebase:firebase-storage-ktx:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/628e047fe2c82323885392c759538f78/transformed/jetified-firebase-storage-ktx-20.0.1/AndroidManifest.xml:17:17-82
+83-->[com.google.firebase:firebase-database:20.0.4] /Users/chandramouli/.gradle/caches/transforms-3/009c9efa3941c58f46d911f1e197e500/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:34:17-82
 84            <meta-data
-84-->[com.google.firebase:firebase-storage:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/95252b884f0919abda0e534c1546b832/transformed/jetified-firebase-storage-20.0.1/AndroidManifest.xml:33:13-35:85
-85                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-85-->[com.google.firebase:firebase-storage:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/95252b884f0919abda0e534c1546b832/transformed/jetified-firebase-storage-20.0.1/AndroidManifest.xml:34:17-107
+84-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:55:13-57:85
+85                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+85-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:56:17-119
 86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-storage:20.0.1] /Users/chandramouli/.gradle/caches/transforms-3/95252b884f0919abda0e534c1546b832/transformed/jetified-firebase-storage-20.0.1/AndroidManifest.xml:35:17-82
+86-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:57:17-82
 87            <meta-data
 87-->[com.google.firebase:firebase-firestore-ktx:24.0.2] /Users/chandramouli/.gradle/caches/transforms-3/0f8493eae74988db79ae7241b29d4427/transformed/jetified-firebase-firestore-ktx-24.0.2/AndroidManifest.xml:15:13-17:85
 88                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"

@@ -8,7 +8,9 @@ import android.widget.TextView
 import com.example.projectmanagement.model.ProjectDetails
 import de.codecrafters.tableview.TableView
 import de.codecrafters.tableview.toolkit.LongPressAwareTableDataAdapter
+import java.text.DateFormat
 import java.text.NumberFormat
+import java.text.SimpleDateFormat
 import kotlin.math.log
 
 
@@ -41,7 +43,10 @@ class ProjectTableDataAdapter(context: Context, data: List<ProjectDetails?>?, ta
     }
 
     private fun renderProjectDeadLine(projectDetails: ProjectDetails?): View? {
-        return projectDetails!!.projectDeadline?.let { renderString(it.toString()) }
+        return projectDetails!!.projectDeadline?.let {
+             val dateFormat : DateFormat = SimpleDateFormat("dd/MM/yyyy")
+
+            renderString(dateFormat.format(it.toDate()) )}
     }
 
     private fun renderString(value: String): View {

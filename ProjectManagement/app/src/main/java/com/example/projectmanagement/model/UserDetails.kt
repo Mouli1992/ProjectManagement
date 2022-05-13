@@ -8,6 +8,7 @@ data class UserDetails(
     val name : String? = null,
     val mobileNo : Int? = -1,
     val createdAt : Timestamp? = Timestamp.now(),
-    val role: String? = null
+    val role: String? = null,
+    var pictureUri: String? = null
 )
 

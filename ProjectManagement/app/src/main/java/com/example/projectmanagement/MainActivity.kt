@@ -47,14 +47,14 @@ class MainActivity : AppCompatActivity() {
 //        }
 //        FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
 
-
+        //RecipentToken
         email = findViewById(R.id.editEmail)
         pwd = findViewById(R.id.editPassword)
         btnSignIn = findViewById(R.id.btnSignIn)
         val signUpBtn = findViewById<Button>(R.id.btnSignUp)
 
-//        val title = "New Notification"
-//        val message= "A new notification has been received"
+//        val title = "Task Notification"
+//        val message= "Task Assigned"
 //         val recipientToken = token
 //
 //        if(title.isNotEmpty() && message.isNotEmpty() && recipientToken.isNotEmpty()) {
@@ -131,6 +131,7 @@ class MainActivity : AppCompatActivity() {
                                 intent.putExtra("email", email)
                                 intent.putExtra("role", userDetails?.role)
                                 intent.putExtra("mobileNo", userDetails?.mobileNo)
+                                intent.putExtra("profileImage", userDetails?.pictureUri)
                                 intent.putExtra("code", INTENT_FROM_LOGIN)
                                 startActivity(intent)
                                 finish()

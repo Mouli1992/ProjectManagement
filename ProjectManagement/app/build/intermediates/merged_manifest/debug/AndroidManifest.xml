@@ -73,16 +73,16 @@
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"

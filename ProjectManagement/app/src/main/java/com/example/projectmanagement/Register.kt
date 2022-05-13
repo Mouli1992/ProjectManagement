@@ -1,19 +1,23 @@
 package com.example.projectmanagement
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.*
+import com.example.projectmanagement.db.FirebaseStorageManager
 import com.example.projectmanagement.model.UserDetails
 import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.ktx.storage
 
 class Register: AppCompatActivity() {
 
@@ -29,17 +33,21 @@ class Register: AppCompatActivity() {
     private lateinit var signUpBtn : Button
     private lateinit var selectedRole :String
     private val database = Firebase.firestore
-
+    private val storage =Firebase.storage
+    private lateinit var uri : Uri
+    private lateinit var context: Context
 
     companion object{
         private const val TAG = "Register"
         private const val CREATE_REQUEST_CODE = 248
+        private const val IMAGE_SELECTION_CODE = 250
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_ProjectManagement)
         setContentView(R.layout.registerlayout)
+
 
 
         name= findViewById(R.id.editFullNameRegister)
@@ -53,11 +61,13 @@ class Register: AppCompatActivity() {
         signUpBtn = findViewById(R.id.btnSignUpRegister)
         roleSpinner = findViewById(R.id.roleSpinner)
         getRoleSelected()
+        context = this
         addProfilePhoto.setOnClickListener {
-            Intent(Intent.ACTION_GET_CONTENT).also {
-                it.type = "image/*"
-                startActivityForResult(it,0)
-            }
+            choosePictures()
+//            Intent(Intent.ACTION_GET_CONTENT).also {
+//                it.type = "image/*"
+//                startActivityForResult(it,0)
+//            }
         }
         signInBtn.setOnClickListener{
             navigateToSignInActivity()
@@ -67,22 +77,29 @@ class Register: AppCompatActivity() {
             registerUser()
         }
 
-
-
-
     }
 
+    private fun choosePictures() {
+        var intent : Intent = Intent()
+        intent.setType("image/*")
+        intent.setAction(Intent.ACTION_GET_CONTENT)
+        startActivityForResult(intent, IMAGE_SELECTION_CODE,)
+    }
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode==Activity.RESULT_OK && requestCode==0){
-            val uri= data?.data
-                uploadP.setImageURI(uri)
+        if(resultCode==Activity.RESULT_OK && requestCode==IMAGE_SELECTION_CODE && data!= null &&
+                data.data != null){
+
+            uri= data?.data!!
+            uploadP.setImageURI(uri)
+
         }
 
-
     }
+
+
 
     private fun getRoleSelected() {
         roleSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
@@ -92,7 +109,6 @@ class Register: AppCompatActivity() {
                 Log.i(TAG,"Role selected $selectedRole")
 
             }
-
             override fun onNothingSelected(p0: AdapterView<*>?) {
                 TODO("Not yet implemented")
             }
@@ -120,7 +136,9 @@ class Register: AppCompatActivity() {
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         firebaseUser = task.result!!.user!!
-                        saveUserDetails(email,name.text.toString(),Integer.parseInt(mobile.text.toString()),selectedRole)
+                        val userDetails = UserDetails(email, name.text.toString(),Integer.parseInt(mobile.text.toString()),Timestamp.now(),selectedRole,"")
+                        FirebaseStorageManager().registerUser(context,uri,userDetails)
+                    //saveUserDetails(email,name.text.toString(),Integer.parseInt(mobile.text.toString()),selectedRole,uri)
 
                     }
                 }
@@ -133,31 +151,6 @@ class Register: AppCompatActivity() {
         }
 
         }
-    }
-
-    private fun saveUserDetails(email: String, name: String, mobileNo: Int, role: String) {
-        val userDetails = UserDetails(email,name,mobileNo, Timestamp.now(),role)
-        database.collection("userDetails").document(email).set(userDetails).addOnCompleteListener { userDetailsTask ->
-            if(userDetailsTask.isSuccessful) {
-                Toast.makeText(this, "You are registered Successfully", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this@Register, MainActivity::class.java)
-                intent.putExtra("name", name)
-                intent.putExtra("email", email)
-                startActivity(intent)
-                finish()
-
-            }else{
-                Log.e(TAG, "Exception with User Registration")
-                Toast.makeText(this, "User registration Failed", Toast.LENGTH_SHORT).show()
-                return@addOnCompleteListener
-            }
-
-
-
-        }
-
-
-
     }
 
     private fun navigateToSignInActivity() {

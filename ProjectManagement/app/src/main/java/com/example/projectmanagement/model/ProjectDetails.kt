@@ -9,5 +9,6 @@ data class ProjectDetails(
     var projectStatus: String?= null,
     var projectDeadline: Timestamp? = Timestamp.now(),
     var taskLst: MutableList<TaskDetails>? = mutableListOf(),
-    var createdAt : Timestamp? = Timestamp.now()
+    var createdAt : Timestamp? = Timestamp.now(),
+    var teamLst : MutableList<String>? = mutableListOf()
 )

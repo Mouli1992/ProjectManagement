@@ -6,6 +6,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.*
 import androidx.core.view.isVisible
 import com.example.projectmanagement.model.ProjectDetails
@@ -20,6 +22,7 @@ import de.codecrafters.tableview.TableView
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.util.*
+import java.util.function.Consumer
 
 lateinit var submitPB:Button
 //private lateinit var taskRecyclerView: TableView<TaskDetails>
@@ -55,28 +58,6 @@ class ProjectDetails : AppCompatActivity() {
             openDatePickerDialog()
 
         }
-
-//        val mcurrentTime = Calendar.getInstance()
-//        val year = mcurrentTime.get(Calendar.YEAR)
-//        val month = mcurrentTime.get(Calendar.MONTH)
-//        val day = mcurrentTime.get(Calendar.DAY_OF_MONTH)
-
-
-//        val datePicker = DatePickerDialog(this,
-//            { view, year, month, dayOfMonth ->
-//                prjDeadline.setText(String.format("%d / %d / %d", dayOfMonth, month + 1, year)) }, year, month, day);
-//
-//        prjDeadline.setOnClickListener()
-
-//        val taskList= mutableListOf<TaskListData>(
-//           TaskListData("t1","pending"),
-//            TaskListData("t2","pending"),
-//        )
-
-//        val projectList= mutableListOf<ProjectListData>(
-//           ProjectListData("t1","pending"),
-//            ProjectListData("t2","pending"),
-//       )
         val intent = intent
         if(intent.getStringExtra("code").equals(INTENT_FROM_PROJECT_LIST)) {
             createdBy.setText(intent.getStringExtra("email"))
@@ -139,9 +120,10 @@ class ProjectDetails : AppCompatActivity() {
             startActivity(taskLstIntent)
         }
 
+
         submitPB = findViewById(R.id.btnSubmitProject)
         submitPB.setOnClickListener {
-
+            projectDetails.teamLst = getTeamLst(projectDetails)
             database.collection("projectDetails").document(projectDetails.projectId.toString()).
             set(projectDetails).addOnCompleteListener { projectTaskDetailsTask ->
                 if(projectTaskDetailsTask.isSuccessful) {
@@ -161,6 +143,17 @@ class ProjectDetails : AppCompatActivity() {
         }
     }
 
+    private fun getTeamLst(projectDetails: ProjectDetails) : MutableList<String>? {
+        var teamLst = mutableListOf<String>()
+        for (task in projectDetails.taskLst!!){
+            task.assignedTo?.let { teamLst.add(it) }
+        }
+
+        return teamLst
+
+
+    }
+
     private fun openDatePickerDialog() {
         // Get Current Date
         val cal: Calendar = Calendar.getInstance()
@@ -174,7 +167,22 @@ class ProjectDetails : AppCompatActivity() {
         datePickerDialog.datePicker.minDate = cal.timeInMillis
         datePickerDialog.show()
     }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.heading_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.menuLogout-> Intent(this@ProjectDetails, MainActivity::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK )
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                startActivity(it)
+
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 }
