@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] /Users/chandramouli/.gradle/caches/transforms-3/bc6d7d3dcc4e74af847737094e69649c/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /Users/chandramouli/.gradle/caches/transforms-3/78fc27931efa2a5cfa4aad0acf151911/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.4.2] /Users/chandramouli/.gradle/caches/transforms-3/415e9e0f3380c56f690b051dc906bc78/transformed/navigation-fragment-2.4.2/AndroidManifest.xml:17:1-24:12
@@ -101,25 +101,25 @@ MERGED from [androidx.print:print:1.0.0] /Users/chandramouli/.gradle/caches/tran
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/273ef1274ce6cfa47603057dc539e3af/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/chandramouli/.gradle/caches/transforms-3/7236ff134a9c50ebe72cbae5c1687934/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/chandramouli/.gradle/caches/transforms-3/510db31c168a9d8845bc0d5105466c4c/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
 	package
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:3:5-44
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:1-54:12
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/chandramouli/.gradle/caches/transforms-3/009c9efa3941c58f46d911f1e197e500/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:26:5-67
@@ -135,17 +135,17 @@ MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:6:5-82
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:6:5-82
 MERGED from [com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:28:5-82
 MERGED from [com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:28:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/chandramouli/.gradle/caches/transforms-3/cd2df997847e6473936e731be9d5bbcb/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/chandramouli/.gradle/caches/transforms-3/cd2df997847e6473936e731be9d5bbcb/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:6:22-79
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:6:22-79
 application
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:8:5-52:19
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:8:5-52:19
 MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/654bc96244b3f2d7e8a462d0f661c709/transformed/jetified-firebase-auth-ktx-21.0.3/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/654bc96244b3f2d7e8a462d0f661c709/transformed/jetified-firebase-auth-ktx-21.0.3/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:26:5-71:19
@@ -213,89 +213,89 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/chandramouli/.gradle
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/chandramouli/.gradle/caches/transforms-3/ef4734bc28bd4bb1328ec87ff041e6ed/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:14:9-55
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:14:9-55
 activity#com.example.projectmanagement.ProjectReadOnly
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:15:9-17:40
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:15:9-17:40
 	android:exported
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:17:13-37
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:16:13-44
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:16:13-44
 service#com.example.projectmanagement.FirebaseService
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:19:9-27:19
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:19:9-27:19
 	android:exported
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:21:13-36
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:21:13-36
 	android:permission
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:22:13-73
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:22:13-73
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:20:13-44
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:20:13-44
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:23:13-26:29
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:23:13-26:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:24:17-78
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:24:17-78
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:24:25-75
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:24:25-75
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:25:17-81
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:25:17-81
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:25:25-78
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:25:25-78
 activity#com.example.projectmanagement.ProjectsTasks
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:29:9-31:40
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:30:13-42
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:30:13-42
 activity#com.example.projectmanagement.ProjectDetails
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:32:9-34:40
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:34:13-37
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:33:13-43
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:33:13-43
 activity#com.example.projectmanagement.ListingProject
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:35:9-37:40
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:35:9-37:40
 	android:exported
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:37:13-37
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:36:13-43
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:36:13-43
 activity#com.example.projectmanagement.Register
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:38:9-42:74
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:38:9-42:74
 	android:label
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:41:13-37
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:41:13-37
 	android:exported
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:40:13-37
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:40:13-37
 	android:theme
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:42:13-71
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:42:13-71
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:39:13-37
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:39:13-37
 activity#com.example.projectmanagement.MainActivity
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:43:9-51:20
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:43:9-51:20
 	android:exported
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:45:13-36
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:45:13-36
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:44:13-41
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:44:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:46:13-50:29
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:46:13-50:29
 action#android.intent.action.MAIN
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:47:17-69
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:47:25-66
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:47:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:49:17-77
+ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:49:17-77
 	android:name
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml:49:27-74
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml:49:27-74
 uses-sdk
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.0.4] /Users/chandramouli/.gradle/caches/transforms-3/bc6d7d3dcc4e74af847737094e69649c/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.4] /Users/chandramouli/.gradle/caches/transforms-3/bc6d7d3dcc4e74af847737094e69649c/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /Users/chandramouli/.gradle/caches/transforms-3/78fc27931efa2a5cfa4aad0acf151911/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
@@ -490,16 +490,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/chandramo
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/chandramouli/.gradle/caches/transforms-3/7236ff134a9c50ebe72cbae5c1687934/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/chandramouli/.gradle/caches/transforms-3/510db31c168a9d8845bc0d5105466c4c/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/chandramouli/.gradle/caches/transforms-3/510db31c168a9d8845bc0d5105466c4c/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-		ADDED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/src/main/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth-ktx:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/654bc96244b3f2d7e8a462d0f661c709/transformed/jetified-firebase-auth-ktx-21.0.3/AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:64:9-70:19

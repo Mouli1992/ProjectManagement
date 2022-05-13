@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/res/values-small-v4/values-small-v4.xml",

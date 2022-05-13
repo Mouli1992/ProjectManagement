@@ -92,6 +92,8 @@ class ProjectDetails : AppCompatActivity() {
             createdBy.isEnabled=false
             projectName.setText(projectDetails?.projectName)
             projectName.isEnabled=false
+            prjDeadline.setText(projectDetails.projectDeadline?.toDate().toString())
+            prjDeadline.isEnabled=false
             //prjDeadline.setText(projectDetails.projectDeadline?.nanoseconds.toString())
             tableView.isVisible=true
             tableView.columnCount=3

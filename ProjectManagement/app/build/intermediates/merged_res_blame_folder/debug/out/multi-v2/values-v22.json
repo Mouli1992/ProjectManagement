@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-3/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-main/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
             "map": [
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/5a1d233fbd76010039e72b23df41acb5/transformed/appcompat-1.4.1/res/values-v22/values-v22.xml",

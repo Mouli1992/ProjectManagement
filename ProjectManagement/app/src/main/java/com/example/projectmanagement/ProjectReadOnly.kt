@@ -81,7 +81,7 @@ class ProjectReadOnly : AppCompatActivity() {
                 createdBy.setText(projectDetails.projectCreatedBy.toString())
                 projectName.isEnabled=false
                 createdBy.isEnabled=false
-                createdBy.isEnabled=false
+                prjDeadline.isEnabled=false
             }
         }, projectId = projectId)
 
