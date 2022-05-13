@@ -1,5 +1,7 @@
 com/example/projectmanagement/databinding/RegisterlayoutBinding.java
  com.example.projectmanagement.databinding.RegisterlayoutBinding
+com/example/projectmanagement/databinding/ActivityListingProjectTeamMemberBinding.java
+ com.example.projectmanagement.databinding.ActivityListingProjectTeamMemberBinding
 com/example/projectmanagement/utils/TableHeader.java
  com.example.projectmanagement.utils.TableHeader
 com/example/projectmanagement/databinding/ActivityProjectDetailsBinding.java

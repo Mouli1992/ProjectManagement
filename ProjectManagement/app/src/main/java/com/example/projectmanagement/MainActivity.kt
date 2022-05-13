@@ -125,6 +125,7 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this, "You are signed in Successfully", Toast.LENGTH_SHORT).show()
                         database.collection("userDetails").document(email).get().addOnSuccessListener { document ->
                             val userDetails = document.toObject(UserDetails::class.java)
+                            println("userDetails${userDetails?.role} ")
                             if(userDetails?.role.equals(USER_ROLE_MANAGER)){
                                 val intent = Intent(this@MainActivity, ListingProject::class.java)
                                 intent.putExtra("userId", firebaseUser?.uid)
@@ -134,14 +135,16 @@ class MainActivity : AppCompatActivity() {
                                 intent.putExtra("profileImage", userDetails?.pictureUri)
                                 intent.putExtra("code", INTENT_FROM_LOGIN)
                                 startActivity(intent)
+                                println("userDetails${userDetails?.role} ")
                                 finish()
                             }else{
-                                val intent = Intent(this@MainActivity, ListingProject::class.java)
+                                val intent = Intent(this@MainActivity, ListingProjectTeamMember::class.java)
                                 intent.putExtra("userId", firebaseUser?.uid)
                                 intent.putExtra("email", email)
                                 intent.putExtra("role", userDetails?.role)
                                 intent.putExtra("mobileNo", userDetails?.mobileNo)
                                 startActivity(intent)
+                                println("userDetails${userDetails?.role} ")
                                 finish()
 
                             }
