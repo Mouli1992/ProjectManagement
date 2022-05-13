@@ -21,33 +21,33 @@
         app:layout_constraintTop_toTopOf="@+id/guideline35" />
 
 
-    <TextView
-        android:id="@+id/txtMembersNametmtl"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/shape"
-        android:hint="members name"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline34"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline33"
-        app:layout_constraintTop_toBottomOf="@+id/txtProjectStatustmtl" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtMembersNametmtl"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:background="@drawable/shape"-->
+    <!--        android:hint="members name"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline34"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline33"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txtProjectStatustmtl" />-->
 
-    <TextView
-        android:id="@+id/txtTeamMemberstmtl"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/shape"
-        android:text="Team Members"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline32"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toBottomOf="@+id/txtProjectStatustmtl" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtTeamMemberstmtl"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:background="@drawable/shape"-->
+    <!--        android:text="Team Members"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline32"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline28"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txtProjectStatustmtl" />-->
 
     <TextView
         android:id="@+id/txtProjectStatustmtl"
@@ -64,15 +64,24 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAssignedManagertmtl" />
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rvTasksTeamMember"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/guideline27"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/guideline25"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/guideline24"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/guideline26"-->
-<!--        app:layout_constraintVertical_bias="0.0" />-->
+    <!--        android:id="@+id/rvTasksTeamMember"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline27"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline25"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline24"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline26"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <de.codecrafters.tableview.TableView
+        android:id="@+id/teamLstTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline43"
+        app:layout_constraintEnd_toStartOf="@+id/guideline34"
+        app:layout_constraintStart_toStartOf="@+id/guideline24"
+        app:layout_constraintTop_toTopOf="@+id/guideline44" />
 
     <de.codecrafters.tableview.TableView
         android:id="@+id/teamMemberTv"
@@ -83,13 +92,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline24"
         app:layout_constraintTop_toTopOf="@+id/guideline26"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintVertical_bias="0.0" />
 
-<!--        <de.codecrafters.tableview.TableView-->
-<!--            android:id="@+id/teamMemberLstTableView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="0dp" />-->
-<!--    </de.codecrafters.tableview.TableView>-->
+    <!--        <de.codecrafters.tableview.TableView-->
+    <!--            android:id="@+id/teamMemberLstTableView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp" />-->
+    <!--    </de.codecrafters.tableview.TableView>-->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline24"
@@ -110,14 +119,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.43" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.93" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline28"
@@ -160,5 +169,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16689466" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

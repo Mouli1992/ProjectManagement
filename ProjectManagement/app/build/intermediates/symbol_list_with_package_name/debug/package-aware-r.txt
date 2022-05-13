@@ -2916,6 +2916,8 @@ id guideline4
 id guideline40
 id guideline41
 id guideline42
+id guideline43
+id guideline44
 id guideline5
 id guideline6
 id guideline7
@@ -3166,6 +3168,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id teamLstTv
 id teamMemberTv
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
@@ -3213,7 +3216,6 @@ id txtDeadline
 id txtForgetPassword
 id txtMemberUserName
 id txtMemberUserRole
-id txtMembersNametmtl
 id txtNoProjects
 id txtNoTasks
 id txtNotRegistered
@@ -3228,7 +3230,6 @@ id txtTaskName
 id txtTaskStatus
 id txtTeamMemberTaskName
 id txtTeamMemberTaskStatus
-id txtTeamMemberstmtl
 id txtUserName
 id txtUserRole
 id unchecked

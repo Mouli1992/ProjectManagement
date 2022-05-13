@@ -92,12 +92,12 @@
         "source": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_person.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_menu_logout.png.flat",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-hdpi/ic_menu_logout.png"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_menu_logout.png.flat",
+        "source": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-hdpi/ic_menu_logout.png"
     },
     {
         "merged": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_menu_logout.png.flat",

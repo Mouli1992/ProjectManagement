@@ -2915,6 +2915,8 @@ int id guideline4 0x7f09011c
 int id guideline40 0x7f09011d
 int id guideline41 0x7f09011e
 int id guideline42 0x7f09011f
+int id guideline43 0x7f090273
+int id guideline44 0x7f090274
 int id guideline5 0x7f090120
 int id guideline6 0x7f090121
 int id guideline7 0x7f090122
@@ -3165,6 +3167,7 @@ int id tag_transition_group 0x7f090217
 int id tag_unhandled_key_event_manager 0x7f090218
 int id tag_unhandled_key_listeners 0x7f090219
 int id tag_window_insets_animation_callback 0x7f09021a
+int id teamLstTv 0x7f090275
 int id teamMemberTv 0x7f090272
 int id test_checkbox_android_button_tint 0x7f09021b
 int id test_checkbox_app_button_tint 0x7f09021c
@@ -3212,7 +3215,6 @@ int id txtDeadline 0x7f090245
 int id txtForgetPassword 0x7f090246
 int id txtMemberUserName 0x7f090247
 int id txtMemberUserRole 0x7f090248
-int id txtMembersNametmtl 0x7f090249
 int id txtNoProjects 0x7f09024a
 int id txtNoTasks 0x7f09024b
 int id txtNotRegistered 0x7f09024c
@@ -3227,7 +3229,6 @@ int id txtTaskName 0x7f090254
 int id txtTaskStatus 0x7f090255
 int id txtTeamMemberTaskName 0x7f090256
 int id txtTeamMemberTaskStatus 0x7f090257
-int id txtTeamMemberstmtl 0x7f090258
 int id txtUserName 0x7f090259
 int id txtUserRole 0x7f09025a
 int id unchecked 0x7f09025b
