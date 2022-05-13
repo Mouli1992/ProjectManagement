@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/shape.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/splashscreen.xml" value="0.10277777777777777" />
         <entry key="app/src/main/res/layout/activity_listing_project.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_listing_project_team_member.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_project_details.xml" value="0.2764102564102564" />
         <entry key="app/src/main/res/layout/activity_project_read_only.xml" value="0.5078125" />
@@ -17,6 +18,7 @@
         <entry key="app/src/main/res/layout/recyclerviewtasklist.xml" value="0.2764102564102564" />
         <entry key="app/src/main/res/layout/recyclerviewteammembertasks.xml" value="0.335" />
         <entry key="app/src/main/res/layout/registerlayout.xml" value="0.2874873353596758" />
+        <entry key="app/src/main/res/menu/heading_menu.xml" value="0.23020833333333332" />
       </map>
     </option>
   </component>
