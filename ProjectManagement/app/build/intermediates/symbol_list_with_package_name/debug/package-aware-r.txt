@@ -2902,11 +2902,20 @@ id guideline27
 id guideline28
 id guideline29
 id guideline3
+id guideline30
+id guideline31
 id guideline32
 id guideline33
 id guideline34
 id guideline35
+id guideline36
+id guideline37
+id guideline38
+id guideline39
 id guideline4
+id guideline40
+id guideline41
+id guideline42
 id guideline5
 id guideline6
 id guideline7
@@ -2925,6 +2934,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageTeamManager
+id imageTeamMember
 id imgMainScreen
 id imgProfileImage
 id imgRegisterScreen
@@ -3069,7 +3080,6 @@ id roleSpinner
 id rounded
 id row_index_key
 id rtl
-id rvProjectShown
 id rvTasks
 id rvTasksTeamMember
 id save_non_transition_alpha
@@ -3201,6 +3211,8 @@ id txtAssignedUser
 id txtDatePicker
 id txtDeadline
 id txtForgetPassword
+id txtMemberUserName
+id txtMemberUserRole
 id txtMembersNametmtl
 id txtNoProjects
 id txtNoTasks
@@ -3217,6 +3229,8 @@ id txtTaskStatus
 id txtTeamMemberTaskName
 id txtTeamMemberTaskStatus
 id txtTeamMemberstmtl
+id txtUserName
+id txtUserRole
 id unchecked
 id uniform
 id unlabeled

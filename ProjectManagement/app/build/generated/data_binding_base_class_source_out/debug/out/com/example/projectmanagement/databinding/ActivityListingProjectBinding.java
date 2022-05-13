@@ -5,12 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
@@ -33,6 +33,18 @@ public final class ActivityListingProjectBinding implements ViewBinding {
   public final Guideline guideline3;
 
   @NonNull
+  public final Guideline guideline30;
+
+  @NonNull
+  public final Guideline guideline31;
+
+  @NonNull
+  public final Guideline guideline36;
+
+  @NonNull
+  public final Guideline guideline37;
+
+  @NonNull
   public final Guideline guideline4;
 
   @NonNull
@@ -42,7 +54,7 @@ public final class ActivityListingProjectBinding implements ViewBinding {
   public final Guideline guideline6;
 
   @NonNull
-  public final RecyclerView rvProjectShown;
+  public final ImageView imageTeamManager;
 
   @NonNull
   public final TableView tableView;
@@ -50,21 +62,36 @@ public final class ActivityListingProjectBinding implements ViewBinding {
   @NonNull
   public final TextView txtNoProjects;
 
+  @NonNull
+  public final TextView txtUserName;
+
+  @NonNull
+  public final TextView txtUserRole;
+
   private ActivityListingProjectBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnAddProject, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
-      @NonNull Guideline guideline4, @NonNull Guideline guideline5, @NonNull Guideline guideline6,
-      @NonNull RecyclerView rvProjectShown, @NonNull TableView tableView,
-      @NonNull TextView txtNoProjects) {
+      @NonNull Guideline guideline30, @NonNull Guideline guideline31,
+      @NonNull Guideline guideline36, @NonNull Guideline guideline37, @NonNull Guideline guideline4,
+      @NonNull Guideline guideline5, @NonNull Guideline guideline6,
+      @NonNull ImageView imageTeamManager, @NonNull TableView tableView,
+      @NonNull TextView txtNoProjects, @NonNull TextView txtUserName,
+      @NonNull TextView txtUserRole) {
     this.rootView = rootView;
     this.btnAddProject = btnAddProject;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
+    this.guideline30 = guideline30;
+    this.guideline31 = guideline31;
+    this.guideline36 = guideline36;
+    this.guideline37 = guideline37;
     this.guideline4 = guideline4;
     this.guideline5 = guideline5;
     this.guideline6 = guideline6;
-    this.rvProjectShown = rvProjectShown;
+    this.imageTeamManager = imageTeamManager;
     this.tableView = tableView;
     this.txtNoProjects = txtNoProjects;
+    this.txtUserName = txtUserName;
+    this.txtUserRole = txtUserRole;
   }
 
   @Override
@@ -112,6 +139,30 @@ public final class ActivityListingProjectBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline30;
+      Guideline guideline30 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline30 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline31;
+      Guideline guideline31 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline31 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline36;
+      Guideline guideline36 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline36 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline37;
+      Guideline guideline37 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline37 == null) {
+        break missingId;
+      }
+
       id = R.id.guideline4;
       Guideline guideline4 = ViewBindings.findChildViewById(rootView, id);
       if (guideline4 == null) {
@@ -130,9 +181,9 @@ public final class ActivityListingProjectBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rvProjectShown;
-      RecyclerView rvProjectShown = ViewBindings.findChildViewById(rootView, id);
-      if (rvProjectShown == null) {
+      id = R.id.imageTeamManager;
+      ImageView imageTeamManager = ViewBindings.findChildViewById(rootView, id);
+      if (imageTeamManager == null) {
         break missingId;
       }
 
@@ -148,9 +199,22 @@ public final class ActivityListingProjectBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtUserName;
+      TextView txtUserName = ViewBindings.findChildViewById(rootView, id);
+      if (txtUserName == null) {
+        break missingId;
+      }
+
+      id = R.id.txtUserRole;
+      TextView txtUserRole = ViewBindings.findChildViewById(rootView, id);
+      if (txtUserRole == null) {
+        break missingId;
+      }
+
       return new ActivityListingProjectBinding((ConstraintLayout) rootView, btnAddProject,
-          guideline2, guideline3, guideline4, guideline5, guideline6, rvProjectShown, tableView,
-          txtNoProjects);
+          guideline2, guideline3, guideline30, guideline31, guideline36, guideline37, guideline4,
+          guideline5, guideline6, imageTeamManager, tableView, txtNoProjects, txtUserName,
+          txtUserRole);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

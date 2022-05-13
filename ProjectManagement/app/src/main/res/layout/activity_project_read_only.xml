@@ -82,9 +82,8 @@
 
 
     <de.codecrafters.tableview.TableView
-        xmlns:table="http://schemas.android.com/apk/res-auto"
         android:id="@+id/tableReadOnlyTaskView"
-        android:layout_width="367dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
