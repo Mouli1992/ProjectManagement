@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -28,7 +27,7 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
   public final Button btnSubmitTask;
 
   @NonNull
-  public final DatePicker dteTaskDeadline;
+  public final EditText dteTaskDeadline;
 
   @NonNull
   public final EditText edtTaskName;
@@ -64,7 +63,7 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
   public final TextView txtTaskStatus;
 
   private ActivityProjectsTasksBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnSubmitTask, @NonNull DatePicker dteTaskDeadline,
+      @NonNull Button btnSubmitTask, @NonNull EditText dteTaskDeadline,
       @NonNull EditText edtTaskName, @NonNull Guideline guideline16, @NonNull Guideline guideline20,
       @NonNull Guideline guideline22, @NonNull Guideline guideline23,
       @NonNull Spinner spinnerAssignedUser, @NonNull TextView txtAssigned,
@@ -120,7 +119,7 @@ public final class ActivityProjectsTasksBinding implements ViewBinding {
       }
 
       id = R.id.dteTaskDeadline;
-      DatePicker dteTaskDeadline = ViewBindings.findChildViewById(rootView, id);
+      EditText dteTaskDeadline = ViewBindings.findChildViewById(rootView, id);
       if (dteTaskDeadline == null) {
         break missingId;
       }

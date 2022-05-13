@@ -1,5 +1,6 @@
 package com.example.projectmanagement
 
+import android.app.DatePickerDialog
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,10 +16,12 @@ import com.google.gson.Gson
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TeamMemberEmailViewModel
 import com.example.projectmanagement.utils.INTENT_FROM_TASK_LIST
+import java.text.SimpleDateFormat
+import java.util.*
 
 private lateinit var buttonSubmitTask: Button
 private lateinit var edtTaskName : EditText
-private lateinit var datePicker: DatePicker
+private lateinit var taskDeadline: EditText
 private lateinit var taskStatus : TextView
 private lateinit var teamMemberEmailViewModel: TeamMemberEmailViewModel
 private lateinit var listOfTeamMembers : MutableList<String>
@@ -33,7 +36,10 @@ class ProjectsTasks : AppCompatActivity() {
         setContentView(R.layout.activity_projects_tasks)
         edtTaskName = findViewById(R.id.edtTaskName)
         //assignedUser = findViewById(R.id.edtAssignedUser)
-        datePicker = findViewById(R.id.dteTaskDeadline)
+        taskDeadline = findViewById(R.id.dteTaskDeadline)
+        taskDeadline.setOnClickListener{
+            openDatePickerDialog()
+        }
         taskStatus = findViewById(R.id.txtAssigned)
         buttonSubmitTask= findViewById<Button>(R.id.btnSubmitTask)
         context = this
@@ -45,7 +51,11 @@ class ProjectsTasks : AppCompatActivity() {
         println(intent.getStringExtra("json"))
         println(intent.getStringExtra("code"))
         buttonSubmitTask.setOnClickListener{
-            task.taskDeadline = Timestamp.now()
+            val sdf : SimpleDateFormat = SimpleDateFormat("dd-MM-yyyy")
+            println("Task Deadline${taskDeadline.text.toString()}")
+            val date: Date = sdf.parse(taskDeadline.text.toString())
+            println(date.toString())
+            task.taskDeadline = Timestamp(date)
             task.taskId = Timestamp.now().nanoseconds.toLong()
             task.taskName = edtTaskName.text.toString()
             task.taskStatus = taskStatus.text.toString()
@@ -68,6 +78,21 @@ class ProjectsTasks : AppCompatActivity() {
         }
 
     }
+
+    private fun openDatePickerDialog() {
+        // Get Current Date
+        val cal: Calendar = Calendar.getInstance()
+        val datePickerDialog = DatePickerDialog(this@ProjectsTasks,
+            { view, year, monthOfYear, dayOfMonth ->
+                val selectedDate: String =
+                    dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year
+                taskDeadline.setText(selectedDate)
+            }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)
+        )
+        datePickerDialog.datePicker.minDate = cal.timeInMillis
+        datePickerDialog.show()
+    }
+
 
     private fun getTeamMemberEmails(role: String) {
         teamMemberEmailViewModel.getTeamMemberDetails(object : FirestoreCallback{

@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt 2/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/chandramouli/Downloads/git12052021/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
-                {
-                    "source": "/Users/chandramouli/Downloads/PrjMgmt 2/ProjectManagement/app/src/main/res/values-night/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "826"
-                    },
-                    "to": {
-                        "startLines": "33",
-                        "startColumns": "4",
-                        "startOffsets": "3386",
-                        "endLines": "45",
-                        "endColumns": "12",
-                        "endOffsets": "4110"
-                    }
-                },
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
@@ -37,6 +18,25 @@
                         "startOffsets": "732,807,918,1007,1108,1215,1322,1421,1524,1612,1736,1838,1940,2056,2158,2272,2400,2516,2638,2774,2894,3028,3148,3260,4204,4321,4445,4575,4697,4835,4969,5085",
                         "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "802,913,1002,1103,1210,1317,1416,1519,1607,1731,1833,1935,2051,2153,2267,2395,2511,2633,2769,2889,3023,3143,3255,3381,4316,4440,4570,4692,4830,4964,5080,5200"
+                    }
+                },
+                {
+                    "source": "/Users/chandramouli/Downloads/git12052021/PrjMgmt/ProjectManagement/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "826"
+                    },
+                    "to": {
+                        "startLines": "33",
+                        "startColumns": "4",
+                        "startOffsets": "3386",
+                        "endLines": "45",
+                        "endColumns": "12",
+                        "endOffsets": "4110"
                     }
                 },
                 {

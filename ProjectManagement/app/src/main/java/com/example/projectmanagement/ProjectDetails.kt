@@ -1,5 +1,6 @@
 package com.example.projectmanagement
 
+import android.app.DatePickerDialog
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,8 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 import de.codecrafters.tableview.TableView
+import java.text.SimpleDateFormat
+import java.time.LocalDate
 import java.util.*
 
 lateinit var submitPB:Button
@@ -23,13 +26,14 @@ lateinit var submitPB:Button
 private lateinit var tableView: TableView<com.example.projectmanagement.model.TaskDetails>
 private lateinit var txtNoTasks: TextView
 private lateinit var projectName: EditText
-private lateinit var prjDeadline: DatePicker
+private lateinit var prjDeadline: EditText
 private lateinit var createdBy: EditText
 private lateinit var projectDetails : ProjectDetails
 private lateinit var taskList: MutableList<TaskDetails>
 private var database = Firebase.firestore
 private lateinit var datePicker : DatePicker
 private lateinit var context: Context
+private lateinit var buttonAddProjectTasks : Button
 
 class ProjectDetails : AppCompatActivity() {
     companion object{
@@ -39,7 +43,7 @@ class ProjectDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_ProjectManagement)
         setContentView(R.layout.activity_project_details)
-        val buttonAddProjectTasks = findViewById<Button>(R.id.btnAddTasks)
+        buttonAddProjectTasks = findViewById<Button>(R.id.btnAddTasks)
         //taskRecyclerView = findViewById(R.id.rvTasks)
         tableView = findViewById(R.id.rvTasks)
         txtNoTasks= findViewById(R.id.txtNoTasks)
@@ -47,10 +51,15 @@ class ProjectDetails : AppCompatActivity() {
         prjDeadline = findViewById(R.id.dteProjectDeadline)
         createdBy = findViewById(R.id.edtCreatedBy)
         context = this
-        val mcurrentTime = Calendar.getInstance()
-        val year = mcurrentTime.get(Calendar.YEAR)
-        val month = mcurrentTime.get(Calendar.MONTH)
-        val day = mcurrentTime.get(Calendar.DAY_OF_MONTH)
+        prjDeadline.setOnClickListener{
+            openDatePickerDialog()
+
+        }
+
+//        val mcurrentTime = Calendar.getInstance()
+//        val year = mcurrentTime.get(Calendar.YEAR)
+//        val month = mcurrentTime.get(Calendar.MONTH)
+//        val day = mcurrentTime.get(Calendar.DAY_OF_MONTH)
 
 
 //        val datePicker = DatePickerDialog(this,
@@ -108,12 +117,18 @@ class ProjectDetails : AppCompatActivity() {
         buttonAddProjectTasks.setOnClickListener {
             if(intent.getStringExtra("code").equals(INTENT_FROM_PROJECT_LIST)){
                 projectDetails = ProjectDetails()
-                projectDetails.projectDeadline = Timestamp.now()
+                val sdf : SimpleDateFormat = SimpleDateFormat("dd-MM-yyyy")
+                println("Project Deadline${prjDeadline.text.toString()}")
+                val date: Date = sdf.parse(prjDeadline.text.toString())
+                println(date.toString())
+                projectDetails.projectDeadline = Timestamp(date)
                 projectDetails.projectName = projectName.text.toString()
                 projectDetails.projectCreatedBy = createdBy.text.toString()
                 projectDetails.createdAt = Timestamp.now()
                 projectDetails.projectId= Timestamp.now().nanoseconds.toLong()
                 projectDetails.projectStatus = PROJECT_STATUS_PENDING
+
+                println(projectDetails)
             }
 
             val taskLstIntent = Intent(this@ProjectDetails, ProjectsTasks::class.java)
@@ -143,6 +158,20 @@ class ProjectDetails : AppCompatActivity() {
 
                 }
             }
+
+    private fun openDatePickerDialog() {
+        // Get Current Date
+        val cal: Calendar = Calendar.getInstance()
+        val datePickerDialog = DatePickerDialog(this@ProjectDetails,
+            { view, year, monthOfYear, dayOfMonth ->
+                val selectedDate: String =
+                    dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year
+                prjDeadline.setText(selectedDate)
+            }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)
+        )
+        datePickerDialog.datePicker.minDate = cal.timeInMillis
+        datePickerDialog.show()
+    }
 
 
 

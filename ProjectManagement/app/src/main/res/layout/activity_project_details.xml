@@ -93,14 +93,14 @@
       android:id="@+id/txtDeadline"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginTop="72dp"
+      android:layout_marginTop="40dp"
       android:background="@drawable/shape"
       android:gravity="start"
       android:text="deadline"
       android:textColor="#000000"
       android:textStyle="bold"
       app:layout_constraintEnd_toStartOf="@+id/guideline17"
-      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
       app:layout_constraintTop_toBottomOf="@+id/txtProjectName" />
 
@@ -147,14 +147,26 @@
 <!--      app:layout_constraintStart_toStartOf="@+id/guideline19"-->
 <!--      app:layout_constraintTop_toBottomOf="@+id/edtProjectName" />-->
 
-  <DatePicker
+<!--  <DatePicker-->
+<!--      android:id="@+id/dteProjectDeadline"-->
+<!--      android:layout_width="0dp"-->
+<!--      android:layout_height="100dp"-->
+<!--      android:layout_marginTop="28dp"-->
+<!--      android:background="@drawable/shape"-->
+<!--      android:calendarViewShown="false"-->
+<!--      android:datePickerMode="spinner"-->
+<!--      app:layout_constraintEnd_toStartOf="@+id/guideline21"-->
+<!--      app:layout_constraintHorizontal_bias="0.0"-->
+<!--      app:layout_constraintStart_toStartOf="@+id/guideline19"-->
+<!--      app:layout_constraintTop_toBottomOf="@+id/edtProjectName" />-->
+
+  <EditText
       android:id="@+id/dteProjectDeadline"
-      android:layout_width="0dp"
-      android:layout_height="100dp"
+      android:layout_width="225dp"
+      android:layout_height="55dp"
       android:layout_marginTop="28dp"
       android:background="@drawable/shape"
-      android:calendarViewShown="false"
-      android:datePickerMode="spinner"
+      android:hint="Project Deadline"
       app:layout_constraintEnd_toStartOf="@+id/guideline21"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="@+id/guideline19"
