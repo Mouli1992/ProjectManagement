@@ -61,7 +61,6 @@ class FirebaseStorageManager {
                 Toast.makeText(context, "User registration Failed", Toast.LENGTH_SHORT).show()
                 return@addOnCompleteListener
             }
-
         }
 
 

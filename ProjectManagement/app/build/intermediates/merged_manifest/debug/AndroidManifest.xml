@@ -42,6 +42,9 @@
             android:name="com.example.projectmanagement.ListingProjectTeamMember"
             android:exported="false" />
         <activity
+            android:name="com.example.projectmanagement.TeamMemberTaskList"
+            android:exported="false" />
+        <activity
             android:name="com.example.projectmanagement.ProjectsTasks"
             android:exported="false" />
         <activity

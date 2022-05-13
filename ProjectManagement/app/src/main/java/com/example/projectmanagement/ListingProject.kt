@@ -147,6 +147,10 @@ class ListingProject : AppCompatActivity()  {
             override fun onOneProjectDetailsCallback(projectDetails: ProjectDetails) {
                 TODO("Not yet implemented")
             }
+
+            override fun onTeamMemberProjectCallback(projectDetails: MutableList<ProjectDetails>) {
+                TODO("Not yet implemented")
+            }
         }, email = email)
 
     }
@@ -165,6 +169,10 @@ class ListingProject : AppCompatActivity()  {
            }
 
            override fun onOneProjectDetailsCallback(projectDetails: ProjectDetails) {
+               TODO("Not yet implemented")
+           }
+
+           override fun onTeamMemberProjectCallback(projectDetails: MutableList<ProjectDetails>) {
                TODO("Not yet implemented")
            }
        }, role = "Team Member")

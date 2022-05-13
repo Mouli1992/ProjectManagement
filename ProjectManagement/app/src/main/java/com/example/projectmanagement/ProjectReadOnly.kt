@@ -83,6 +83,10 @@ class ProjectReadOnly : AppCompatActivity() {
                 createdBy.isEnabled=false
                 prjDeadline.isEnabled=false
             }
+
+            override fun onTeamMemberProjectCallback(projectDetails: MutableList<ProjectDetails>) {
+                TODO("Not yet implemented")
+            }
         }, projectId = projectId)
 
     }

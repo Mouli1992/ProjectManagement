@@ -29,6 +29,9 @@
             android:name=".ListingProjectTeamMember"
             android:exported="false" />
         <activity
+            android:name=".TeamMemberTaskList"
+            android:exported="false" />
+        <activity
             android:name=".ProjectsTasks"
             android:exported="false" />
         <activity

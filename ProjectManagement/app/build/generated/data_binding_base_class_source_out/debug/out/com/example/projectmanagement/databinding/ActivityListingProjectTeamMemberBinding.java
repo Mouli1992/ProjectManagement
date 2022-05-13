@@ -53,7 +53,7 @@ public final class ActivityListingProjectTeamMemberBinding implements ViewBindin
   public final ImageView imageTeamMember;
 
   @NonNull
-  public final TableView tableViewProjectlslistingTeamMember;
+  public final TableView tableViewProjectListingTeamMember;
 
   @NonNull
   public final TextView txtMemberUserName;
@@ -65,7 +65,7 @@ public final class ActivityListingProjectTeamMemberBinding implements ViewBindin
       @NonNull Guideline guideline3, @NonNull Guideline guideline38, @NonNull Guideline guideline39,
       @NonNull Guideline guideline4, @NonNull Guideline guideline40, @NonNull Guideline guideline41,
       @NonNull Guideline guideline42, @NonNull Guideline guideline5, @NonNull Guideline guideline6,
-      @NonNull ImageView imageTeamMember, @NonNull TableView tableViewProjectlslistingTeamMember,
+      @NonNull ImageView imageTeamMember, @NonNull TableView tableViewProjectListingTeamMember,
       @NonNull TextView txtMemberUserName, @NonNull TextView txtMemberUserRole) {
     this.rootView = rootView;
     this.guideline3 = guideline3;
@@ -78,7 +78,7 @@ public final class ActivityListingProjectTeamMemberBinding implements ViewBindin
     this.guideline5 = guideline5;
     this.guideline6 = guideline6;
     this.imageTeamMember = imageTeamMember;
-    this.tableViewProjectlslistingTeamMember = tableViewProjectlslistingTeamMember;
+    this.tableViewProjectListingTeamMember = tableViewProjectListingTeamMember;
     this.txtMemberUserName = txtMemberUserName;
     this.txtMemberUserRole = txtMemberUserRole;
   }
@@ -170,9 +170,9 @@ public final class ActivityListingProjectTeamMemberBinding implements ViewBindin
         break missingId;
       }
 
-      id = R.id.tableViewProjectlslistingTeamMember;
-      TableView tableViewProjectlslistingTeamMember = ViewBindings.findChildViewById(rootView, id);
-      if (tableViewProjectlslistingTeamMember == null) {
+      id = R.id.tableViewProjectListingTeamMember;
+      TableView tableViewProjectListingTeamMember = ViewBindings.findChildViewById(rootView, id);
+      if (tableViewProjectListingTeamMember == null) {
         break missingId;
       }
 
@@ -190,7 +190,7 @@ public final class ActivityListingProjectTeamMemberBinding implements ViewBindin
 
       return new ActivityListingProjectTeamMemberBinding((ConstraintLayout) rootView, guideline3,
           guideline38, guideline39, guideline4, guideline40, guideline41, guideline42, guideline5,
-          guideline6, imageTeamMember, tableViewProjectlslistingTeamMember, txtMemberUserName,
+          guideline6, imageTeamMember, tableViewProjectListingTeamMember, txtMemberUserName,
           txtMemberUserRole);
     }
     String missingId = rootView.getResources().getResourceName(id);

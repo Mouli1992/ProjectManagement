@@ -61,6 +61,21 @@ class FirestoreRepository {
             return@addOnCompleteListener
 
         }
+    }
 
-        }
+    fun getTeamMemberProjectDetails(projectDetailsCallback: FirestoreCallback, email : String) {
+        var projectDetails = mutableListOf<ProjectDetails>()
+        database.collection("projectDetails").whereArrayContains("teamLst", email).get()
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    projectDetails = task.result.toObjects(ProjectDetails::class.java)
+                    println(projectDetails)
+                } else {
+                    Log.e(TAG, "Error in getManagerProjectDetails Details :", task.exception)
+                }
+                projectDetailsCallback.onTeamMemberProjectCallback(projectDetails)
+                return@addOnCompleteListener
+
+            }
+    }
 }
