@@ -2,35 +2,34 @@ package com.example.projectmanagement
 
 import android.content.Context
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.EditText
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
-import com.example.projectmanagement.model.OneProjectDetailsViewModel
+import com.example.projectmanagement.model.*
 import com.example.projectmanagement.model.ProjectDetails
-import com.example.projectmanagement.model.TaskDetails
-import com.example.projectmanagement.model.TeamDetails
 import com.example.projectmanagement.table.project.TaskTableViewAdaptor
-import com.example.projectmanagement.table.project.TeamLstTableAdaptor
 import com.example.projectmanagement.utils.TableHeader
 import de.codecrafters.tableview.TableView
 
 class TeamMemberTaskList : AppCompatActivity() {
-    private lateinit var managerName : TextView
-    private lateinit var projectStatus : TextView
+    private lateinit var managerName : EditText
+    private lateinit var projectStatus : EditText
     private lateinit var taskTableView : TableView<TaskDetails>
     private lateinit var projectDetailsViewModel : OneProjectDetailsViewModel
     private lateinit var context: Context
     private lateinit var teamLstTv : TableView<TeamDetails>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_team_member_task_list)
 
-        managerName = findViewById(R.id.txtAssignedManagertmtl)
-        projectStatus = findViewById(R.id.txtProjectStatustmtl)
+        managerName = findViewById(R.id.edtProjectManagerName)
+        projectStatus = findViewById(R.id.edtProjectStatus)
         //teamMemberTaskList = findViewById(R.id.txtMembersNametmtl)
         teamLstTv = findViewById(R.id.teamLstTv)
         taskTableView = findViewById(R.id.teamMemberTv)
@@ -48,6 +47,13 @@ class TeamMemberTaskList : AppCompatActivity() {
         when(item.itemId){
             R.id.menuLogout-> Intent(this@TeamMemberTaskList, MainActivity::class.java).also {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK )
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                startActivity(it)
+
+            }
+
+            R.id.menuHome-> Intent(this@TeamMemberTaskList, ListingProjectTeamMember::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(it)
             }
@@ -100,6 +106,4 @@ class TeamMemberTaskList : AppCompatActivity() {
         println("teamDetailsLst :: $teamDetailsLst")
         return teamDetailsLst
     }
-
-
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/ef4734bc28bd4bb1328ec87ff041e6ed/transformed/core-1.7.0/res/values-en-rAU/values-en-rAU.xml",

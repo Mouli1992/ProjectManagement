@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
+                {
+                    "source": "/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "826"
+                    },
+                    "to": {
+                        "startLines": "33",
+                        "startColumns": "4",
+                        "startOffsets": "3386",
+                        "endLines": "45",
+                        "endColumns": "12",
+                        "endOffsets": "4110"
+                    }
+                },
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
@@ -35,25 +54,6 @@
                         "startOffsets": "100,170,254,338,434,536,638,4115",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "165,249,333,429,531,633,727,4199"
-                    }
-                },
-                {
-                    "source": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/res/values-night/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "826"
-                    },
-                    "to": {
-                        "startLines": "33",
-                        "startColumns": "4",
-                        "startOffsets": "3386",
-                        "endLines": "45",
-                        "endColumns": "12",
-                        "endOffsets": "4110"
                     }
                 }
             ]

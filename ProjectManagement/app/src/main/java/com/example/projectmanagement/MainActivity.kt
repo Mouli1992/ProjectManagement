@@ -115,54 +115,63 @@ class MainActivity : AppCompatActivity() {
             TextUtils.isEmpty(pwd.text.toString().trim{it <= ' '}) ->{
                 Toast.makeText(this@MainActivity,"Please enter password", Toast.LENGTH_SHORT).show()
             }else -> {
-            val email = email.text.toString().trim {it <= ' '}
-            val pwd = pwd.text.toString().trim{it <= ' '}
+            val email = email.text.toString().trim { it <= ' ' }
+            val pwd = pwd.text.toString().trim { it <= ' ' }
 
-            FirebaseAuth.getInstance().signInWithEmailAndPassword(email,pwd)
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pwd)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         firebaseUser = task.result!!.user!!
-                        Toast.makeText(this, "You are signed in Successfully", Toast.LENGTH_SHORT).show()
-                        database.collection("userDetails").document(email).get().addOnSuccessListener { document ->
-                            val userDetails = document.toObject(UserDetails::class.java)
-                            println("userDetails${userDetails?.role} ")
-                            if(userDetails?.role.equals(USER_ROLE_MANAGER)){
-                                val intent = Intent(this@MainActivity, ListingProject::class.java)
-                                intent.putExtra("userId", firebaseUser?.uid)
-                                intent.putExtra("email", email)
-                                intent.putExtra("role", userDetails?.role)
-                                intent.putExtra("mobileNo", userDetails?.mobileNo)
-                                intent.putExtra("profileImage", userDetails?.pictureUri)
-                                intent.putExtra("code", INTENT_FROM_LOGIN)
-                                startActivity(intent)
+                        Toast.makeText(this, "You are signed in Successfully", Toast.LENGTH_SHORT)
+                            .show()
+                        database.collection("userDetails").document(email).get()
+                            .addOnSuccessListener { document ->
+                                val userDetails = document.toObject(UserDetails::class.java)
                                 println("userDetails${userDetails?.role} ")
-                                finish()
-                            }else{
-                                val intent = Intent(this@MainActivity, ListingProjectTeamMember::class.java)
-                                intent.putExtra("userId", firebaseUser?.uid)
-                                intent.putExtra("email", email)
-                                intent.putExtra("role", userDetails?.role)
-                                intent.putExtra("mobileNo", userDetails?.mobileNo)
-                                startActivity(intent)
-                                println("userDetails${userDetails?.role} ")
-                                finish()
+                                if (userDetails?.role.equals(USER_ROLE_MANAGER)) {
+                                    val intent =
+                                        Intent(this@MainActivity, ListingProject::class.java)
+                                    intent.putExtra("userId", firebaseUser?.uid)
+                                    intent.putExtra("email", email)
+                                    intent.putExtra("role", userDetails?.role)
+                                    intent.putExtra("mobileNo", userDetails?.mobileNo)
+                                    intent.putExtra("profileImage", userDetails?.pictureUri)
+                                    intent.putExtra("code", INTENT_FROM_LOGIN)
+                                    intent.putExtra("name", userDetails?.name)
+                                    startActivity(intent)
+                                    println("userDetails${userDetails?.role} ")
+                                    finish()
+                                } else {
+                                    val intent = Intent(
+                                        this@MainActivity,
+                                        ListingProjectTeamMember::class.java
+                                    )
+                                    intent.putExtra("userId", firebaseUser?.uid)
+                                    intent.putExtra("email", email)
+                                    intent.putExtra("role", userDetails?.role)
+                                    intent.putExtra("mobileNo", userDetails?.mobileNo)
+                                    intent.putExtra("profileImage", userDetails?.pictureUri)
+                                    startActivity(intent)
+                                    println("userDetails${userDetails?.role} ")
+                                    finish()
+
+                                }
 
                             }
-
-                        }
                     }
                 }
-                .addOnFailureListener{ exception ->
-                    Log.e(TAG, "Encountered error while authenticating the user",exception)
-                    Toast.makeText(this, "Encountered error while authentication", Toast.LENGTH_SHORT).show()
+                .addOnFailureListener { exception ->
+                    Log.e(TAG, "Encountered error while authenticating the user", exception)
+                    Toast.makeText(
+                        this,
+                        "Encountered error while authentication",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
 
 
         }
-
-
         }
-
     }
 
 

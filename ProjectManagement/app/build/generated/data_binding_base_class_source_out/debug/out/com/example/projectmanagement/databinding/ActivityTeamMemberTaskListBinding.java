@@ -4,6 +4,7 @@ package com.example.projectmanagement.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,12 @@ import java.lang.String;
 public final class ActivityTeamMemberTaskListBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final EditText edtProjectManagerName;
+
+  @NonNull
+  public final EditText edtProjectStatus;
 
   @NonNull
   public final Guideline guideline24;
@@ -70,6 +77,7 @@ public final class ActivityTeamMemberTaskListBinding implements ViewBinding {
   public final TextView txtProjectStatustmtl;
 
   private ActivityTeamMemberTaskListBinding(@NonNull ConstraintLayout rootView,
+      @NonNull EditText edtProjectManagerName, @NonNull EditText edtProjectStatus,
       @NonNull Guideline guideline24, @NonNull Guideline guideline25,
       @NonNull Guideline guideline26, @NonNull Guideline guideline27,
       @NonNull Guideline guideline28, @NonNull Guideline guideline29,
@@ -79,6 +87,8 @@ public final class ActivityTeamMemberTaskListBinding implements ViewBinding {
       @NonNull TableView teamMemberTv, @NonNull TextView txtAssignedManagertmtl,
       @NonNull TextView txtProjectStatustmtl) {
     this.rootView = rootView;
+    this.edtProjectManagerName = edtProjectManagerName;
+    this.edtProjectStatus = edtProjectStatus;
     this.guideline24 = guideline24;
     this.guideline25 = guideline25;
     this.guideline26 = guideline26;
@@ -124,6 +134,18 @@ public final class ActivityTeamMemberTaskListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.edtProjectManagerName;
+      EditText edtProjectManagerName = ViewBindings.findChildViewById(rootView, id);
+      if (edtProjectManagerName == null) {
+        break missingId;
+      }
+
+      id = R.id.edtProjectStatus;
+      EditText edtProjectStatus = ViewBindings.findChildViewById(rootView, id);
+      if (edtProjectStatus == null) {
+        break missingId;
+      }
+
       id = R.id.guideline24;
       Guideline guideline24 = ViewBindings.findChildViewById(rootView, id);
       if (guideline24 == null) {
@@ -220,10 +242,11 @@ public final class ActivityTeamMemberTaskListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTeamMemberTaskListBinding((ConstraintLayout) rootView, guideline24,
-          guideline25, guideline26, guideline27, guideline28, guideline29, guideline32, guideline33,
-          guideline34, guideline35, guideline43, guideline44, teamLstTv, teamMemberTv,
-          txtAssignedManagertmtl, txtProjectStatustmtl);
+      return new ActivityTeamMemberTaskListBinding((ConstraintLayout) rootView,
+          edtProjectManagerName, edtProjectStatus, guideline24, guideline25, guideline26,
+          guideline27, guideline28, guideline29, guideline32, guideline33, guideline34, guideline35,
+          guideline43, guideline44, teamLstTv, teamMemberTv, txtAssignedManagertmtl,
+          txtProjectStatustmtl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

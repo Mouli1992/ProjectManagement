@@ -9,6 +9,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
+import android.widget.ImageView
 import android.widget.Button as Button
 import android.widget.TextView
 import androidx.core.view.isVisible
@@ -26,6 +27,7 @@ import com.example.projectmanagement.utils.*
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.squareup.picasso.Picasso
 import de.codecrafters.tableview.TableView
 import java.util.*
 
@@ -39,6 +41,9 @@ class ListingProject : AppCompatActivity()  {
     private lateinit var managerProjectDetailsViewModel : ProjectDetailsViewModel
     private lateinit var tableView: TableView<ProjectDetails>
     private lateinit var context : Context
+    private lateinit var profilePic: ImageView
+    private lateinit var name : TextView
+    private lateinit var role :TextView
     companion object{
         private const val TAG = "ListingProject"
         private const val CREATE_REQUEST_CODE = 248
@@ -77,6 +82,15 @@ class ListingProject : AppCompatActivity()  {
         getTeamMemberEmails(USER_ROLE_TEAM_MEMBER)
         managerProjectDetailsViewModel = ViewModelProvider(this).get(ProjectDetailsViewModel::class.java)
         val intent = intent
+        profilePic = findViewById(R.id.imageTeamManager)
+        if(null != intent.getStringExtra("profileImage")) {
+            Picasso.get().load(intent.getStringExtra("profileImage")).into(profilePic);
+        }
+        name = findViewById(R.id.txtUserName)
+        role = findViewById(R.id.txtUserRole)
+        name.text = "Name :"+intent.getStringExtra("name")
+        name.isEnabled = false
+        role.text = "Role :"+intent.getStringExtra("role")
         getProjectDetailsOfManager(intent.getStringExtra("email")!!)
         buttonAddProject = findViewById<Button>(R.id.btnAddProject)
 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "/Users/chandramouli/.gradle/caches/transforms-3/5a1d233fbd76010039e72b23df41acb5/transformed/appcompat-1.4.1/res/values-en-rCA/values-en-rCA.xml",

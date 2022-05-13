@@ -11,5 +11,10 @@
         android:title="Logout"
         android:icon="@mipmap/ic_menu_logout"
         app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menuHome"
+        android:title="Home"
+        android:icon="@mipmap/ic_menu_home"
+        app:showAsAction="ifRoom"/>
 
 </menu>

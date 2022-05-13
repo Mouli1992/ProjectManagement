@@ -2568,6 +2568,8 @@ drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
 drawable ic_mail
+drawable ic_menu_home_background
+drawable ic_menu_home_foreground
 drawable ic_menu_logout_background
 drawable ic_menu_logout_foreground
 drawable ic_mtrl_checked_circle
@@ -2842,7 +2844,9 @@ id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id edtCreatedBy
 id edtDeadline
+id edtProjectManagerName
 id edtProjectName
+id edtProjectStatus
 id edtRdProjectName
 id edtTaskName
 id elastic
@@ -2991,6 +2995,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id media_actions
+id menuHome
 id menuImage
 id menuLogout
 id message
@@ -3473,6 +3478,8 @@ mipmap ic_launcher_round
 mipmap ic_light_sortable
 mipmap ic_light_sorted_asc
 mipmap ic_light_sorted_desc
+mipmap ic_menu_home
+mipmap ic_menu_home_round
 mipmap ic_menu_logout
 mipmap ic_menu_logout_round
 navigation nav_graph

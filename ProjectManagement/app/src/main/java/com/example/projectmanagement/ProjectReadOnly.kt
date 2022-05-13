@@ -103,6 +103,12 @@ class ProjectReadOnly : AppCompatActivity() {
                 startActivity(it)
 
             }
+
+            R.id.menuHome-> Intent(this@ProjectReadOnly, ListingProjectTeamMember::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                startActivity(it)
+            }
         }
         return super.onOptionsItemSelected(item)
     }

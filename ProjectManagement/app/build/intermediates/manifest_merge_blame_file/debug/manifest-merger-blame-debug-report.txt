@@ -6,16 +6,16 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml
+8-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml
+9-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-12-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:6:5-82
-12-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:6:22-79
+12-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:6:5-82
+12-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:6:22-79
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 13-->[com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:24:5-79
 13-->[com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:24:22-76
@@ -24,105 +24,105 @@
 14-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:26:22-65
 15
 16    <application
-16-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:8:5-57:19
+16-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:8:5-57:19
 17        android:allowBackup="true"
-17-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:9:9-35
+17-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:9:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.7.0] /Users/chandramouli/.gradle/caches/transforms-3/ef4734bc28bd4bb1328ec87ff041e6ed/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:extractNativeLibs="false"
 21        android:icon="@mipmap/ic_launcher"
-21-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:10:9-43
+21-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:10:9-43
 22        android:label="@string/app_name"
-22-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:11:9-41
+22-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:11:9-41
 23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:12:9-54
+23-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:12:9-54
 24        android:supportsRtl="true"
-24-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:13:9-35
+24-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:13:9-35
 25        android:testOnly="true"
 26        android:theme="@style/Theme.ProjectManagement" >
-26-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:14:9-55
+26-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:14:9-55
 27        <activity
-27-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:15:9-17:40
+27-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:15:9-17:40
 28            android:name="com.example.projectmanagement.ProjectReadOnly"
-28-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:16:13-44
+28-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:16:13-44
 29            android:exported="false" />
-29-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:17:13-37
+29-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:17:13-37
 30
 31        <service
-31-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:19:9-27:19
+31-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:19:9-27:19
 32            android:name="com.example.projectmanagement.FirebaseService"
-32-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:20:13-44
+32-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:20:13-44
 33            android:exported="true"
-33-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:21:13-36
+33-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:21:13-36
 34            android:permission="com.google.android.c2dm.permission.SEND" >
-34-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:22:13-73
+34-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:22:13-73
 35            <intent-filter>
-35-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:23:13-26:29
+35-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:23:13-26:29
 36                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-36-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:24:17-78
-36-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:24:25-75
+36-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:24:17-78
+36-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:24:25-75
 37                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-37-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:25:17-81
-37-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:25:25-78
+37-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:25:17-81
+37-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:25:25-78
 38            </intent-filter>
 39        </service>
 40
 41        <activity
-41-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:28:9-30:40
+41-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:28:9-30:40
 42            android:name="com.example.projectmanagement.ListingProjectTeamMember"
-42-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:29:13-53
+42-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:29:13-53
 43            android:exported="false" />
-43-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:30:13-37
+43-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:30:13-37
 44        <activity
-44-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:31:9-33:40
+44-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:31:9-33:40
 45            android:name="com.example.projectmanagement.TeamMemberTaskList"
-45-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:32:13-47
+45-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:32:13-47
 46            android:exported="false" />
-46-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:33:13-37
+46-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:33:13-37
 47        <activity
-47-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:34:9-36:40
+47-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:34:9-36:40
 48            android:name="com.example.projectmanagement.ProjectsTasks"
-48-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:35:13-42
+48-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:35:13-42
 49            android:exported="false" />
-49-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:36:13-37
+49-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:36:13-37
 50        <activity
-50-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:37:9-39:40
+50-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:37:9-39:40
 51            android:name="com.example.projectmanagement.ProjectDetails"
-51-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:38:13-43
+51-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:38:13-43
 52            android:exported="false" />
-52-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:39:13-37
+52-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:39:13-37
 53        <activity
-53-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:40:9-42:40
+53-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:40:9-42:40
 54            android:name="com.example.projectmanagement.ListingProject"
-54-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:41:13-43
+54-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:41:13-43
 55            android:exported="false" />
-55-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:42:13-37
+55-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:42:13-37
 56        <activity
-56-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:43:9-47:74
+56-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:43:9-47:74
 57            android:name="com.example.projectmanagement.Register"
-57-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:44:13-37
+57-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:44:13-37
 58            android:exported="false"
-58-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:45:13-37
+58-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:45:13-37
 59            android:label="Register"
-59-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:46:13-37
+59-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:46:13-37
 60            android:theme="@style/Theme.ProjectManagement.NoActionBar" />
-60-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:47:13-71
+60-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:47:13-71
 61        <activity
-61-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:48:9-56:20
+61-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:48:9-56:20
 62            android:name="com.example.projectmanagement.MainActivity"
-62-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:49:13-41
+62-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:49:13-41
 63            android:exported="true" >
-63-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:50:13-36
+63-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:50:13-36
 64            <intent-filter>
-64-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:51:13-55:29
+64-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:51:13-55:29
 65                <action android:name="android.intent.action.MAIN" />
-65-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:52:17-69
-65-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:52:25-66
+65-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:52:17-69
+65-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:52:25-66
 66
 67                <category android:name="android.intent.category.LAUNCHER" />
-67-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:54:17-77
-67-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:54:27-74
+67-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:54:17-77
+67-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:54:27-74
 68            </intent-filter>
 69        </activity>
 70
@@ -297,8 +297,8 @@
 158            <intent-filter>
 158-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:35:13-37:29
 159                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-159-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:25:17-81
-159-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:25:25-78
+159-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:25:17-81
+159-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:25:25-78
 160            </intent-filter>
 161        </receiver>
 162        <!--
@@ -317,8 +317,8 @@
 170-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:48:13-50:29
 170-->[com.google.firebase:firebase-messaging:23.0.3] /Users/chandramouli/.gradle/caches/transforms-3/e39b3a4c49096194137c93fc83e80862/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:48:28-51
 171                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-171-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:24:17-78
-171-->/Users/chandramouli/Downloads/git12052021/gitnew/PrjMgmt/ProjectManagement/app/src/main/AndroidManifest.xml:24:25-75
+171-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:24:17-78
+171-->/Users/chandramouli/Downloads/PrjMgmt-4/ProjectManagement/app/src/main/AndroidManifest.xml:24:25-75
 172            </intent-filter>
 173        </service>
 174
@@ -351,57 +351,66 @@
 189            android:value="@integer/google_play_services_version" />
 189-->[com.google.android.gms:play-services-basement:18.0.0] /Users/chandramouli/.gradle/caches/transforms-3/b8426ea903b6b4ab591e1df9c1cfd966/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 190
-191        <service
-191-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:29:9-35:19
-192            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-192-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:30:13-103
-193            android:exported="false" >
-193-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:31:13-37
-194            <meta-data
-194-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:32:13-34:39
-195                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-195-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:33:17-94
-196                android:value="cct" />
-196-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:34:17-36
-197        </service>
-198        <service
-198-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:26:9-30:19
-199            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-199-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:27:13-117
-200            android:exported="false"
-200-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:28:13-37
-201            android:permission="android.permission.BIND_JOB_SERVICE" >
-201-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:29:13-69
+191        <provider
+191-->[com.squareup.picasso:picasso:2.8] /Users/chandramouli/.gradle/caches/transforms-3/8d61ff56755fd253816e5d45639a7270/transformed/jetified-picasso-2.8/AndroidManifest.xml:8:9-11:40
+192            android:name="com.squareup.picasso.PicassoProvider"
+192-->[com.squareup.picasso:picasso:2.8] /Users/chandramouli/.gradle/caches/transforms-3/8d61ff56755fd253816e5d45639a7270/transformed/jetified-picasso-2.8/AndroidManifest.xml:9:13-64
+193            android:authorities="com.example.projectmanagement.com.squareup.picasso"
+193-->[com.squareup.picasso:picasso:2.8] /Users/chandramouli/.gradle/caches/transforms-3/8d61ff56755fd253816e5d45639a7270/transformed/jetified-picasso-2.8/AndroidManifest.xml:10:13-72
+194            android:exported="false" />
+194-->[com.squareup.picasso:picasso:2.8] /Users/chandramouli/.gradle/caches/transforms-3/8d61ff56755fd253816e5d45639a7270/transformed/jetified-picasso-2.8/AndroidManifest.xml:11:13-37
+195
+196        <service
+196-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:29:9-35:19
+197            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+197-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:30:13-103
+198            android:exported="false" >
+198-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:31:13-37
+199            <meta-data
+199-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:32:13-34:39
+200                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+200-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:33:17-94
+201                android:value="cct" />
+201-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/870d2bcae0516bbb80432433e2d0987b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:34:17-36
 202        </service>
-203
-204        <receiver
-204-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:32:9-34:40
-205            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-205-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:33:13-132
-206            android:exported="false" />
-206-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:34:13-37
-207
-208        <provider
-208-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-209            android:name="androidx.startup.InitializationProvider"
-209-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-210            android:authorities="com.example.projectmanagement.androidx-startup"
-210-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-211            android:exported="false" >
-211-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-212            <meta-data
-212-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-213                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-213-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-214                android:value="androidx.startup" />
-214-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-215            <meta-data
-215-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/chandramouli/.gradle/caches/transforms-3/871189e5a4b212737684290a3c9bb30a/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-216                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-216-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/chandramouli/.gradle/caches/transforms-3/871189e5a4b212737684290a3c9bb30a/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-217                android:value="androidx.startup" />
-217-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/chandramouli/.gradle/caches/transforms-3/871189e5a4b212737684290a3c9bb30a/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-218        </provider>
-219    </application>
-220
-221</manifest>
+203        <service
+203-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:26:9-30:19
+204            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+204-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:27:13-117
+205            android:exported="false"
+205-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:28:13-37
+206            android:permission="android.permission.BIND_JOB_SERVICE" >
+206-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:29:13-69
+207        </service>
+208
+209        <receiver
+209-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:32:9-34:40
+210            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+210-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:33:13-132
+211            android:exported="false" />
+211-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/chandramouli/.gradle/caches/transforms-3/5ccf4dd079e2e1c4dcade098e4179c28/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:34:13-37
+212
+213        <provider
+213-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+214            android:name="androidx.startup.InitializationProvider"
+214-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+215            android:authorities="com.example.projectmanagement.androidx-startup"
+215-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+216            android:exported="false" >
+216-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+217            <meta-data
+217-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+218                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+218-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+219                android:value="androidx.startup" />
+219-->[androidx.emoji2:emoji2:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/70df6184e9eb5b56322907cf7c3b1d6a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+220            <meta-data
+220-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/chandramouli/.gradle/caches/transforms-3/871189e5a4b212737684290a3c9bb30a/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+221                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+221-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/chandramouli/.gradle/caches/transforms-3/871189e5a4b212737684290a3c9bb30a/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+222                android:value="androidx.startup" />
+222-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/chandramouli/.gradle/caches/transforms-3/871189e5a4b212737684290a3c9bb30a/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+223        </provider>
+224    </application>
+225
+226</manifest>

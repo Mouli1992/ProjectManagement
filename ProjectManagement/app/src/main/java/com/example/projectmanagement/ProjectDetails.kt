@@ -180,9 +180,16 @@ class ProjectDetails : AppCompatActivity() {
                 startActivity(it)
 
             }
+
+            R.id.menuHome-> Intent(this@ProjectDetails, ListingProject::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                startActivity(it)
+            }
+            }
+            return super.onOptionsItemSelected(item)
         }
-        return super.onOptionsItemSelected(item)
+
+
+
     }
-
-
-}
