@@ -58,6 +58,9 @@ public final class RegisterlayoutBinding implements ViewBinding {
   public final ImageView imgProfileImage;
 
   @NonNull
+  public final ImageView imgRegisterScreen;
+
+  @NonNull
   public final Spinner roleSpinner;
 
   @NonNull
@@ -69,8 +72,8 @@ public final class RegisterlayoutBinding implements ViewBinding {
       @NonNull EditText editFullNameRegister, @NonNull EditText editMobileNumberRegister,
       @NonNull EditText editNewPasswordRegister, @NonNull Guideline guideline10,
       @NonNull Guideline guideline15, @NonNull Guideline guideline9,
-      @NonNull ImageView imgProfileImage, @NonNull Spinner roleSpinner,
-      @NonNull TextView txtAlreadyAccount) {
+      @NonNull ImageView imgProfileImage, @NonNull ImageView imgRegisterScreen,
+      @NonNull Spinner roleSpinner, @NonNull TextView txtAlreadyAccount) {
     this.rootView = rootView;
     this.btnAddProfileImage = btnAddProfileImage;
     this.btnSignInRegister = btnSignInRegister;
@@ -83,6 +86,7 @@ public final class RegisterlayoutBinding implements ViewBinding {
     this.guideline15 = guideline15;
     this.guideline9 = guideline9;
     this.imgProfileImage = imgProfileImage;
+    this.imgRegisterScreen = imgRegisterScreen;
     this.roleSpinner = roleSpinner;
     this.txtAlreadyAccount = txtAlreadyAccount;
   }
@@ -180,6 +184,12 @@ public final class RegisterlayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imgRegisterScreen;
+      ImageView imgRegisterScreen = ViewBindings.findChildViewById(rootView, id);
+      if (imgRegisterScreen == null) {
+        break missingId;
+      }
+
       id = R.id.roleSpinner;
       Spinner roleSpinner = ViewBindings.findChildViewById(rootView, id);
       if (roleSpinner == null) {
@@ -195,7 +205,7 @@ public final class RegisterlayoutBinding implements ViewBinding {
       return new RegisterlayoutBinding((ConstraintLayout) rootView, btnAddProfileImage,
           btnSignInRegister, btnSignUpRegister, editEmailRegister, editFullNameRegister,
           editMobileNumberRegister, editNewPasswordRegister, guideline10, guideline15, guideline9,
-          imgProfileImage, roleSpinner, txtAlreadyAccount);
+          imgProfileImage, imgRegisterScreen, roleSpinner, txtAlreadyAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

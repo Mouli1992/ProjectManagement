@@ -19,9 +19,8 @@ class TeamMemberProjectAdapter(
     override fun onBindViewHolder(holder: TeamMemberProjectAdapter.TeamMemberProjectViewHolder, position: Int) {
 
         holder.itemView.apply {
-            val txtbutton = findViewById<TextView>(R.id.txtProgramManagerName)
-            val txtstatus = findViewById<TextView>(R.id.txtTeamMembers)
-            val txtProjectDeadline = findViewById<TextView>(R.id.txtProjectStatus)
+            val txttaskname = findViewById<TextView>(R.id.txtTeamMemberTaskName)
+            val txtstatus = findViewById<TextView>(R.id.txtTeamMemberTaskStatus)
 
 //            txtbutton.text= teammembertaskdata[position].
 //            txtstatus.text=teammembertaskdata[position].

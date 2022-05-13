@@ -135,29 +135,29 @@ class ProjectDetails : AppCompatActivity() {
             taskLstIntent.putExtra("json", Gson().toJson(projectDetails))
             taskLstIntent.putExtra("code", INTENT_FROM_PROJECT_DETAILS)
             startActivity(taskLstIntent)
-            }
+        }
 
-            submitPB = findViewById(R.id.btnSubmitProject)
-            submitPB.setOnClickListener {
+        submitPB = findViewById(R.id.btnSubmitProject)
+        submitPB.setOnClickListener {
 
-                database.collection("projectDetails").document(projectDetails.projectId.toString()).
-                set(projectDetails).addOnCompleteListener { projectTaskDetailsTask ->
-                    if(projectTaskDetailsTask.isSuccessful) {
-                        Toast.makeText(this, "Project Details Added Successfully", Toast.LENGTH_SHORT).show()
-                    }else{
-                        Log.e(TAG, "Exception with Project Data Insertion")
-                        Toast.makeText(this, "Project Details Insertion Failed", Toast.LENGTH_SHORT).show()
-                        return@addOnCompleteListener
-                    }
-
+            database.collection("projectDetails").document(projectDetails.projectId.toString()).
+            set(projectDetails).addOnCompleteListener { projectTaskDetailsTask ->
+                if(projectTaskDetailsTask.isSuccessful) {
+                    Toast.makeText(this, "Project Details Added Successfully", Toast.LENGTH_SHORT).show()
+                }else{
+                    Log.e(TAG, "Exception with Project Data Insertion")
+                    Toast.makeText(this, "Project Details Insertion Failed", Toast.LENGTH_SHORT).show()
+                    return@addOnCompleteListener
                 }
-                val projectListingIntent = Intent(this, ListingProject::class.java)
-                projectListingIntent.putExtra("email",projectDetails.projectCreatedBy)
-                    finish()
-                    startActivity(projectListingIntent)
 
-                }
             }
+            val projectListingIntent = Intent(this, ListingProject::class.java)
+            projectListingIntent.putExtra("email",projectDetails.projectCreatedBy)
+            finish()
+            startActivity(projectListingIntent)
+
+        }
+    }
 
     private fun openDatePickerDialog() {
         // Get Current Date
@@ -175,4 +175,4 @@ class ProjectDetails : AppCompatActivity() {
 
 
 
-    }
+}

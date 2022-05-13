@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -41,6 +42,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Guideline guideline8;
 
   @NonNull
+  public final ImageView imgMainScreen;
+
+  @NonNull
   public final TextView txtForgetPassword;
 
   @NonNull
@@ -49,7 +53,8 @@ public final class ActivityMainBinding implements ViewBinding {
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnSignIn,
       @NonNull Button btnSignUp, @NonNull EditText editEmail, @NonNull EditText editPassword,
       @NonNull Guideline guideline7, @NonNull Guideline guideline8,
-      @NonNull TextView txtForgetPassword, @NonNull TextView txtNotRegistered) {
+      @NonNull ImageView imgMainScreen, @NonNull TextView txtForgetPassword,
+      @NonNull TextView txtNotRegistered) {
     this.rootView = rootView;
     this.btnSignIn = btnSignIn;
     this.btnSignUp = btnSignUp;
@@ -57,6 +62,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.editPassword = editPassword;
     this.guideline7 = guideline7;
     this.guideline8 = guideline8;
+    this.imgMainScreen = imgMainScreen;
     this.txtForgetPassword = txtForgetPassword;
     this.txtNotRegistered = txtNotRegistered;
   }
@@ -124,6 +130,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imgMainScreen;
+      ImageView imgMainScreen = ViewBindings.findChildViewById(rootView, id);
+      if (imgMainScreen == null) {
+        break missingId;
+      }
+
       id = R.id.txtForgetPassword;
       TextView txtForgetPassword = ViewBindings.findChildViewById(rootView, id);
       if (txtForgetPassword == null) {
@@ -137,7 +149,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, btnSignIn, btnSignUp, editEmail,
-          editPassword, guideline7, guideline8, txtForgetPassword, txtNotRegistered);
+          editPassword, guideline7, guideline8, imgMainScreen, txtForgetPassword, txtNotRegistered);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

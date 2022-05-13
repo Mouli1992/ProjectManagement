@@ -7,51 +7,27 @@
     android:textAlignment="center">
 
     <TextView
-        android:id="@+id/txtProgramManagerName"
+        android:id="@+id/txtTeamMemberTaskName"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:padding="2dp"
-        android:text="PM Name"
+        android:text="Task Name"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/txtTeamMembers"
+        app:layout_constraintEnd_toStartOf="@+id/txtTeamMemberTaskStatus"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtRespectiveTeamMemberTaskStatus"
+        android:id="@+id/txtTeamMemberTaskStatus"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:padding="2dp"
         android:text="Task Status"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/txtProjectStatus"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtTeamMembers"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtProjectStatus"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
-        android:padding="2dp"
-        android:text="Project Status"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtRespectiveTeamMemberTaskStatus"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtTeamMembers"
-        android:layout_width="111dp"
-        android:layout_height="25dp"
-        android:padding="2dp"
-        android:text="Team Members"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/txtRespectiveTeamMemberTaskStatus"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtProgramManagerName"
+        app:layout_constraintStart_toEndOf="@+id/txtTeamMemberTaskName"
         app:layout_constraintTop_toTopOf="parent" />
 
 

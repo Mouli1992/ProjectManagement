@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtRdProjectName" />
 
 
-    <de.codecrafters.tableview.SortableTableView
+    <de.codecrafters.tableview.TableView
         xmlns:table="http://schemas.android.com/apk/res-auto"
         android:id="@+id/tableReadOnlyTaskView"
         android:layout_width="367dp"

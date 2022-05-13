@@ -4,6 +4,7 @@ package com.example.projectmanagement.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -33,18 +34,63 @@ public final class ActivityTeamMemberTaskListBinding implements ViewBinding {
   public final Guideline guideline27;
 
   @NonNull
+  public final Guideline guideline28;
+
+  @NonNull
+  public final Guideline guideline29;
+
+  @NonNull
+  public final Guideline guideline32;
+
+  @NonNull
+  public final Guideline guideline33;
+
+  @NonNull
+  public final Guideline guideline34;
+
+  @NonNull
+  public final Guideline guideline35;
+
+  @NonNull
   public final RecyclerView rvTasksTeamMember;
+
+  @NonNull
+  public final TextView txtAssignedManagertmtl;
+
+  @NonNull
+  public final TextView txtMembersNametmtl;
+
+  @NonNull
+  public final TextView txtProjectStatustmtl;
+
+  @NonNull
+  public final TextView txtTeamMemberstmtl;
 
   private ActivityTeamMemberTaskListBinding(@NonNull ConstraintLayout rootView,
       @NonNull Guideline guideline24, @NonNull Guideline guideline25,
       @NonNull Guideline guideline26, @NonNull Guideline guideline27,
-      @NonNull RecyclerView rvTasksTeamMember) {
+      @NonNull Guideline guideline28, @NonNull Guideline guideline29,
+      @NonNull Guideline guideline32, @NonNull Guideline guideline33,
+      @NonNull Guideline guideline34, @NonNull Guideline guideline35,
+      @NonNull RecyclerView rvTasksTeamMember, @NonNull TextView txtAssignedManagertmtl,
+      @NonNull TextView txtMembersNametmtl, @NonNull TextView txtProjectStatustmtl,
+      @NonNull TextView txtTeamMemberstmtl) {
     this.rootView = rootView;
     this.guideline24 = guideline24;
     this.guideline25 = guideline25;
     this.guideline26 = guideline26;
     this.guideline27 = guideline27;
+    this.guideline28 = guideline28;
+    this.guideline29 = guideline29;
+    this.guideline32 = guideline32;
+    this.guideline33 = guideline33;
+    this.guideline34 = guideline34;
+    this.guideline35 = guideline35;
     this.rvTasksTeamMember = rvTasksTeamMember;
+    this.txtAssignedManagertmtl = txtAssignedManagertmtl;
+    this.txtMembersNametmtl = txtMembersNametmtl;
+    this.txtProjectStatustmtl = txtProjectStatustmtl;
+    this.txtTeamMemberstmtl = txtTeamMemberstmtl;
   }
 
   @Override
@@ -98,14 +144,76 @@ public final class ActivityTeamMemberTaskListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline28;
+      Guideline guideline28 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline28 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline29;
+      Guideline guideline29 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline29 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline32;
+      Guideline guideline32 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline32 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline33;
+      Guideline guideline33 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline33 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline34;
+      Guideline guideline34 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline34 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline35;
+      Guideline guideline35 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline35 == null) {
+        break missingId;
+      }
+
       id = R.id.rvTasksTeamMember;
       RecyclerView rvTasksTeamMember = ViewBindings.findChildViewById(rootView, id);
       if (rvTasksTeamMember == null) {
         break missingId;
       }
 
+      id = R.id.txtAssignedManagertmtl;
+      TextView txtAssignedManagertmtl = ViewBindings.findChildViewById(rootView, id);
+      if (txtAssignedManagertmtl == null) {
+        break missingId;
+      }
+
+      id = R.id.txtMembersNametmtl;
+      TextView txtMembersNametmtl = ViewBindings.findChildViewById(rootView, id);
+      if (txtMembersNametmtl == null) {
+        break missingId;
+      }
+
+      id = R.id.txtProjectStatustmtl;
+      TextView txtProjectStatustmtl = ViewBindings.findChildViewById(rootView, id);
+      if (txtProjectStatustmtl == null) {
+        break missingId;
+      }
+
+      id = R.id.txtTeamMemberstmtl;
+      TextView txtTeamMemberstmtl = ViewBindings.findChildViewById(rootView, id);
+      if (txtTeamMemberstmtl == null) {
+        break missingId;
+      }
+
       return new ActivityTeamMemberTaskListBinding((ConstraintLayout) rootView, guideline24,
-          guideline25, guideline26, guideline27, rvTasksTeamMember);
+          guideline25, guideline26, guideline27, guideline28, guideline29, guideline32, guideline33,
+          guideline34, guideline35, rvTasksTeamMember, txtAssignedManagertmtl, txtMembersNametmtl,
+          txtProjectStatustmtl, txtTeamMemberstmtl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

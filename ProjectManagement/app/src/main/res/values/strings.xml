@@ -31,9 +31,6 @@
         <item>Member2</item>
         <item>Member3</item>
     </string-array>
-    <string name="taskName">Task Name</string>
-    <string name="taskStatus">Task Status</string>
-    <string name="assignedTo">Assigned To</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

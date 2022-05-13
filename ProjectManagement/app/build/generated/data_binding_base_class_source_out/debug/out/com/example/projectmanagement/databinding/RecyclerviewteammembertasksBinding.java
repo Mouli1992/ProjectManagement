@@ -20,25 +20,16 @@ public final class RecyclerviewteammembertasksBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView txtProgramManagerName;
+  public final TextView txtTeamMemberTaskName;
 
   @NonNull
-  public final TextView txtProjectStatus;
-
-  @NonNull
-  public final TextView txtRespectiveTeamMemberTaskStatus;
-
-  @NonNull
-  public final TextView txtTeamMembers;
+  public final TextView txtTeamMemberTaskStatus;
 
   private RecyclerviewteammembertasksBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView txtProgramManagerName, @NonNull TextView txtProjectStatus,
-      @NonNull TextView txtRespectiveTeamMemberTaskStatus, @NonNull TextView txtTeamMembers) {
+      @NonNull TextView txtTeamMemberTaskName, @NonNull TextView txtTeamMemberTaskStatus) {
     this.rootView = rootView;
-    this.txtProgramManagerName = txtProgramManagerName;
-    this.txtProjectStatus = txtProjectStatus;
-    this.txtRespectiveTeamMemberTaskStatus = txtRespectiveTeamMemberTaskStatus;
-    this.txtTeamMembers = txtTeamMembers;
+    this.txtTeamMemberTaskName = txtTeamMemberTaskName;
+    this.txtTeamMemberTaskStatus = txtTeamMemberTaskStatus;
   }
 
   @Override
@@ -68,33 +59,20 @@ public final class RecyclerviewteammembertasksBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.txtProgramManagerName;
-      TextView txtProgramManagerName = ViewBindings.findChildViewById(rootView, id);
-      if (txtProgramManagerName == null) {
+      id = R.id.txtTeamMemberTaskName;
+      TextView txtTeamMemberTaskName = ViewBindings.findChildViewById(rootView, id);
+      if (txtTeamMemberTaskName == null) {
         break missingId;
       }
 
-      id = R.id.txtProjectStatus;
-      TextView txtProjectStatus = ViewBindings.findChildViewById(rootView, id);
-      if (txtProjectStatus == null) {
-        break missingId;
-      }
-
-      id = R.id.txtRespectiveTeamMemberTaskStatus;
-      TextView txtRespectiveTeamMemberTaskStatus = ViewBindings.findChildViewById(rootView, id);
-      if (txtRespectiveTeamMemberTaskStatus == null) {
-        break missingId;
-      }
-
-      id = R.id.txtTeamMembers;
-      TextView txtTeamMembers = ViewBindings.findChildViewById(rootView, id);
-      if (txtTeamMembers == null) {
+      id = R.id.txtTeamMemberTaskStatus;
+      TextView txtTeamMemberTaskStatus = ViewBindings.findChildViewById(rootView, id);
+      if (txtTeamMemberTaskStatus == null) {
         break missingId;
       }
 
       return new RecyclerviewteammembertasksBinding((ConstraintLayout) rootView,
-          txtProgramManagerName, txtProjectStatus, txtRespectiveTeamMemberTaskStatus,
-          txtTeamMembers);
+          txtTeamMemberTaskName, txtTeamMemberTaskStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
