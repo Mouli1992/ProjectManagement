@@ -99,7 +99,7 @@
     <!--        app:layout_constraintTop_toTopOf="parent"-->
     <!--        app:layout_constraintVertical_bias="0.533" />-->
 
-    <de.codecrafters.tableview.TableView
+    <de.codecrafters.tableview.SortableTableView
         android:id="@+id/tableView"
         android:layout_width="match_parent"
         android:layout_height="0dp"

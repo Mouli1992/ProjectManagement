@@ -3,15 +3,9 @@ package com.example.projectmanagement.table.project
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import com.example.projectmanagement.ListingProject
 import com.example.projectmanagement.ProjectReadOnly
-import com.example.projectmanagement.TeamMemberTaskList
-import com.example.projectmanagement.db.FirestoreRepository
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.utils.INETNT_FROM_TEAM_PRJ_LIST
-import com.example.projectmanagement.utils.INTENT_FROM_LOGIN
-import com.example.projectmanagement.utils.INTENT_FROM_PRJ_LST_FOR_PRJ
-import com.google.firebase.analytics.connector.R
 import de.codecrafters.tableview.listeners.TableDataClickListener
 
 

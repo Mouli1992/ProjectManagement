@@ -14,7 +14,7 @@ import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projectmanagement.R;
-import de.codecrafters.tableview.TableView;
+import de.codecrafters.tableview.SortableTableView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -57,7 +57,7 @@ public final class ActivityListingProjectBinding implements ViewBinding {
   public final ImageView imageTeamManager;
 
   @NonNull
-  public final TableView tableView;
+  public final SortableTableView tableView;
 
   @NonNull
   public final TextView txtNoProjects;
@@ -73,7 +73,7 @@ public final class ActivityListingProjectBinding implements ViewBinding {
       @NonNull Guideline guideline30, @NonNull Guideline guideline31,
       @NonNull Guideline guideline36, @NonNull Guideline guideline37, @NonNull Guideline guideline4,
       @NonNull Guideline guideline5, @NonNull Guideline guideline6,
-      @NonNull ImageView imageTeamManager, @NonNull TableView tableView,
+      @NonNull ImageView imageTeamManager, @NonNull SortableTableView tableView,
       @NonNull TextView txtNoProjects, @NonNull TextView txtUserName,
       @NonNull TextView txtUserRole) {
     this.rootView = rootView;
@@ -188,7 +188,7 @@ public final class ActivityListingProjectBinding implements ViewBinding {
       }
 
       id = R.id.tableView;
-      TableView tableView = ViewBindings.findChildViewById(rootView, id);
+      SortableTableView tableView = ViewBindings.findChildViewById(rootView, id);
       if (tableView == null) {
         break missingId;
       }

@@ -4,21 +4,15 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.Button as Button
 import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
 import com.example.projectmanagement.db.FirestoreCallback
-import com.example.projectmanagement.db.FirestoreRepository
 import com.example.projectmanagement.model.*
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.table.project.ProjectClickListener
@@ -28,6 +22,7 @@ import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.squareup.picasso.Picasso
+import de.codecrafters.tableview.SortableTableView
 import de.codecrafters.tableview.TableView
 import java.util.*
 
@@ -39,7 +34,7 @@ class ListingProject : AppCompatActivity()  {
     private lateinit var listOfTeamMembers : MutableList<String>
     private lateinit var teamMemberEmailViewModel: TeamMemberEmailViewModel
     private lateinit var managerProjectDetailsViewModel : ProjectDetailsViewModel
-    private lateinit var tableView: TableView<ProjectDetails>
+    private lateinit var tableView: SortableTableView<ProjectDetails>
     private lateinit var context : Context
     private lateinit var profilePic: ImageView
     private lateinit var name : TextView
@@ -146,7 +141,9 @@ class ListingProject : AppCompatActivity()  {
                 val adapter = ProjectTableDataAdapter(context,projectDetails,tableView)
                 tableView.dataAdapter = adapter
                 tableView.headerAdapter = TableHeader.getProjectTableHeader(context, "")
-
+                tableView.setColumnComparator(0,ProjectNameComparator())
+                tableView.setColumnComparator(1,ProjectStatusComparator())
+                tableView.setColumnComparator(2,ProjectDeadlineComparator())
 
                 if (projectDetails.isNotEmpty()) {
                     txtNo.isVisible = false
