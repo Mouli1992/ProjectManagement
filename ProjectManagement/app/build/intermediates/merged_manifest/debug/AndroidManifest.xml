@@ -24,10 +24,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.ProjectManagement" >
-        <activity
-            android:name="com.example.projectmanagement.ProjectReadOnly"
-            android:exported="false" />
-
         <service
             android:name="com.example.projectmanagement.FirebaseService"
             android:exported="true"
@@ -38,6 +34,9 @@
             </intent-filter>
         </service>
 
+        <activity
+            android:name="com.example.projectmanagement.ProjectReadOnly"
+            android:exported="false" />
         <activity
             android:name="com.example.projectmanagement.ListingProjectTeamMember"
             android:exported="false" />
@@ -88,13 +87,16 @@
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"

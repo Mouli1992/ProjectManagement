@@ -2576,6 +2576,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_notification_background
+drawable ic_notification_foreground
 drawable ic_password
 drawable ic_person
 drawable ic_phone
@@ -2996,7 +2998,6 @@ id material_value_index
 id matrix
 id media_actions
 id menuHome
-id menuImage
 id menuLogout
 id message
 id middle
@@ -3482,8 +3483,11 @@ mipmap ic_menu_home
 mipmap ic_menu_home_round
 mipmap ic_menu_logout
 mipmap ic_menu_logout_round
+mipmap ic_notification
+mipmap ic_notification_round
 navigation nav_graph
 plurals mtrl_badge_content_description
+raw keep
 string R
 string abc_action_bar_home_description
 string abc_action_bar_up_description
