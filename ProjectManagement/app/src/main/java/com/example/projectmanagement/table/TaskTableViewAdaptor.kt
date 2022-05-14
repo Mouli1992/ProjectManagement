@@ -1,10 +1,9 @@
-package com.example.projectmanagement.table.project
+package com.example.projectmanagement.table
 
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TaskDetails
 import de.codecrafters.tableview.TableView
 import de.codecrafters.tableview.toolkit.LongPressAwareTableDataAdapter
@@ -47,7 +46,7 @@ class TaskTableViewAdaptor  (context: Context, data: List<TaskDetails?>?, tableV
 
         textView.text = value
         textView.setPadding(20, 10, 20, 10)
-        textView.textSize = TaskTableViewAdaptor.TEXT_SIZE.toFloat()
+        textView.textSize = TEXT_SIZE.toFloat()
         return textView
     }
 

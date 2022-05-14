@@ -20,23 +20,23 @@ import kotlin.random.Random
 private const val CHANNEL_ID = "my_channel"
 
 class FirebaseService :FirebaseMessagingService(){
-    companion object {
-        var sharedPref: SharedPreferences? = null
-
-        var token: String?
-            get() {
-                return sharedPref?.getString("token", "")
-            }
-            set(value) {
-                sharedPref?.edit()?.putString("token", value)?.apply()
-            }
-    }
-
-    override fun onNewToken(newToken: String) {
-        super.onNewToken(newToken)
-        token = newToken
-
-    }
+//    companion object {
+//        var sharedPref: SharedPreferences? = null
+//
+//        var token: String?
+//            get() {
+//                return sharedPref?.getString("token", "")
+//            }
+//            set(value) {
+//                sharedPref?.edit()?.putString("token", value)?.apply()
+//            }
+//    }
+//
+//    override fun onNewToken(newToken: String) {
+//        super.onNewToken(newToken)
+//        token = newToken
+//
+//    }
 
     override fun onMessageReceived(message: RemoteMessage) {
         super.onMessageReceived(message)
@@ -50,13 +50,13 @@ class FirebaseService :FirebaseMessagingService(){
         }
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        val pendingIntent = PendingIntent.getActivity(this, 0, intent, FLAG_ONE_SHOT)
+       // val pendingIntent = PendingIntent.getActivity(this, 200, intent, FLAG_ONE_SHOT)
         val notification = NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle(message.data["title"])
             .setContentText(message.data["message"])
-            //.setSmallIcon(R.drawable.ic_android_black_24dp)
+            .setSmallIcon(R.drawable.ic_notification_foreground)
             .setAutoCancel(true)
-            .setContentIntent(pendingIntent)
+           //.setContentIntent(pendingIntent)
             .build()
 
         notificationManager.notify(notificationID, notification)

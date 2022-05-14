@@ -12,7 +12,7 @@ import android.widget.*
 import androidx.core.view.isVisible
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TaskDetails
-import com.example.projectmanagement.table.project.TaskTableViewAdaptor
+import com.example.projectmanagement.table.TaskTableViewAdaptor
 import com.example.projectmanagement.utils.*
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ktx.firestore
@@ -20,9 +20,7 @@ import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 import de.codecrafters.tableview.TableView
 import java.text.SimpleDateFormat
-import java.time.LocalDate
 import java.util.*
-import java.util.function.Consumer
 
 lateinit var submitPB:Button
 //private lateinit var taskRecyclerView: TableView<TaskDetails>

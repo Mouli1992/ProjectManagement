@@ -10,9 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TeamMemberProjectDetailsViewModel
-import com.example.projectmanagement.table.project.ProjectClickListener
-import com.example.projectmanagement.table.project.TaskClickListener
-import com.example.projectmanagement.table.project.TeamMemberTableAdaptor
+import com.example.projectmanagement.table.TaskClickListener
+import com.example.projectmanagement.table.TeamMemberTableAdaptor
 import com.example.projectmanagement.utils.TableHeader
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase

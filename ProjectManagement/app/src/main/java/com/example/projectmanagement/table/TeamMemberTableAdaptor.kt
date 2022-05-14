@@ -1,4 +1,4 @@
-package com.example.projectmanagement.table.project
+package com.example.projectmanagement.table
 
 import android.content.Context
 import android.view.View
@@ -51,7 +51,7 @@ class TeamMemberTableAdaptor (context: Context, data: List<ProjectDetails?>?, ta
 
         textView.text = value
         textView.setPadding(20, 10, 20, 10)
-        textView.textSize = TeamMemberTableAdaptor.TEXT_SIZE.toFloat()
+        textView.textSize = TEXT_SIZE.toFloat()
         return textView
     }
 

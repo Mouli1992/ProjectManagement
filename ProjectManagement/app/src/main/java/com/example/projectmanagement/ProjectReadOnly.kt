@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
 import com.example.projectmanagement.model.OneProjectDetailsViewModel
 import com.example.projectmanagement.model.ProjectDetails
-import com.example.projectmanagement.table.project.TaskTableViewAdaptor
+import com.example.projectmanagement.table.TaskTableViewAdaptor
 import com.example.projectmanagement.utils.INTENT_FROM_READ_PROJECT
 import com.example.projectmanagement.utils.TableHeader
 import com.google.firebase.firestore.ktx.firestore

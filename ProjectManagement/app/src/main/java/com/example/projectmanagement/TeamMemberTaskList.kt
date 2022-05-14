@@ -7,12 +7,11 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
-import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
 import com.example.projectmanagement.model.*
 import com.example.projectmanagement.model.ProjectDetails
-import com.example.projectmanagement.table.project.TaskTableViewAdaptor
+import com.example.projectmanagement.table.TaskTableViewAdaptor
 import com.example.projectmanagement.utils.TableHeader
 import de.codecrafters.tableview.TableView
 

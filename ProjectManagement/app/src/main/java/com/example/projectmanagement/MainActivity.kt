@@ -16,10 +16,15 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.messaging.FirebaseMessaging
+import com.google.gson.Gson
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import android.widget.Button as Button
 
 
-//const val TOPIC = "/topics/myTopic2"
+const val TOPIC = "/topics/myTopic2"
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,7 +32,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var pwd: EditText
     private lateinit var btnSignIn: Button
     private val database = Firebase.firestore
-
+    private val title = "Task Notification"
+    private val message= "Task Assigned"
 
 //    val TAG = "MainActivity"
 
@@ -45,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 //            FirebaseService.token = it.token
 //             val token = it.token
 //        }
-//        FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
+       FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
 
         //RecipentToken
         email = findViewById(R.id.editEmail)
@@ -53,32 +59,18 @@ class MainActivity : AppCompatActivity() {
         btnSignIn = findViewById(R.id.btnSignIn)
         val signUpBtn = findViewById<Button>(R.id.btnSignUp)
 
-//        val title = "Task Notification"
-//        val message= "Task Assigned"
+
 //         val recipientToken = token
 //
-//        if(title.isNotEmpty() && message.isNotEmpty() && recipientToken.isNotEmpty()) {
+//        if(title.isNotEmpty() && message.isNotEmpty()) {
 //            PushNotification(
 //                NotificationData(title, message),
-//                recipientToken
+//                TOPIC
 //            ).also {
 //                sendNotification(it)
 //            }
 //        }
 
-
-//        private fun sendNotification(notification: PushNotification) = CoroutineScope(Dispatchers.IO).launch {
-//            try {
-//                val response = RetrofitInstance.api.postNotification(notification)
-//                if (response.isSuccessful) {
-//                    Log.d(TAG, "Response: ${Gson().toJson(response)}")
-//                } else {
-//                    Log.e(TAG, response.errorBody().toString())
-//                }
-//            } catch (e: Exception) {
-//                Log.e(TAG, e.toString())
-//            }
-//        }
 
 
 
@@ -87,6 +79,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnSignIn.setOnClickListener {
+
             validateUserCred()
         }
 
@@ -121,6 +114,14 @@ class MainActivity : AppCompatActivity() {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pwd)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
+                        if(title.isNotEmpty() && message.isNotEmpty()) {
+                            PushNotification(
+                                NotificationData(title, message),
+                                TOPIC
+                            ).also {
+                                sendNotification(it)
+                            }
+                        }
                         firebaseUser = task.result!!.user!!
                         Toast.makeText(this, "You are signed in Successfully", Toast.LENGTH_SHORT)
                             .show()
@@ -171,6 +172,18 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+        }
+    }
+    private fun sendNotification(notification: PushNotification) = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val response = RetrofitInstance.api.postNotification(notification)
+            if (response.isSuccessful) {
+                Log.d(TAG, "Response: ${Gson().toJson(response)}")
+            } else {
+                Log.e(TAG, response.errorBody().toString())
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, e.toString())
         }
     }
 
