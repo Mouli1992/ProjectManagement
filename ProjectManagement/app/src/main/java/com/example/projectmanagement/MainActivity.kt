@@ -24,7 +24,7 @@ import kotlinx.coroutines.launch
 import android.widget.Button as Button
 
 
-const val TOPIC = "/topics/myTopic2"
+//const val TOPIC = "/topics/myTopic2"
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 //            FirebaseService.token = it.token
 //             val token = it.token
 //        }
-       FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
+//       FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
 
         //RecipentToken
         email = findViewById(R.id.editEmail)
@@ -114,14 +114,12 @@ class MainActivity : AppCompatActivity() {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pwd)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        if(title.isNotEmpty() && message.isNotEmpty()) {
-                            PushNotification(
-                                NotificationData(title, message),
-                                TOPIC
-                            ).also {
-                                sendNotification(it)
-                            }
-                        }
+//                        if(title.isNotEmpty() && message.isNotEmpty()) {
+//                            PushNotification(
+//                                NotificationData(title, message) ).also {
+//                                sendNotification(it)
+//                            }
+//                        }
                         firebaseUser = task.result!!.user!!
                         Toast.makeText(this, "You are signed in Successfully", Toast.LENGTH_SHORT)
                             .show()
@@ -145,13 +143,13 @@ class MainActivity : AppCompatActivity() {
                                 } else {
                                     val intent = Intent(
                                         this@MainActivity,
-                                        ListingProjectTeamMember::class.java
-                                    )
+                                        ListingProjectTeamMember::class.java)
                                     intent.putExtra("userId", firebaseUser?.uid)
                                     intent.putExtra("email", email)
                                     intent.putExtra("role", userDetails?.role)
                                     intent.putExtra("mobileNo", userDetails?.mobileNo)
                                     intent.putExtra("profileImage", userDetails?.pictureUri)
+                                    intent.putExtra("name", userDetails?.name)
                                     startActivity(intent)
                                     println("userDetails${userDetails?.role} ")
                                     finish()

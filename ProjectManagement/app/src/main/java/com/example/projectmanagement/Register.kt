@@ -15,6 +15,7 @@ import com.example.projectmanagement.model.UserDetails
 import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
@@ -36,6 +37,9 @@ class Register: AppCompatActivity() {
     private val storage =Firebase.storage
     private lateinit var uri : Uri
     private lateinit var context: Context
+    private val auth = Firebase.auth;
+
+
 
     companion object{
         private const val TAG = "Register"
@@ -141,6 +145,13 @@ class Register: AppCompatActivity() {
                         if(null == uri){
                             uri = Uri.EMPTY
                         }
+                        val user = auth.currentUser
+                        user!!.sendEmailVerification()
+                            .addOnCompleteListener {task ->
+                                if(task.isSuccessful) {
+                                    Log.d(TAG, "Email Successfully Sent")
+                                }
+                            }
 
                         FirebaseStorageManager().registerUser(context,uri,userDetails)
                     //saveUserDetails(email,name.text.toString(),Integer.parseInt(mobile.text.toString()),selectedRole,uri)

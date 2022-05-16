@@ -9,7 +9,7 @@ import com.example.projectmanagement.utils.INETNT_FROM_TEAM_PRJ_LIST
 import de.codecrafters.tableview.listeners.TableDataClickListener
 
 
-class ProjectClickListener (private val context: Context):TableDataClickListener<ProjectDetails> {
+class ProjectClickListener (private val context: Context, val name : String, val role : String, val email : String, val profileImage : String):TableDataClickListener<ProjectDetails> {
     companion object{
         private const val TAG = "ListingProject"
         private const val PROJECT_LISTING_ACTING = 230
@@ -21,6 +21,11 @@ class ProjectClickListener (private val context: Context):TableDataClickListener
         var intent = Intent(context, ProjectReadOnly::class.java)
         intent.putExtra("code", INETNT_FROM_TEAM_PRJ_LIST)
         intent.putExtra("projectId",projectId.toString() )
+        intent.putExtra("name",name )
+        intent.putExtra("role",role )
+        intent.putExtra("email",email )
+        intent.putExtra("profileImage",profileImage )
+
         context.startActivity(intent)
         Log.i("Test",projectId.toString())
 

@@ -11,7 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
 import com.example.projectmanagement.model.*
 import com.example.projectmanagement.model.ProjectDetails
-import com.example.projectmanagement.table.TaskTableViewAdaptor
+import com.example.projectmanagement.table.team.ClickTeamMemberTask
+import com.example.projectmanagement.table.team.TaskTableViewAdaptor
 import com.example.projectmanagement.utils.TableHeader
 import de.codecrafters.tableview.TableView
 
@@ -34,18 +35,16 @@ class TeamMemberTaskList : AppCompatActivity() {
         taskTableView = findViewById(R.id.teamMemberTv)
         projectDetailsViewModel = ViewModelProvider(this).get(OneProjectDetailsViewModel::class.java)
         context = this
-        intent.getStringExtra("projectId")?.let { getProjectDetails(it.toLong()) }
-        //Alert dialogbox for vishal
-//        val taskUpdateDialog= AlertDialog.Builder(this)
-//            .setTitle("Task Update")
-//            .setMessage("Are you sure you want to update the status of the task")
-//            .setIcon(R.drawable.ic_dialog_image)
-//            .setPositiveButton("yes"){_,_ ->
-//            Toast.makeText(this,"You updated the task status",Toast.LENGTH_SHORT).show()
-//            }
-//            .setNegativeButton("No"){_,_ ->
-//                Toast.makeText(this,"The task status wasnt updated",Toast.LENGTH_SHORT).show()
-//            }
+       // var projectId = intent.getStringExtra("projectId")
+        println("Name ${intent.getStringExtra("name")}")
+        println("role ${intent.getStringExtra("role")}")
+        println("profileImage ${intent.getStringExtra("profileImage")}")
+        println("email ${intent.getStringExtra("email")}")
+        intent.getStringExtra("projectId")?.let { getProjectDetails(it) }
+        taskTableView.addDataClickListener(intent.getStringExtra("projectId")?.let {
+            ClickTeamMemberTask(this, it.toLong() , intent.getStringExtra("name")!!, intent.getStringExtra("role")!!, intent.getStringExtra("email")!!, intent.getStringExtra("profileImage")!!)
+        })
+
 
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -63,15 +62,20 @@ class TeamMemberTaskList : AppCompatActivity() {
             }
 
             R.id.menuHome-> Intent(this@TeamMemberTaskList, ListingProjectTeamMember::class.java).also {
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                println(intent.getStringExtra("profileImage"))
+                it.putExtra("email",intent.getStringExtra("email"))
+                it.putExtra("name",intent.getStringExtra("name"))
+                it.putExtra("role",intent.getStringExtra("role"))
+                it.putExtra("profileImage",intent.getStringExtra("profileImage"))
+                it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(it)
             }
         }
         return super.onOptionsItemSelected(item)
     }
 
-    private fun getProjectDetails(projectId : Long) {
+    private fun getProjectDetails(projectId : String) {
         projectDetailsViewModel.getOneProjectDetails(object : FirestoreCallback {
             override fun onTeamMemberListCallBack(teamMemberLst: MutableList<String>) {
                 TODO("Not yet implemented")
@@ -83,7 +87,13 @@ class TeamMemberTaskList : AppCompatActivity() {
 
             override fun onOneProjectDetailsCallback(projectDetails: ProjectDetails) {
                 taskTableView.columnCount=3
-                var taskLst = projectDetails.taskLst
+                var taskLst = mutableListOf<TaskDetails>()
+                    for (eachTask in projectDetails.taskLst!!){
+                        if(eachTask.assignedTo.contentEquals(intent.getStringExtra("email")))
+                            taskLst.add(eachTask)
+
+                    }
+
                 val adapter = TaskTableViewAdaptor(context,taskLst,taskTableView)
                 taskTableView.dataAdapter = adapter
                 taskTableView.headerAdapter = TableHeader.getTaskTableHeader(context, "")
@@ -93,8 +103,8 @@ class TeamMemberTaskList : AppCompatActivity() {
                 val teamLstAdaptor = TeamLstTableAdaptor(context,teamDetails,teamLstTv)
                 teamLstTv.dataAdapter = teamLstAdaptor
                 //teamLstTv.dataAdapter = SimpleTableDataAdapter(MutableList(projectDetails.teamLst))
-                managerName.setText("Manager Name :"+projectDetails.projectName.toString())
-                projectStatus.setText("Project Status"+projectDetails.projectStatus.toString())
+                managerName.setText(projectDetails.projectName.toString())
+                projectStatus.setText(projectDetails.projectStatus.toString())
                 managerName.isEnabled=false
                 projectStatus.isEnabled=false
             }
@@ -102,7 +112,7 @@ class TeamMemberTaskList : AppCompatActivity() {
             override fun onTeamMemberProjectCallback(projectDetails: MutableList<ProjectDetails>) {
                 TODO("Not yet implemented")
             }
-        }, projectId = projectId)
+        }, projectId = projectId.toLong())
 
     }
 

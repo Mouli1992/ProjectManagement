@@ -12,13 +12,17 @@ import android.widget.*
 import androidx.core.view.isVisible
 import com.example.projectmanagement.model.ProjectDetails
 import com.example.projectmanagement.model.TaskDetails
-import com.example.projectmanagement.table.TaskTableViewAdaptor
+import com.example.projectmanagement.table.team.TaskTableViewAdaptor
 import com.example.projectmanagement.utils.*
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.messaging.FirebaseMessaging
 import com.google.gson.Gson
 import de.codecrafters.tableview.TableView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -36,9 +40,13 @@ private lateinit var datePicker : DatePicker
 private lateinit var context: Context
 private lateinit var buttonAddProjectTasks : Button
 
+const val TOPIC = "/topics/myTopic2"
 class ProjectDetails : AppCompatActivity() {
+    private val msgTitle = "Task Notification"
+    private val message= "Task Assigned"
     companion object{
         const val TAG = "ProjectDetails"
+
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,7 +64,7 @@ class ProjectDetails : AppCompatActivity() {
             openDatePickerDialog()
 
         }
-        val intent = intent
+        FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
         if(intent.getStringExtra("code").equals(INTENT_FROM_PROJECT_LIST)) {
             createdBy.setText(intent.getStringExtra("email"))
             createdBy.isEnabled=false
@@ -71,7 +79,12 @@ class ProjectDetails : AppCompatActivity() {
             createdBy.isEnabled=false
             projectName.setText(projectDetails?.projectName)
             projectName.isEnabled=false
-            prjDeadline.setText(projectDetails.projectDeadline?.toDate().toString())
+            val dateUtils = DateUtils()
+            prjDeadline.setText(projectDetails.projectDeadline?.let {
+                dateUtils.convertTimeStampToDate(
+                    it
+                )
+            })
             prjDeadline.isEnabled=false
             //prjDeadline.setText(projectDetails.projectDeadline?.nanoseconds.toString())
             tableView.isVisible=true
@@ -115,6 +128,10 @@ class ProjectDetails : AppCompatActivity() {
             val taskLstIntent = Intent(this@ProjectDetails, ProjectsTasks::class.java)
             taskLstIntent.putExtra("json", Gson().toJson(projectDetails))
             taskLstIntent.putExtra("code", INTENT_FROM_PROJECT_DETAILS)
+            taskLstIntent.putExtra("email",intent.getStringExtra("email"))
+            taskLstIntent.putExtra("name",intent.getStringExtra("name"))
+            taskLstIntent.putExtra("role",intent.getStringExtra("role"))
+            taskLstIntent.putExtra("profileImage",intent.getStringExtra("profileImage"))
             startActivity(taskLstIntent)
         }
 
@@ -125,6 +142,14 @@ class ProjectDetails : AppCompatActivity() {
             database.collection("projectDetails").document(projectDetails.projectId.toString()).
             set(projectDetails).addOnCompleteListener { projectTaskDetailsTask ->
                 if(projectTaskDetailsTask.isSuccessful) {
+                    if(msgTitle.isNotEmpty() && message.isNotEmpty()) {
+                        PushNotification(
+                            NotificationData(msgTitle, message),
+                            TOPIC
+                        ).also {
+                            sendNotification(it)
+                        }
+                    }
                     Toast.makeText(this, "Project Details Added Successfully", Toast.LENGTH_SHORT).show()
                 }else{
                     Log.e(TAG, "Exception with Project Data Insertion")
@@ -135,6 +160,9 @@ class ProjectDetails : AppCompatActivity() {
             }
             val projectListingIntent = Intent(this, ListingProject::class.java)
             projectListingIntent.putExtra("email",projectDetails.projectCreatedBy)
+            projectListingIntent.putExtra("role",intent.getStringExtra("role"))
+            projectListingIntent.putExtra("name",intent.getStringExtra("name"))
+            projectListingIntent.putExtra("profileImage",intent.getStringExtra("profileImage"))
             finish()
             startActivity(projectListingIntent)
 
@@ -180,13 +208,30 @@ class ProjectDetails : AppCompatActivity() {
             }
 
             R.id.menuHome-> Intent(this@ProjectDetails, ListingProject::class.java).also {
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                it.putExtra("email",intent.getStringExtra("email"))
+                it.putExtra("name",intent.getStringExtra("name"))
+                it.putExtra("role",intent.getStringExtra("role"))
+                it.putExtra("profileImage",intent.getStringExtra("profileImage"))
+                it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(it)
             }
             }
             return super.onOptionsItemSelected(item)
         }
+
+    private fun sendNotification(notification: PushNotification) = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val response = RetrofitInstance.api.postNotification(notification)
+            if (response.isSuccessful) {
+                Log.d(TAG, "Response: ${Gson().toJson(response)}")
+            } else {
+                Log.e(TAG, response.errorBody().toString())
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, e.toString())
+        }
+    }
 
 
 

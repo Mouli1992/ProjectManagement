@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
-        android:text="name"
+        android:text="Name"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -30,14 +30,15 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/shape"
         android:gravity="start"
-        android:text="deadline"
+        android:text="Deadline"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline17"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
-        app:layout_constraintTop_toBottomOf="@+id/txtRdProjectName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRdProjectName"
+        />
 
     <TextView
         android:id="@+id/txtRdAssignedBy"
@@ -46,7 +47,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/shape"
         android:editable="false"
-        android:text="CreatedBy:"
+        android:text="Created By:"
         android:textAlignment="viewStart"
         android:textColor="#000000"
 
@@ -64,6 +65,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/shape"
         android:hint="Enter Project Name"
+        android:textColor="@drawable/dis_bg"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
@@ -77,6 +79,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/shape"
         android:hint="Enter Date"
+        android:textColor="@drawable/dis_bg"
         android:inputType="date"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
@@ -130,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.33" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline18"
@@ -161,6 +164,7 @@
         android:background="@drawable/shape"
         android:ems="10"
         android:hint="Name"
+        android:textColor="@drawable/dis_bg"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"

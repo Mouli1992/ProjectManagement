@@ -53,10 +53,6 @@ class ListingProject : AppCompatActivity()  {
         //projectRecyclerView = findViewById(R.id.rvProjectShown)
         txtNo = findViewById(R.id.txtNoProjects)
         listOfTeamMembers = mutableListOf()
-        val todoList = mutableListOf<ProjectListData>(
-            ProjectListData("p1", "pending"),
-            ProjectListData("p2", "pending"),
-        )
 
         tableView = findViewById(R.id.tableView)
         tableView.columnCount=3
@@ -90,13 +86,15 @@ class ListingProject : AppCompatActivity()  {
         getProjectDetailsOfManager(intent.getStringExtra("email")!!)
         buttonAddProject = findViewById<Button>(R.id.btnAddProject)
 
-        tableView.addDataClickListener(ProjectClickListener(this))
+        tableView.addDataClickListener(ProjectClickListener(this,intent.getStringExtra("name")!!,intent.getStringExtra("role")!!,intent.getStringExtra("email")!!, intent.getStringExtra("profileImage")!! ))
         buttonAddProject.setOnClickListener{
 
             val prevIntent = intent;
             val intent = Intent(this@ListingProject, com.example.projectmanagement.ProjectDetails::class.java)
             intent.putExtra("name",prevIntent.getStringExtra("name") )
             intent.putExtra("email", prevIntent.getStringExtra("email"))
+            intent.putExtra("role", prevIntent.getStringExtra("role"))
+            intent.putExtra("profileImage", prevIntent.getStringExtra("profileImage"))
             intent.putExtra("code", INTENT_FROM_PROJECT_LIST)
             startActivity(intent)
             finish()

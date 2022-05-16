@@ -74,8 +74,13 @@ class ProjectsTasks : AppCompatActivity() {
             val prjLstIntent = Intent(this,com.example.projectmanagement.ProjectDetails::class.java)
             prjLstIntent.putExtra("json",Gson().toJson(projectDetails))
             prjLstIntent.putExtra("code", INTENT_FROM_TASK_LIST)
+            prjLstIntent.putExtra("email",intent.getStringExtra("email"))
+            prjLstIntent.putExtra("name",intent.getStringExtra("name"))
+            prjLstIntent.putExtra("role",intent.getStringExtra("role"))
+            prjLstIntent.putExtra("profileImage",intent.getStringExtra("profileImage"))
             startActivity(prjLstIntent)
             finish()
+
 
         }
 

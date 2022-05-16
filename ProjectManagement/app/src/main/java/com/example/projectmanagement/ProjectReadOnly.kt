@@ -12,7 +12,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
 import com.example.projectmanagement.model.OneProjectDetailsViewModel
 import com.example.projectmanagement.model.ProjectDetails
-import com.example.projectmanagement.table.TaskTableViewAdaptor
+import com.example.projectmanagement.table.team.TaskTableViewAdaptor
+import com.example.projectmanagement.utils.DateUtils
 import com.example.projectmanagement.utils.INTENT_FROM_READ_PROJECT
 import com.example.projectmanagement.utils.TableHeader
 import com.google.firebase.firestore.ktx.firestore
@@ -53,11 +54,13 @@ class ProjectReadOnly : AppCompatActivity() {
 
     private fun navigateToProjectListing() {
 
-        val intent = Intent(this@ProjectReadOnly, ListingProject::class.java)
-        println(createdBy.text.toString())
-        intent.putExtra("email", createdBy.text.toString())
-        intent.putExtra("code", INTENT_FROM_READ_PROJECT)
-        startActivity(intent)
+        val it = Intent(this@ProjectReadOnly, ListingProject::class.java)
+        it.putExtra("code", INTENT_FROM_READ_PROJECT)
+        it.putExtra("email",intent.getStringExtra("email"))
+        it.putExtra("name",intent.getStringExtra("name"))
+        it.putExtra("role",intent.getStringExtra("role"))
+        it.putExtra("profileImage",intent.getStringExtra("profileImage"))
+        startActivity(it)
         finish()
     }
 
@@ -77,7 +80,12 @@ class ProjectReadOnly : AppCompatActivity() {
                 tableView.dataAdapter = adapter
                 tableView.headerAdapter = TableHeader.getTaskTableHeader(context, "")
                 projectName.setText(projectDetails.projectName)
-                prjDeadline.setText(projectDetails.projectDeadline?.toDate().toString())
+                val dateUtils = DateUtils()
+                prjDeadline.setText(projectDetails.projectDeadline?.let {
+                    dateUtils.convertTimeStampToDate(
+                        it
+                    )
+                })
                 createdBy.setText(projectDetails.projectCreatedBy.toString())
                 projectName.isEnabled=false
                 createdBy.isEnabled=false
@@ -106,7 +114,10 @@ class ProjectReadOnly : AppCompatActivity() {
 
             R.id.menuHome-> Intent(this@ProjectReadOnly, ListingProject::class.java).also {
 
-                intent.putExtra("email", createdBy.text.toString())
+                it.putExtra("email",intent.getStringExtra("email"))
+                it.putExtra("name",intent.getStringExtra("name"))
+                it.putExtra("role",intent.getStringExtra("role"))
+                it.putExtra("profileImage",intent.getStringExtra("profileImage"))
                 intent.putExtra("code", INTENT_FROM_READ_PROJECT)
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
