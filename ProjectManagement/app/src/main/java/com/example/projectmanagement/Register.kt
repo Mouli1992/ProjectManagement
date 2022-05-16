@@ -94,6 +94,7 @@ class Register: AppCompatActivity() {
 
             uri= data?.data!!
             uploadP.setImageURI(uri)
+            uploadP.scaleType = ImageView.ScaleType.CENTER_CROP
 
         }
 
@@ -137,6 +138,10 @@ class Register: AppCompatActivity() {
                     if (task.isSuccessful) {
                         firebaseUser = task.result!!.user!!
                         val userDetails = UserDetails(email, name.text.toString(),Integer.parseInt(mobile.text.toString()),Timestamp.now(),selectedRole,"")
+                        if(null == uri){
+                            uri = Uri.EMPTY
+                        }
+
                         FirebaseStorageManager().registerUser(context,uri,userDetails)
                     //saveUserDetails(email,name.text.toString(),Integer.parseInt(mobile.text.toString()),selectedRole,uri)
 

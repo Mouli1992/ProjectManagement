@@ -7,8 +7,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
 import com.example.projectmanagement.db.FirestoreCallback
 import com.example.projectmanagement.model.*
@@ -36,10 +34,7 @@ class TeamMemberTaskList : AppCompatActivity() {
         taskTableView = findViewById(R.id.teamMemberTv)
         projectDetailsViewModel = ViewModelProvider(this).get(OneProjectDetailsViewModel::class.java)
         context = this
-
         intent.getStringExtra("projectId")?.let { getProjectDetails(it.toLong()) }
-
-
         //Alert dialogbox for vishal
 //        val taskUpdateDialog= AlertDialog.Builder(this)
 //            .setTitle("Task Upodate")
@@ -51,6 +46,7 @@ class TeamMemberTaskList : AppCompatActivity() {
 //            .setNegativeButton("No"){_,_ ->
 //                Toast.makeText(this,"The task status wasnt updated",Toast.LENGTH_SHORT).show()
 //            }
+
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.heading_menu,menu)
@@ -120,5 +116,4 @@ class TeamMemberTaskList : AppCompatActivity() {
         println("teamDetailsLst :: $teamDetailsLst")
         return teamDetailsLst
     }
-
 }

@@ -11,7 +11,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="emailExample">xyz@email.com</string>
-    <string name="notRegistered">Not registered?</string>
+    <string name="notRegistered">Not Registered?</string>
     <string name="signUp">Sign Up</string>
     <string name="password">password</string>
     <string name="signIn">Sign In</string>
@@ -22,8 +22,8 @@
     <string name="passwordRegister">Password</string>
     <string name="R">Role</string>
     <string-array name="SpinnerRole">
-        <item>Manager</item>
-        <item>Team Member</item>
+        <item color="black" textStyle="bold">Manager</item>
+        <item color="black" textStyle="bold">Team Member</item>
     </string-array>
     <string-array name="SpinnerRoleTaskAssignment">
         <item>Member</item>

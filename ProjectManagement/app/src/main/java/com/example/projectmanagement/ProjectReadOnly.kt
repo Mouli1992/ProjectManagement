@@ -104,7 +104,10 @@ class ProjectReadOnly : AppCompatActivity() {
 
             }
 
-            R.id.menuHome-> Intent(this@ProjectReadOnly, ListingProjectTeamMember::class.java).also {
+            R.id.menuHome-> Intent(this@ProjectReadOnly, ListingProject::class.java).also {
+
+                intent.putExtra("email", createdBy.text.toString())
+                intent.putExtra("code", INTENT_FROM_READ_PROJECT)
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(it)

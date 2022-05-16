@@ -49,7 +49,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="16dp"
       android:layout_marginBottom="8dp"
-      android:background="@color/blue1"
+      android:background="@drawable/shape"
       android:text="Add new Tasks"
       android:textColor="#000000"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +63,7 @@
       android:id="@+id/btnSubmitProject"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:background="@color/blue1"
+      android:background="@drawable/shape"
       android:text="Submit Project"
       android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="@+id/btnAddTasks"
@@ -73,33 +73,35 @@
       app:layout_constraintTop_toTopOf="@+id/guideline18"
       app:layout_constraintVertical_bias="1.0" />
 
+
   <TextView
       android:id="@+id/txtProjectName"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginTop="16dp"
       android:background="@drawable/shape"
-      android:text="name"
+      android:text="Name"
       android:textColor="#000000"
+      android:textSize="18sp"
       android:textStyle="bold"
       app:layout_constraintEnd_toStartOf="@+id/guideline17"
-      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
       app:layout_constraintTop_toTopOf="@+id/guideline13" />
-
 
   <TextView
       android:id="@+id/txtDeadline"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginTop="36dp"
+      android:layout_marginTop="20dp"
       android:background="@drawable/shape"
       android:gravity="start"
-      android:text="deadline"
+      android:text="Deadline"
       android:textColor="#000000"
+      android:textSize="18sp"
       android:textStyle="bold"
       app:layout_constraintEnd_toStartOf="@+id/guideline17"
-      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
       app:layout_constraintTop_toBottomOf="@+id/txtProjectName" />
 
@@ -107,25 +109,25 @@
       android:id="@+id/txtAssignedBy"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginBottom="20dp"
       android:background="@drawable/shape"
       android:editable="false"
-      android:text="CreatedBy:"
+      android:text="Created By:"
       android:textAlignment="viewStart"
       android:textColor="#000000"
-      android:textSize="16sp"
+      android:textSize="18sp"
 
       android:textStyle="bold"
       app:layout_constraintBottom_toTopOf="@+id/guideline14"
       app:layout_constraintEnd_toStartOf="@+id/guideline17"
-      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="@+id/guideline11"
-      app:layout_constraintTop_toBottomOf="@+id/txtDeadline" />
+      app:layout_constraintTop_toBottomOf="@+id/txtDeadline"
+      app:layout_constraintVertical_bias="0.23" />
 
   <EditText
       android:id="@+id/edtProjectName"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
+      android:layout_width="188dp"
+      android:layout_height="26dp"
       android:layout_marginTop="16dp"
       android:background="@drawable/shape"
       android:hint="Enter Project Name"
@@ -160,11 +162,12 @@
 <!--      app:layout_constraintHorizontal_bias="0.0"-->
 <!--      app:layout_constraintStart_toStartOf="@+id/guideline19"-->
 <!--      app:layout_constraintTop_toBottomOf="@+id/edtProjectName" />-->
+
   <EditText
       android:id="@+id/dteProjectDeadline"
-      android:layout_width="225dp"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="28dp"
+      android:layout_width="201dp"
+      android:layout_height="31dp"
+      android:layout_marginTop="20dp"
       android:background="@drawable/shape"
       android:hint="Project Deadline"
       android:textColorHint="@color/black"
@@ -178,7 +181,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="vertical"
-      app:layout_constraintGuide_percent="0.05" />
+      app:layout_constraintGuide_percent="0.04" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline12"
@@ -199,7 +202,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:orientation="horizontal"
-      app:layout_constraintGuide_percent="0.35" />
+      app:layout_constraintGuide_percent="0.3" />
 
   <androidx.constraintlayout.widget.Guideline
       android:id="@+id/guideline17"
@@ -231,20 +234,20 @@
 
   <EditText
       android:id="@+id/edtCreatedBy"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
+      android:layout_width="197dp"
+      android:layout_height="27dp"
       android:background="@drawable/shape"
       android:ems="10"
       android:hint="Name"
-      android:textColorHint="@color/black"
       android:inputType="textPersonName"
+      android:textColor="@drawable/dis_bg"
+      android:textColorHint="@color/black"
       app:layout_constraintBottom_toTopOf="@+id/guideline14"
       app:layout_constraintEnd_toStartOf="@+id/guideline21"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="@+id/guideline19"
       app:layout_constraintTop_toBottomOf="@+id/dteProjectDeadline"
-      app:layout_constraintVertical_bias="0.471" />
+      app:layout_constraintVertical_bias="0.221" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
