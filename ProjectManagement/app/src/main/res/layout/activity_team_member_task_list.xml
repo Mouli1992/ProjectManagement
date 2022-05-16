@@ -43,6 +43,7 @@
         android:background="@drawable/shape"
         android:text="Project Manager:"
         android:textColor="@color/black"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline33"
         app:layout_constraintHorizontal_bias="0.0"
@@ -53,10 +54,12 @@
         android:id="@+id/edtProjectManagerName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="@drawable/shape"
         android:hint="Manager Name"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/guideline25"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline29"
         app:layout_constraintTop_toTopOf="@+id/guideline35" />
 
@@ -88,10 +91,11 @@
         android:id="@+id/txtProjectStatustmtl"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/shape"
         android:text="Project Status:"
         android:textColor="@color/black"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline33"
         app:layout_constraintHorizontal_bias="0.0"
@@ -157,14 +161,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.09" />
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline32"
@@ -178,7 +182,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="156dp" />
+        app:layout_constraintGuide_begin="170dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline34"

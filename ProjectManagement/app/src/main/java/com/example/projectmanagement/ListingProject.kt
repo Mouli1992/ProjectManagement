@@ -80,6 +80,7 @@ class ListingProject : AppCompatActivity()  {
         profilePic = findViewById(R.id.imageTeamManager)
         if(null != intent.getStringExtra("profileImage")) {
             Picasso.get().load(intent.getStringExtra("profileImage")).into(profilePic);
+            profilePic.scaleType = ImageView.ScaleType.CENTER_CROP
         }
         name = findViewById(R.id.txtUserName)
         role = findViewById(R.id.txtUserRole)

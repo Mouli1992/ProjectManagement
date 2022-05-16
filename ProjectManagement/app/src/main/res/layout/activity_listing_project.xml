@@ -16,6 +16,7 @@
     <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
     <!--        app:layout_constraintTop_toTopOf="@+id/guideline4" />-->
 
+
     <ImageView
         android:id="@+id/imageTeamManager"
         android:layout_width="0dp"
@@ -23,9 +24,10 @@
         android:src="@drawable/ic_person"
         app:layout_constraintBottom_toTopOf="@+id/guideline36"
         app:layout_constraintEnd_toStartOf="@+id/guideline31"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline30" />
-
+        app:layout_constraintTop_toTopOf="@+id/guideline30"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtUserName"
@@ -62,7 +64,7 @@
         android:layout_height="wrap_content"
         android:text="No Projects Available"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddProject"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintHorizontal_bias="0.53"

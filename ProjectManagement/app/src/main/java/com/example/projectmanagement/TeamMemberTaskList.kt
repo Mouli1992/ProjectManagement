@@ -37,7 +37,7 @@ class TeamMemberTaskList : AppCompatActivity() {
         intent.getStringExtra("projectId")?.let { getProjectDetails(it.toLong()) }
         //Alert dialogbox for vishal
 //        val taskUpdateDialog= AlertDialog.Builder(this)
-//            .setTitle("Task Upodate")
+//            .setTitle("Task Update")
 //            .setMessage("Are you sure you want to update the status of the task")
 //            .setIcon(R.drawable.ic_dialog_image)
 //            .setPositiveButton("yes"){_,_ ->
