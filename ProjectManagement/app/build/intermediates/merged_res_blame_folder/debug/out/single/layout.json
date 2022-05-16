@@ -1,46 +1,46 @@
 [
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_project_details.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_project_details.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewprojectlist.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewprojectlist.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_project_read_only.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_project_read_only.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_project_details.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_project_details.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing_project_team_member.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_listing_project_team_member.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewtasklist.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewtasklist.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_projects_tasks.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_projects_tasks.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing_project.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_listing_project.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewteammembertasks.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewteammembertasks.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewteammembertasks.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewteammembertasks.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewprojectlist.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewprojectlist.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing_project_team_member.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_listing_project_team_member.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerlayout.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/registerlayout.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_projects_tasks.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_projects_tasks.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_team_member_task_list.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_team_member_task_list.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_project_read_only.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_project_read_only.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing_project.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_listing_project.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_team_member_task_list.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_team_member_task_list.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/recyclerviewtasklist.xml",
-        "source": "/Users/chandramouli/Downloads/git12052021/gitnewtoday/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewtasklist.xml"
+        "merged": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerlayout.xml",
+        "source": "/Users/anmolaggarwal/Desktop/PrjMgmt/ProjectManagement/app/src/main/res/layout/registerlayout.xml"
     }
 ]
