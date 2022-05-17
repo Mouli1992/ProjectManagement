@@ -1,11 +1,14 @@
 package com.example.projectmanagement.table.project
 
 import android.content.Context
+import android.graphics.Color
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.example.projectmanagement.model.ProjectDetails
+import com.example.projectmanagement.utils.PROJECT_STATUS_PENDING
 import de.codecrafters.tableview.TableView
 import de.codecrafters.tableview.toolkit.LongPressAwareTableDataAdapter
 import java.text.DateFormat
@@ -34,19 +37,50 @@ class ProjectTableDataAdapter(context: Context, data: List<ProjectDetails?>?, ta
     }
 
     private fun renderProjectStatus(projectDetails: ProjectDetails?): View? {
-        return projectDetails!!.projectStatus?.let { renderString(it) }
+        return if(projectDetails!!.projectStatus.equals(PROJECT_STATUS_PENDING)){
+            projectDetails.projectStatus?.let { renderStatus(it) }
+
+        }else{
+            projectDetails!!.projectStatus?.let { renderString(it) }
+
+        }
 
     }
 
     private fun renderProjectName(projectDetails: ProjectDetails?): View? {
-        return projectDetails!!.projectName?.let { renderString(it) }
+        return if(projectDetails!!.projectStatus.equals(PROJECT_STATUS_PENDING)){
+            projectDetails.projectName?.let { renderStatus(it) }
+
+        }else{
+            projectDetails!!.projectName?.let { renderString(it) }
+
+        }
     }
 
     private fun renderProjectDeadLine(projectDetails: ProjectDetails?): View? {
-        return projectDetails!!.projectDeadline?.let {
-             val dateFormat : DateFormat = SimpleDateFormat("dd/MM/yyyy")
+        return if(projectDetails!!.projectStatus.equals(PROJECT_STATUS_PENDING)){
+            projectDetails.projectDeadline?.let {
+                val dateFormat : DateFormat = SimpleDateFormat("dd/MM/yyyy")
+                renderStatus(dateFormat.format(it.toDate()) )
+            }
 
-            renderString(dateFormat.format(it.toDate()) )}
+        }else{
+                projectDetails!!.projectDeadline?.let {
+                val dateFormat : DateFormat = SimpleDateFormat("dd/MM/yyyy")
+                renderString(dateFormat.format(it.toDate()) )}
+
+        }
+
+    }
+
+
+    private fun renderStatus(value : String) : View {
+        val textView = TextView(context)
+        textView.text=value
+        textView.setPadding(20, 10, 20, 10)
+        textView.textSize = ProjectTableDataAdapter.TEXT_SIZE.toFloat()
+        textView.setTextColor(Color.RED);
+        return textView
     }
 
     private fun renderString(value: String): View {

@@ -1,19 +1,15 @@
 [
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_menu_home.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-anydpi-v26/ic_menu_home.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_menu_logout_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-hdpi/ic_menu_logout_round.png"
+        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_mail.xml.flat",
@@ -24,20 +20,12 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewprojectlist.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_splashscreenicon.xml.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_splashscreenicon.xml"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_notification_round.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-anydpi-v26/ic_notification_round.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_menu_logout_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-mdpi/ic_menu_logout_round.png"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_menu_logout.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-hdpi/ic_menu_logout.png"
+        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_splashscreenicon.xml.flat",
+        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_splashscreenicon.xml"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_notification.png.flat",
@@ -64,24 +52,12 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_menu_home.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-hdpi/ic_menu_home.png"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_menu_home_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xhdpi/ic_menu_home_round.png"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/menu_heading_menu.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/menu/heading_menu.xml"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/layout_recyclerviewteammembertasks.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/layout/recyclerviewteammembertasks.xml"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_menu_logout_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_menu_logout_round.png"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_menu_logout_foreground.xml.flat",
@@ -94,10 +70,6 @@
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/layout_activity_project_read_only.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_project_read_only.xml"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_menu_home.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxhdpi/ic_menu_home.png"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -116,10 +88,6 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_add.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_menu_logout_background.xml.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_menu_logout_background.xml"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_notification.png.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xhdpi/ic_notification.png"
     },
@@ -136,20 +104,8 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_menu_home_background.xml.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_menu_home_background.xml"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_menu_logout_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxhdpi/ic_menu_logout_round.png"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_menu_logout_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xhdpi/ic_menu_logout_round.png"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_dis_bg.xml.flat",
@@ -180,10 +136,6 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_user.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_menu_home_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-mdpi/ic_menu_home_round.png"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_notification_round.png.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-hdpi/ic_notification_round.png"
     },
@@ -198,10 +150,6 @@
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_menu_home_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxhdpi/ic_menu_home_round.png"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_notification_foreground.xml.flat",
@@ -220,24 +168,8 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-anydpi-v26/ic_notification.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_menu_logout.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xhdpi/ic_menu_logout.png"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_menu_home.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xhdpi/ic_menu_home.png"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_menu_home.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_menu_home.png"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_notification_round.png.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxhdpi/ic_notification_round.png"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_menu_logout.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxhdpi/ic_menu_logout.png"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_splashscreen.xml.flat",
@@ -252,10 +184,6 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_project_details.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_menu_logout.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_menu_logout.png"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/layout_activity_listing_project_team_member.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_listing_project_team_member.xml"
     },
@@ -268,24 +196,16 @@
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-mdpi/ic_notification_round.png"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_menu_home_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-xxxhdpi/ic_menu_home_round.png"
-    },
-    {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/navigation_nav_graph.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/navigation/nav_graph.xml"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_menu_home_foreground.xml.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_menu_home_foreground.xml"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_password.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_password.xml"
     },
     {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_menu_logout.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-mdpi/ic_menu_logout.png"
+        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/drawable_ic_menu_home_foreground.xml.flat",
+        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/drawable/ic_menu_home_foreground.xml"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -302,14 +222,6 @@
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/layout_activity_listing_project.xml.flat",
         "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/layout/activity_listing_project.xml"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_menu_home_round.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-hdpi/ic_menu_home_round.png"
-    },
-    {
-        "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_menu_home.png.flat",
-        "source": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/src/main/res/mipmap-mdpi/ic_menu_home.png"
     },
     {
         "merged": "/Users/chandramouli/Downloads/gitmay16/PrjMgmt/ProjectManagement/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",

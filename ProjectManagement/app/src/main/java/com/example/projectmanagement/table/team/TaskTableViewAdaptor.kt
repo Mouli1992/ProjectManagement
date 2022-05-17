@@ -1,10 +1,12 @@
 package com.example.projectmanagement.table.team
 
 import android.content.Context
+import android.graphics.Color
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.example.projectmanagement.model.TaskDetails
+import com.example.projectmanagement.table.project.ProjectTableDataAdapter
 import de.codecrafters.tableview.TableView
 import de.codecrafters.tableview.toolkit.LongPressAwareTableDataAdapter
 import java.text.NumberFormat

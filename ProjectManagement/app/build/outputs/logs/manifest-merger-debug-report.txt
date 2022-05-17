@@ -24,6 +24,7 @@ MERGED from [androidx.browser:browser:1.0.0] /Users/chandramouli/.gradle/caches/
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/409695779bbc394be9b9d7cccd4ffae8/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/chandramouli/.gradle/caches/transforms-3/f70fd0c44a7887553ba6f88eae1492d1/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/313e3caeb9993debfcec19b01628d0de/transformed/jetified-window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [com.github.matecode:Snacky:1.1.5] /Users/chandramouli/.gradle/caches/transforms-3/22d8ac71e83c58024d7789e501295724/transformed/jetified-Snacky-1.1.5/AndroidManifest.xml:2:1-16:12
 MERGED from [com.google.android.material:material:1.6.0] /Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/chandramouli/.gradle/caches/transforms-3/d2717c667e8168dbb7fe2e33a10cff08/transformed/constraintlayout-2.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.ISchwarz23:SortableTableView:2.8.1] /Users/chandramouli/.gradle/caches/transforms-3/4ef869773f0589b3a737bb0436162620/transformed/jetified-SortableTableView-2.8.1/AndroidManifest.xml:2:1-13:12
@@ -155,6 +156,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.grad
 MERGED from [com.google.firebase:firebase-auth:21.0.3] /Users/chandramouli/.gradle/caches/transforms-3/a95bc82dd6e5710221869792b0dccddc/transformed/jetified-firebase-auth-21.0.3/AndroidManifest.xml:26:5-71:19
 MERGED from [androidx.window:window:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/313e3caeb9993debfcec19b01628d0de/transformed/jetified-window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/313e3caeb9993debfcec19b01628d0de/transformed/jetified-window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [com.github.matecode:Snacky:1.1.5] /Users/chandramouli/.gradle/caches/transforms-3/22d8ac71e83c58024d7789e501295724/transformed/jetified-Snacky-1.1.5/AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.matecode:Snacky:1.1.5] /Users/chandramouli/.gradle/caches/transforms-3/22d8ac71e83c58024d7789e501295724/transformed/jetified-Snacky-1.1.5/AndroidManifest.xml:11:5-14:19
 MERGED from [com.google.android.material:material:1.6.0] /Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.0] /Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/chandramouli/.gradle/caches/transforms-3/d2717c667e8168dbb7fe2e33a10cff08/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
@@ -355,6 +358,8 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/chandram
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/chandramouli/.gradle/caches/transforms-3/f70fd0c44a7887553ba6f88eae1492d1/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/313e3caeb9993debfcec19b01628d0de/transformed/jetified-window-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] /Users/chandramouli/.gradle/caches/transforms-3/313e3caeb9993debfcec19b01628d0de/transformed/jetified-window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.matecode:Snacky:1.1.5] /Users/chandramouli/.gradle/caches/transforms-3/22d8ac71e83c58024d7789e501295724/transformed/jetified-Snacky-1.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.matecode:Snacky:1.1.5] /Users/chandramouli/.gradle/caches/transforms-3/22d8ac71e83c58024d7789e501295724/transformed/jetified-Snacky-1.1.5/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.6.0] /Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.0] /Users/chandramouli/.gradle/caches/transforms-3/e43a0834baa162fb79b28f30adee1456/transformed/material-1.6.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /Users/chandramouli/.gradle/caches/transforms-3/d2717c667e8168dbb7fe2e33a10cff08/transformed/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41

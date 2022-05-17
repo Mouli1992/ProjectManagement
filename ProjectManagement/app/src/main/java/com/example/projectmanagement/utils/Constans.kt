@@ -1,8 +1,8 @@
 package com.example.projectmanagement.utils
 
-const val PROJECT_STATUS_PENDING = "Pending"
-const val TASK_STATUS_ONGOING = "On Going"
-const val PROJECT_STATUS_COMPLETE= "Complete"
+const val PROJECT_STATUS_PENDING = "Ongoing"
+const val TASK_STATUS_ONGOING = "Assigned"
+const val PROJECT_STATUS_COMPLETE= "Completed"
 const val TASK_STATUS_CLOSED= "Closed"
 const val USER_COLLECTION_REF = "userDetails"
 const val USER_ROLE_MANAGER="Manager"

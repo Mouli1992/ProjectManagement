@@ -38,14 +38,8 @@ class ListingProjectTeamMember : AppCompatActivity() {
         teamMemberProjectViewModel = ViewModelProvider(this).get(TeamMemberProjectDetailsViewModel::class.java)
         projectDetails = ProjectDetails()
         context = this
-//        intent.putExtra("userId", firebaseUser?.uid)
-//        intent.putExtra("email", email)
-//        intent.putExtra("role", userDetails?.role)
-//        intent.putExtra("mobileNo", userDetails?.mobileNo)
-//        intent.putExtra("profileImage", userDetails?.pictureUri)
+
         intent.getStringExtra("email")?.let { getTeamMemberProjectDetails(it) }
-        println("name "+intent.getStringExtra("name") )
-        println("profileImage "+intent.getStringExtra("profileImage") )
         tableView.addDataClickListener(intent.getStringExtra("email")?.let {
             TaskClickListener(this,
                 it, intent.getStringExtra("role")!!, intent.getStringExtra("name")!!, intent.getStringExtra("profileImage")!!
@@ -89,17 +83,23 @@ class ListingProjectTeamMember : AppCompatActivity() {
             }
 
             override fun onTeamMemberProjectCallback(projectDetails: MutableList<ProjectDetails>) {
-                val adapter = TeamMemberTableAdaptor(context,projectDetails,tableView)
-                tableView.dataAdapter = adapter
-                tableView.headerAdapter = TableHeader.getProjectTableHeader(context, "")
-                name.text = "Name :"+intent.getStringExtra("name")
-                role.text = "Role :"+intent.getStringExtra("role")
+                if(projectDetails!=null) {
+                    val adapter = TeamMemberTableAdaptor(context, projectDetails, tableView)
+                    tableView.dataAdapter = adapter
+                    tableView.headerAdapter = TableHeader.getProjectTableHeader(context, "")
+                    name.text = "Name : " + intent.getStringExtra("name")
+                    role.text = "Role : " + intent.getStringExtra("role")
 
-                println("Profile URL"+intent.getStringExtra("profileImage"))
-                if(null != intent.getStringExtra("profileImage")) {
-                    intent.putExtra("profileImage",intent.getStringExtra("profileImage"))
-                    Picasso.get().load(intent.getStringExtra("profileImage")).into(profilePic);
-                    profilePic.scaleType = ImageView.ScaleType.CENTER_CROP
+                    println("Profile URL" + intent.getStringExtra("profileImage"))
+                    if (null != intent.getStringExtra("profileImage")) {
+                        intent.putExtra("profileImage", intent.getStringExtra("profileImage"))
+                        Picasso.get().load(intent.getStringExtra("profileImage")).into(profilePic);
+                        profilePic.scaleType = ImageView.ScaleType.CENTER_CROP
+                    }
+                }else{
+                    tableView.isEnabled = false
+
+
                 }
 
             }

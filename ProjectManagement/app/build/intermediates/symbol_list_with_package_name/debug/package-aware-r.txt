@@ -1340,6 +1340,8 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_menu_home_background
+color ic_menu_logout_background
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2419,6 +2421,7 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen sliding_pane_detail_pane_width
+dimen snacky_icon_padding
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
@@ -2561,8 +2564,13 @@ drawable dis_bg
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_add
+drawable ic_check_black_24dp
+drawable ic_clear_black_24dp
 drawable ic_clock_black_24dp
 drawable ic_dialog_image
+drawable ic_empty_24dp
+drawable ic_error_outline_black_24dp
+drawable ic_info_outline_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2570,9 +2578,7 @@ drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
 drawable ic_mail
-drawable ic_menu_home_background
 drawable ic_menu_home_foreground
-drawable ic_menu_logout_background
 drawable ic_menu_logout_foreground
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black

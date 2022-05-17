@@ -80,9 +80,9 @@ class ListingProject : AppCompatActivity()  {
         }
         name = findViewById(R.id.txtUserName)
         role = findViewById(R.id.txtUserRole)
-        name.text = "Name :"+intent.getStringExtra("name")
+        name.text = "Name : "+intent.getStringExtra("name")
         name.isEnabled = false
-        role.text = "Role :"+intent.getStringExtra("role")
+        role.text = "Role : "+intent.getStringExtra("role")
         getProjectDetailsOfManager(intent.getStringExtra("email")!!)
         buttonAddProject = findViewById<Button>(R.id.btnAddProject)
 

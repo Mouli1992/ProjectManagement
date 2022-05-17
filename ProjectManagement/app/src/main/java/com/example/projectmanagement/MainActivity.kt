@@ -18,6 +18,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.messaging.FirebaseMessaging
 import com.google.gson.Gson
+import de.mateware.snacky.Snacky
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -166,22 +167,18 @@ class MainActivity : AppCompatActivity() {
                         "Encountered error while authentication",
                         Toast.LENGTH_SHORT
                     ).show()
+                    Snacky.builder()
+                        .setActivity(this)
+                        .setText("Invalid Username or Password")
+                        .setDuration(Snacky.LENGTH_INDEFINITE)
+                        .setActionText(android.R.string.ok)
+                        .error()
+                        .show();
+
                 }
 
 
         }
-        }
-    }
-    private fun sendNotification(notification: PushNotification) = CoroutineScope(Dispatchers.IO).launch {
-        try {
-            val response = RetrofitInstance.api.postNotification(notification)
-            if (response.isSuccessful) {
-                Log.d(TAG, "Response: ${Gson().toJson(response)}")
-            } else {
-                Log.e(TAG, response.errorBody().toString())
-            }
-        } catch (e: Exception) {
-            Log.e(TAG, e.toString())
         }
     }
 

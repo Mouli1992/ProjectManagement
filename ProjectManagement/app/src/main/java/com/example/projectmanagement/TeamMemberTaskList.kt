@@ -30,7 +30,6 @@ class TeamMemberTaskList : AppCompatActivity() {
 
         managerName = findViewById(R.id.edtProjectManagerName)
         projectStatus = findViewById(R.id.edtProjectStatus)
-        //teamMemberTaskList = findViewById(R.id.txtMembersNametmtl)
         teamLstTv = findViewById(R.id.teamLstTv)
         taskTableView = findViewById(R.id.teamMemberTv)
         projectDetailsViewModel = ViewModelProvider(this).get(OneProjectDetailsViewModel::class.java)

@@ -11,6 +11,8 @@ import de.codecrafters.tableview.listeners.TableDataClickListener
 import com.example.projectmanagement.db.FirestoreRepository
 import com.example.projectmanagement.model.OneProjectDetailsViewModel
 import com.example.projectmanagement.model.ProjectDetails
+import com.example.projectmanagement.utils.PROJECT_STATUS_COMPLETE
+import com.example.projectmanagement.utils.TASK_STATUS_CLOSED
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
@@ -28,12 +30,6 @@ class ClickTeamMemberTask (private val context: Context, private val projectId: 
     private val database = Firebase.firestore
     private lateinit var projectDetails : MutableList<ProjectDetails>
     override fun onDataClicked(rowIndex: Int, clickedData: TaskDetails?) {
-        println(">>>>>>>>>>>. coming here")
-        println("projectID $projectId")
-        println("project Name $name")
-        println("project Role $role")
-        println("project email $email")
-        println("project profile Iamge $profileImage")
         val taskUpdateDialog = AlertDialog.Builder(context)
             .setTitle("Task Update")
             .setMessage("Are you sure you want to update the status of the task")
@@ -57,7 +53,7 @@ class ClickTeamMemberTask (private val context: Context, private val projectId: 
                     taskIntent.putExtra("profileImage", profileImage)
                     taskIntent.putExtra("projectId", projectId.toString())
                     context.startActivity(taskIntent)
-                    Toast.makeText(context, "You updated the task status", Toast.LENGTH_SHORT)
+                    Toast.makeText(context, "Task Status Updated", Toast.LENGTH_SHORT)
                         .show()
                 }else{
                     Toast.makeText(context, "Project status already updated", Toast.LENGTH_SHORT)
@@ -99,7 +95,7 @@ class ClickTeamMemberTask (private val context: Context, private val projectId: 
             for (eachTask in taskLst){
                 if (eachTask.taskId == taskId){
                     var newTask = eachTask
-                    newTask.taskStatus = "Completed"
+                    newTask.taskStatus = TASK_STATUS_CLOSED
                     newTaskLst.add(newTask)
                 }else{
                     if(eachTask.taskStatus.equals("Assigned")){
@@ -113,7 +109,7 @@ class ClickTeamMemberTask (private val context: Context, private val projectId: 
         var projectDetailsNew = projectDetails
         projectDetailsNew?.taskLst = newTaskLst
         if (flag){
-            projectDetailsNew?.projectStatus = "Completed"
+            projectDetailsNew?.projectStatus = PROJECT_STATUS_COMPLETE
         }
 
         if (projectDetailsNew != null) {

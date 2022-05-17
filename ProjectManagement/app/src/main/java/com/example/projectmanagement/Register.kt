@@ -19,6 +19,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import de.mateware.snacky.Snacky
 
 class Register: AppCompatActivity() {
 
@@ -58,7 +59,6 @@ class Register: AppCompatActivity() {
         email= findViewById(R.id.editEmailRegister)
         mobile= findViewById(R.id.editMobileNumberRegister)
         pwd= findViewById(R.id.editNewPasswordRegister)
-//        regBtn = findViewById(R.id.btnSignUpRegister)
         uploadP= findViewById(R.id.imgProfileImage)
         addProfilePhoto = findViewById<Button>(R.id.btnAddProfileImage)
         signInBtn =findViewById(R.id.btnSignInRegister)
@@ -68,10 +68,6 @@ class Register: AppCompatActivity() {
         context = this
         addProfilePhoto.setOnClickListener {
             choosePictures()
-//            Intent(Intent.ACTION_GET_CONTENT).also {
-//                it.type = "image/*"
-//                startActivityForResult(it,0)
-//            }
         }
         signInBtn.setOnClickListener{
             navigateToSignInActivity()
@@ -160,8 +156,32 @@ class Register: AppCompatActivity() {
                 }
                 .addOnFailureListener{ exception ->
                     Log.e(TAG, "Encountered error while authenticating the user",exception)
-                    Toast.makeText(this, "Encountered error while authentication", Toast.LENGTH_SHORT).show()
-                }
+                    println(exception.message)
+                    if(exception.message!!.contains("The email address is already in use by another account")) {
+                        Toast.makeText(
+                            this,
+                            "Account already exists, Please use another email to Register",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        Snacky.builder()
+                            .setActivity(this)
+                            .setText("Account with email exists, Please register with another emailid")
+                            .setDuration(Snacky.LENGTH_LONG)
+                            .setActionText(android.R.string.ok)
+                            .error()
+                            .show();
+
+
+                    }else{
+                        Snacky.builder()
+                            .setActivity(this)
+                            .setText("Error during registration, Please try again later")
+                            .setDuration(Snacky.LENGTH_LONG)
+                            .setActionText(android.R.string.ok)
+                            .error()
+                            .show();
+                    }
+                    }
 
 
         }
